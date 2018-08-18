@@ -13,7 +13,7 @@
 		
 		<!-- Mobile Specific Meta
 		================================================== -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
@@ -48,7 +48,94 @@
 		
 		<!-- Modernizer Script for old Browsers -->		
         <script src="js/modernizr-2.6.2.min.js"></script>
+		<style>
 		
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+a#icon {
+ background-color: #D3D3D3;   
+}
+		</style>
 		
 
 		<script>
@@ -83,9 +170,9 @@
 
     //DB details
     $dbHost     = 'localhost';
-    $dbUsername = 'id6491760_skylon1';
-    $dbPassword = 'skylon@12345';
-    $dbName     = 'id6491760_skylon1';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName     = 'skylon1';
     
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
@@ -321,8 +408,6 @@
 			</div>   	<!-- End container -->
 		</section>   <!-- End section -->
 		
-		
-		
 		<!--
 		Start Main Features
 		==================================== -->
@@ -526,7 +611,7 @@
 								<i class="fa fa-home fa-5x"></i>
 							</div>
 							<h3>Residential Interiors</h3>
-							<p>Sample Paragraph</p>
+							<p>Interior design is an integral part of buildings, Most of the residential building focused on Interior home decorations to have greater aesthetic view of buildings.</p>
 						</div>
 					</article>
                     <!-- End Single Service Item -->
@@ -538,7 +623,7 @@
 								<i class="fa fa-industry fa-5x"></i>
 							</div>
 							<h3>Commercial Interiors</h3>
-							<p>Sample Paragraph</p>
+							<p>Commercial interior works are those interior works which mainly take place in commercial places.</p>
 						</div>
 					</article>
                     <!-- End Single Service Item -->
@@ -550,7 +635,7 @@
 								<i class="fa fa-gavel fa-5x"></i>
 							</div>
 							<h3>Renovation Works</h3>
-							<p>Sample Paragraph</p>
+							<p>Skylon India will help you to renovate or remodel your house to the whole new level and the very look of house will be greater than your farthest imaginations.</p>
 						</div>
 					</article>
 					<!-- End Single Service Item -->
@@ -562,7 +647,7 @@
 								<i class="fa fa-map fa-5x"></i>
 							</div>
 							<h3>Architecture Designing</h3>
-							<p>Sample Paragraph</p>
+							<p>Architecture designing is generally done after the completion of all structural works.</p>
 						</div>
 					</article>
 					<!-- End Single Service Item -->
@@ -574,7 +659,7 @@
 								<i class="fa fa-wrench fa-5x"></i>
 							</div>
 							<h3>Handcrafter Designer Furniture’s</h3>
-							<p>Sample Paragraph</p>
+							<p>Handcrafted designed furnitures are the furnitures that are crafted using bare hands to make it more durable and efficient.</p>
 						</div>
 					</article>
 					<!-- End Single Service Item -->
@@ -586,7 +671,7 @@
 								<i class="fa fa-plug fa-5x"></i>
 							</div>
 							<h3>Civil & Electrical Contractors</h3>
-							<p>Sample Paragraph</p>
+							<p>Our civil and electrical contractors take up works which will commence after structural construction like wall construction,paintings,electrical wiring and more.</p>
 						</div>
 					</article>
 					<!-- End Single Service Item -->
@@ -1018,11 +1103,11 @@
 		
 		<!-- Srart Contact Us
 		=========================================== -->	
-<!-- Google Map -->
+		<!-- Google Map -->
 			<div class="google-map wow fadeInDown" data-wow-duration="500ms">
 				<div id="map-canvas"></div>
 			</div>			
-		<section id="about-counter" class="bg-one">
+		<section id="foot-counter" class="bg-one">
 		
 			<!-- /Google Map -->
 			<div class="container">
@@ -1032,72 +1117,71 @@
 					
 					<!-- section title -->
 					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-						<h2>Get In <span style="color:#352d4f;">Touch</span></h2>
+						<h2>Get In <span style="color:#dbbe3f;">Touch</span></h2>
 						<div class="border"></div>
 					</div>
 					<!-- /section title -->
 					
 					<!-- Contact Details -->
 					<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-						<h1 style="color:#250284;">Contact Details</h1>
+						<h1 style="color:#dbbe3f">Contact Details</h1>
 						<br>
 						<div class="contact-details">
 							<div class="con-info clearfix">
-								<i class="fa fa-home fa-lg"></i>
-								<span>AP:1725,102ndStreet,<br>14thSector,<br>k.k.Nagar,<br>Chennai-600078.</span>
+								<i class="fa fa-home fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff">AP:1725,102ndStreet,<br>14thSector,<br>k.k.Nagar,<br>Chennai-600078.</span>
 							</div>
 							
 							<div class="con-info clearfix">
-								<i class="fa fa-phone fa-lg"></i>
-								<span>Phone: +919840492966</span>
+								<i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff">Phone: +919840492966</span>
 							</div>
 							
 							<div class="con-info clearfix">
-								<i class="fa fa-fax fa-lg"></i>
-								<span>Phone: +917200107659</span>
+								<i class="fa fa-fax fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff">Phone: +917200107659</span>
 							</div>
 							
 							<div class="con-info clearfix">
-								<i class="fa fa-envelope fa-lg"></i>
-								<span>Email: skylonindia@gmail.com</span>
+								<i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff">Email: skylonindia@gmail.com</span>
 							</div>
 						</div>
 					</div>
 					<!-- / End Contact Details -->
+						<div class="col-md-6" style="padding-left:35px">
+						<h1><a href="#">Our Services</a></h1>
+						</div>
+						<div class="col-md-6" style="padding-left:35px">
+						<h1><a href="#">About Us</a></h1>
+						</div>
+						<div class="col-md-6" style="padding-left:35px">
+						<h1><a href="#">Contact Us</a></h1>
+						</div>
+						<div class="col-md-6">
 						
-					<!-- Contact Form -->
+						</div>
+						<div class="col-md-4">
+						<ul class="social-network social-circle">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>	
+						</div>
+					<!-- Contact Form -
 					<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-						<form id="contact-form" method="post" action="sendmail.php" role="form">
+						<div class="col-md-12">
 						
-							<div class="form-group">
-								<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
-							</div>
-							
-							<div class="form-group">
-								<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
-							</div>
-							
-							<div class="form-group">
-								<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-							</div>
-							
-							<div class="form-group">
-								<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
-							</div>
-							
-							<div id="mail-success" class="success">
-								Thank you. The Mailman is on His Way :)
-							</div>
-							
-							<div id="mail-fail" class="error">
-								Sorry, don't know what happened. Try later :(
-							</div>
-							
-							<div id="cf-submit">
-								<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
-							</div>						
-							
-						</form>
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>				
+				</div>
 					</div>
 					<!-- ./End Contact Form -->
 				
@@ -1109,14 +1193,14 @@
 		</section> <!-- end section -->
 		
 		<!-- end Contact Area
-		========================================== -->
+		========================================== 
 		
 		<footer id="foot-counter" class="bg-one">
 			<div class="container">
 			    <div class="row wow fadeInUp" data-wow-duration="500ms">
 					<div class="col-lg-12">
 						
-						<!-- Footer Social Links -->
+						<!-- Footer Social Links 
 						<div class="social-icon">
 							<ul>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1128,9 +1212,9 @@
 								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
 							</ul>
 						</div>
-						<!--/. End Footer Social Links -->
+						<!--/. End Footer Social Links 
 
-						<!-- copyright -->
+						<!-- copyright 
 						<div class="copyright text-center">
 							<a href="index.html">
 								<img src="img/skylon.png" alt="Skylon" /> 
@@ -1139,11 +1223,11 @@
 							
 							<p>Developed by 2G Developers.</p>
 						</div>
-						<!-- /copyright -->
+						<!-- /copyright 
 						
-					</div> <!-- end col lg 12 -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
+					</div> <!-- end col lg 12 
+				</div> <!-- end row 
+			</div> <!-- end container 
 		</footer> <!-- end footer -->
 		
 		<!-- Back to Top
