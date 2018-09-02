@@ -475,9 +475,9 @@
 
     //DB details
     $dbHost     = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName     = 'skylon1';
+    $dbUsername = 'id6491760_skylon1';
+    $dbPassword = 'skylon@12345';
+    $dbName     = 'id6491760_skylon1';
     
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
@@ -646,7 +646,7 @@
                     <div id="features">
                         <div class="item">
 
-                            <div class="features-item">
+                            <div class="features-item" style="margin:50px;">
                                 <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                                     <h1 style="color:#000000;">"We emphasise on making your today's imaginations into tomorrow's reality"</h1>
                                     <h3>Skylon India focuses on providing interior design & services to today's growing designing sector. A real set of experienced Handcrafted labours, budding enthusiast architects and engineers much interested to outbreak
@@ -680,7 +680,7 @@
         </section>
         <!-- End section -->
 
-        <section id="sample1">
+        <section id="sample1" style="position:relative;z-index=-1;">
             <div>
                 <img src="img/parallax/Louis.jpg" style="max-width: 100%;max-height: 100%">
             </div>
@@ -691,7 +691,7 @@
         <!-- Start Services Section
 		==================================== -->
 
-        <section id="services-counter" class="bg-one">
+        <section id="services-counter" class="bg-one" style="position:relative;z-index=-1;">
             <div class="container">
                 <div class="row">
 
@@ -793,7 +793,7 @@
         <!-- Start Portfolio Section
 		=========================================== -->
 
-        <section id="team-skills">
+        <section id="team-skills" style="position:relative;z-index=-1;">
             <div class="container">
                 <div class="row wow fadeInDown" data-wow-duration="500ms">
                     <div class="col-lg-12">
@@ -843,7 +843,7 @@
         <!-- End section -->
 
 
-        <section id="sample2">
+        <section id="sample2" style="position:relative;z-index=-1;">
             <div>
                 <img src="img\parallax\bruns.jpg" style="max-width: 100%;max-height: 100%">
             </div>
@@ -929,7 +929,7 @@
             </div>
         </div>
 
-        <section id="foot-counter" class="bg-one">
+        <section id="foot-counter" class="bg-one" style="position:relative;z-index=-1;">
 
             <!-- /Google Map -->
             <div class="container">
@@ -945,7 +945,7 @@
                     <!-- /section title -->
 
                     <!-- Contact Details -->
-                    <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                    <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms" style="padding:50px;">
                         <h1 style="color:#dbbe3f">Contact Details</h1>
                         <br>
                         <div class="contact-details">
