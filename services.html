@@ -467,7 +467,7 @@
         .earnatskylon {
           position: fixed;
           top: 50%;
-          right:-50px;
+          right:-60px;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -477,16 +477,16 @@
         .earnatskylon a {
           display: block;
           text-align: center;
-          padding: 14px;
-          
+          padding: 1px;
+		  margin-right:10px;
           transition: all 0.3s ease;
           color: white;
-          font-size: 20px;
+          font-size: 8px;
           -webkit-transform: rotate(90deg);
-            -moz-transform: rotate(90deg);
-            -o-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
         
         }
         
@@ -515,10 +515,10 @@
         .icon-bar1 a {
           display: block;
           text-align: center;
-          padding: 16px;
+          padding: 10px;
           transition: all 0.3s ease;
           color: white;
-          font-size: 20px;
+          font-size: 10px;
         }
         
         /* Style the social media icons with color, if you want */
@@ -557,83 +557,19 @@
 </head>
 
 <body id="body">
-    <div class="icon-bar1">
+    <div class="icon-bar1" style="width:32px;height:32px;">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
         <a href="#" class="google"><i class="fa fa-google"></i></a>
         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
     </div>
-    <div class="earnatskylon">
+    <div class="earnatskylon" style="height:30px;">
         <a href="#" class="earn">
             <p class="rot">Earn&nbsp;&nbsp;at&nbsp;&nbsp;Skylon</p>
         </a>
     </div>
-    <!-- Contact form floating -->
-    <div class="container">
-        <div class="row">
-            <!-- Form -->
-
-            <div class="nb-form" id="nb-form1">
-                <p class="title" id="tit1">Send a message</p>
-                <div class="nb-form" id="sam" hidden>
-                    <p class="title" id="tit2">Send a message</p>
-                    <p class="message">Let's Talk</p>
-
-                    <form method="post" id="contactForm1" name="form">
-                        <input type="text" name="cpname" placeholder="Name:" required>
-                        <input type="email" name="cpemail" placeholder="Email:" required>
-                        <input type="tel" name="cpphone" placeholder="Phone:" required>
-                        <select name="intrest" form="contactForm1" style="color:#000;">
-  <option value="residential">Residential Interior</option>
-  <option value="commercial">Commercial Interior</option>
-  <option value="renovation">Renovation works</option>
-  <option value="architectural">Architecture Designing</option>
-  <option value="handcrafted">Handcrafted furnitures</option>
-  <option value="civil">Civil and Electrical</option>
-</select>
-                        <textarea name="cpmessage" placeholder="Message:" required></textarea>
-                        <button id="submit" value="Send message"> SEND TO US</a>
-    </form>
-	</div>
-	<script type="text/javascript">
-	$("#tit2").click(function(){
-    $("#sam").hide();
-	$("#tit1").show();
-});
-
-$("#tit1").click(function(){
-    $("#sam").show();
-	$("#tit1").hide();
-});
-	  
-		  function toggle() {
-       var e = document.getElementById('nb-form1');
-       if(e.style.bottom == '-350px')
-          e.style.bottom = '0px';
-       else
-          e.style.bottom = '-350px';
-    }
+   
 	
-	 var frm = $('#contactForm1');
-    frm.submit(function (e) {
-        e.preventDefault();
-        $.ajax({
-            type: frm.attr('method'),
-            url: frm.attr('email.php'),
-            data: frm.serialize(),
-            success: function (data) {
-                console.log('Submission was successful.');
-                console.log(data);
-            },
-            error: function (data) {
-                console.log('An error occurred.');
-                console.log(data);
-            },
-        });
-    $('#contactForm1').text("new dialog title");
-	});
-	
-	</script>
 	
   </div>
 	</div>
@@ -763,9 +699,10 @@ $("#tit1").click(function(){
                     <div class="row align-items-center">
                         <div class="col-lg-6 home-about-left">
                             <h1>Residential Interior</h1>
-                            <p>
-                                Interior design is an integral part of buildings, Most of the residential building focused on Interior home decorations to have greater aesthetic view of buildings. Since we have different kinds of buildings now,it makes sense if we have different kinds
-                                of interior designs for residential interiors. Architect’s have significant job which is to fulfill people's needs, as people are more concern about safe structural building.
+                            <p align="justify">
+Interior design is an integral part of buildings, Most of the residential building focused on Interior home decorations to have greater aesthetic view of buildings. 
+Since we have different kinds of buildings now,it makes sense if we have different kinds
+of interior designs for residential interiors. Architect’s have significant job which is to fulfill people's needs, as people are more concern about safe structural building.
                             </p>
                         </div>
                         <div class="col-lg-6 home-about-right">
@@ -783,9 +720,9 @@ $("#tit1").click(function(){
                         </div>
                         <div class="col-lg-6 home-about-right" style="padding:60px;">
                             <h1 style="color:#000000">Commercial Interior</h1>
-                            <p style="color:#000000">
-                                Commercial interior works are those interior works which mainly take place in commercial places. These commercial interior works includes corporate interior design, retail stores, restaurants, lobbies and other public spaces. A designer plans and execute
-                                the planned designs in commercial places.This commercial interior work branch is vast and very broad.
+                            <p  align="justify" style="color:#000000">
+Commercial interior works are those interior works which mainly take place in commercial places. These commercial interior works includes corporate interior design, retail stores, restaurants, lobbies and other public spaces. A designer plans and execute
+the planned designs in commercial places.This commercial interior work branch is vast and very broad.
                             </p>
                         </div>
                     </div>
@@ -798,9 +735,9 @@ $("#tit1").click(function(){
                     <div class="row align-items-center">
                         <div class="col-lg-6 home-about-left">
                             <h1>Renovation works</h1>
-                            <p>
-                                Skylon India will help you to renovate or remodel your house to the whole new level and the very look of house will be greater than your farthest imaginations. We have specialized,determined renovative workers who have good experience in the field of
-                                Home renovation works. We further beautify your home by adding interior works after the renovation is done.
+                            <p align="justify">
+Skylon India will help you to renovate or remodel your house to the whole new level and the very look of house will be greater than your farthest imaginations. We have specialized,determined renovative workers who have good experience in the field of
+Home renovation works. We further beautify your home by adding interior works after the renovation is done.
                             </p>
                         </div>
                         <div class="col-lg-6 home-about-right">
@@ -818,9 +755,9 @@ $("#tit1").click(function(){
                         </div>
                         <div class="col-lg-6 home-about-right" style="padding:60px;">
                             <h1 style="color:#000000">Architecture Designing</h1>
-                            <p style="color:#000000">
-                                Architecture designing is generally done after the completion of all structural works. We have certified architectural interior designer who would make sure that your home’s interior looks will be what you desire and coherent. There are so many critical
-                                steps involved in this type of interior works which is very significant for the whole look and safety of the projects.
+                            <p  align="justify" style="color:#000000">
+Architecture designing is generally done after the completion of all structural works. We have certified architectural interior designer who would make sure that your home’s interior looks will be what you desire and coherent. There are so many critical
+steps involved in this type of interior works which is very significant for the whole look and safety of the projects.
                             </p>
                         </div>
                     </div>
@@ -833,9 +770,9 @@ $("#tit1").click(function(){
                     <div class="row align-items-center">
                         <div class="col-lg-6 home-about-left">
                             <h1>Handcrafted designed furnitures</h1>
-                            <p>
-                                Handcrafted designed furnitures are the furnitures that are crafted using bare hands to make it more durable and efficient. Handmade furnitures are sustainable treasures and can be treasured for the years to come. Adding up furnitures to your home interiors
-                                which will make your home more beautiful than already it is.
+                            <p align="justify">
+Handcrafted designed furnitures are the furnitures that are crafted using bare hands to make it more durable and efficient. Handmade furnitures are sustainable treasures and can be treasured for the years to come. Adding up furnitures to your home interiors
+which will make your home more beautiful than already it is.
                             </p>
                         </div>
                         <div class="col-lg-6 home-about-right">
@@ -853,10 +790,9 @@ $("#tit1").click(function(){
                         </div>
                         <div class="col-lg-6 home-about-right" style="padding:60px;">
                             <h1 style="color:#000000">Civil and Electrical contractors</h1>
-                            <p style="color:#000000">
-                                Our civil and electrical contractors take up works which will commence after structural construction like wall construction,paintings,electrical wiring and more.
-                                </br>
-                                These civil and electrical contractors won’t do structural constructions like normal contractors. They are specialised in non-structural constructions especially for interior works.
+                            <p align="justify" style="color:#000000">
+Our civil and electrical contractors take up works which will commence after structural construction like wall construction,paintings,electrical wiring and more.
+These civil and electrical contractors won’t do structural constructions like normal contractors. They are specialised in non-structural constructions especially for interior works.
                             </p>
                         </div>
                     </div>

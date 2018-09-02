@@ -407,10 +407,10 @@
         .icon-bar1 a {
           display: block;
           text-align: center;
-          padding: 16px;
+          padding: 10px;
           transition: all 0.3s ease;
           color: white;
-          font-size: 20px;
+          font-size: 10px;
         }
         
         /* Style the social media icons with color, if you want */
@@ -448,7 +448,7 @@
 </head>
 
 <body id="body">
-    <div class="icon-bar1">
+    <div class="icon-bar1" style="width:32px;height:32px;">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
         <a href="#" class="google"><i class="fa fa-google"></i></a>
@@ -529,7 +529,7 @@
                 <!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="aboutus.php">About Us</a></li>
                         <li><a href="earnatskylon.html">Earn at Skylon</a></li>
                     </ul>
                 </nav>
@@ -649,11 +649,11 @@
                             <div class="features-item" style="margin:50px;">
                                 <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                                     <h1 style="color:#000000;">"We emphasise on making your today's imaginations into tomorrow's reality"</h1>
-                                    <h3>Skylon India focuses on providing interior design & services to today's growing designing sector. A real set of experienced Handcrafted labours, budding enthusiast architects and engineers much interested to outbreak
+                                    <h3 align="justify">Skylon India focuses on providing interior design & services to today's growing designing sector. A real set of experienced Handcrafted labours, budding enthusiast architects and engineers much interested to outbreak
                                         the talent of designing and execution in own thoughts. In a much competitive world of growing business we focus much more on effective work satisfaction rather than the profit.</h3>
-                                    <h3>As a company, we care about PEOPLE; employees, co-workers, customers, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about
+                                    <h3 align="justify">As a company, we care about PEOPLE; employees, co-workers, customers, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about
                                         PERFECTION. We believe that our work must be perfect. When our work is done, our customers rave about our services and products, and we are inspired to progress.</h3>
-                                    <h3>We believe that our positive work environment and commitment to team-work allow us to give our customers the ultimate service experience.</h3>
+                                    <h3 align="justify">We believe that our positive work environment and commitment to team-work allow us to give our customers the ultimate service experience.</h3>
                                 </div>
                                 <!-- features media -->
                                 <div class="col-md-6 feature-media media-wrapper wow fadeInUp hidden-sm hidden-xs hidden-md" data-wow-duration="500ms">
@@ -790,57 +790,7 @@
         <!-- End section -->
 
 
-        <!-- Start Portfolio Section
-		=========================================== -->
-
-        <section id="team-skills" style="position:relative;z-index=-1;">
-            <div class="container">
-                <div class="row wow fadeInDown" data-wow-duration="500ms">
-                    <div class="col-lg-12">
-
-                        <!-- section title -->
-                        <div class="title text-center">
-                            <h2 style="color:#000000">Our <span class="color">Works</span></h2>
-                            <div class="border"></div>
-                        </div>
-
-
-                    </div>
-                    <!-- /end col-lg-12 -->
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-
-            <!-- portfolio items -->
-            <div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
-                <ul id="og-grid" class="og-grid">
-                    <?php
-				if($result->num_rows > 0) {
-					while($row = $result->fetch_assoc()) {
-				
-						
-					echo '<li class="mix app">';
-					
-						?><a href="javascript:void(0)" data-largesrc="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>" data-title=<?php echo $row[ "prod_name"]?> data-description="<?php echo $row["prod_desc"]?>" >
-							<img src="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>">
-							<?php
-							echo '<div class="hover-mask">';
-								echo "<h3>".$row["prod_name"]."</h3>";
-								echo '<span>';
-									echo '<i class="fa fa-plus fa-2x"></i>';
-								echo '</span>';
-							echo '</div>';
-						echo '</a>'; echo '</li>'; } } ?>
-
-
-                </ul>
-                <!-- end og grid -->
-            </div>
-            <!-- portfolio items wrapper -->
-
-        </section>
-        <!-- End section -->
+       
 
 
         <section id="sample2" style="position:relative;z-index=-1;">
@@ -914,15 +864,15 @@
         </div>
 
 
-        <div class="container" style="text-align:center;padding:80px;">
+        <div class="container-fluid" style="text-align:center;padding:80px;position:relative;z-index=-1;background-color:#000;">
             <div class="row">
                 <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                    <button type="button" class="btn btn-primary btn-lg btn3d"><span class="glyphicon glyphicon-cloud"></span>Earn at Skylon</button>
+                    <button type="button" class="btn btn-primary btn-sm btn3d"><span class="glyphicon glyphicon-cloud"></span>Earn at Skylon</button>
                 </a>
                 <a href="services.html" style="color:inherit" target=”_blank”>
                     <!-- Indicates a successful or positive action -->
-                    <button type="button" class="btn btn-success btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Get a Quote</button>
+                    <button type="button" class="btn btn-default btn-sm btn3d"><span class="glyphicon glyphicon-ok"></span>Get a Quote</button>
                 </a>
 
 
@@ -945,7 +895,7 @@
                     <!-- /section title -->
 
                     <!-- Contact Details -->
-                    <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms" style="padding:50px;">
+                    <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
                         <h1 style="color:#dbbe3f">Contact Details</h1>
                         <br>
                         <div class="contact-details">
