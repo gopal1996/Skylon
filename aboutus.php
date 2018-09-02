@@ -571,9 +571,9 @@
                 <div id="features">
                     <div class="item">
 
-                        <div class="features-item">
+                        <div class="features-item" style="padding:50px;">
                             <div class="col-md-12 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h1 style="color:#000000;">Skylon India focuses on providing interior design & services to today's growing interior designing sector. A real set of experienced Handcrafted labors, budding enthusiast architects and engineers much interested to outbreak
+                                <h1 align="center" style="color:#000000;">Skylon India focuses on providing interior design & services to today's growing interior designing sector. A real set of experienced Handcrafted labors, budding enthusiast architects and engineers much interested to outbreak
                                     the talent of interior designing and execution in own thoughts. In a much competitive world of growing business we focus much more on effective work satisfaction rather than the profit. As a company, we care about CLIENTS,
                                     employees,Labours, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about PERFECTION. When our work is done, our customers
                                     rave about our services and products, and we are inspired to progress. We conceive that our positive work environment and commitment to team-work allow us to give our customers the ultimate service experience.
@@ -605,7 +605,7 @@
                 <div id="features">
                     <div class="item">
 
-                        <div class="features-item">
+                        <div class="features-item" style="padding:50px;">
 
                             <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <div style="color:#000000;">
@@ -656,7 +656,7 @@
                 <div id="features">
                     <div class="item">
 
-                        <div class="features-item">
+                        <div class="features-item" style="padding:50px;">
                             <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <div style="color:#000000;">
                                     <i class="fa fa-child fa-4x"></i>
@@ -749,7 +749,7 @@
     <div class="google-map wow fadeInDown" data-wow-duration="500ms">
         <div id="map-canvas"></div>
     </div>
-    <section id="foot-counter" class="bg-one">
+    <section id="foot-counter" class="bg-one" style="position:relative;z-index=-1;">
 
         <!-- /Google Map -->
         <div class="container">
