@@ -475,9 +475,9 @@
 
     //DB details
     $dbHost     = 'localhost';
-    $dbUsername = 'id6491760_skylon1';
-    $dbPassword = 'skylon@12345';
-    $dbName     = 'id6491760_skylon1';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName     = 'skylon1';
     
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
@@ -928,7 +928,7 @@
                         <h1><a href="#">About Us</a></h1>
                     </div>
                     <div class="col-md-6" style="padding-left:35px">
-                        <h1><a href="#popup1">Contact Us</a></h1>
+                        <h1><a data-toggle="modal" href="#normalModal">Contact Us</a></h1>
                     </div>
                     <div class="col-md-6">
 
@@ -948,53 +948,133 @@
             </div>
             <!-- end container -->
 
-            <div id="popup1" class="overlay">
-                <div class="popup1">
-                    <h2 style="color:#000;">Contact Us</h2>
-                    <a class="close" href="#">×</a>
-                    <div class="pop-form">
-                        <!-- Form -->
-                        <div class="pop-form" id="pop-form1">
-                            <p class="title" style="color:#000;">Send a message</p>
-
-                            <p class="message" style="color:#000;">Let's Talk</p>
-
+            <!-- Form -->
+            <div id="normalModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Contact Us</h4>
+                        </div>
+                        <div class="modal-body">
                             <form method="post" id="contactForm1" name="form" style="color:#000000;">
-                                <input type="text" name="cpname" placeholder="Name:" required>
-                                <input type="email" name="cpemail" placeholder="Email:" required>
-                                <input type="tel" name="cpphone" placeholder="Phone:" required>
-                                <textarea name="cpmessage" placeholder="Message:" required style="color:#000000;"></textarea>
-                                <button id="submit" value="Send message"> SEND TO US</a>
-							</form>
-							<script type="text/javascript">
+                                <div class="form-group row">
+                                    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#000;">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPhone3" class="col-sm-2 col-form-label">Phone No</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputPhone3" placeholder="Phone No">
+                                    </div>
+                                </div>
+								<div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Intrested In</label>
+                                    <div class="col-sm-10">
+                                        <div class="checkbox">
+                                            <label for="Intrested-0">
+      <input name="Intrested" id="Intrested-0" value="1" type="checkbox">
+      Residential Interior
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-1">
+      <input name="Intrested" id="Intrested-1" value="2" type="checkbox">
+      Commercial Interior
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-2">
+      <input name="Intrested" id="Intrested-2" value="3" type="checkbox">
+      Renovation works
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-3">
+      <input name="Intrested" id="Intrested-3" value="4" type="checkbox">
+      Architecture Designing
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-4">
+      <input name="Intrested" id="Intrested-4" value="5" type="checkbox">
+      Handcrafted designed furnitures
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-5">
+      <input name="Intrested" id="Intrested-5" value="6" type="checkbox">
+      Civil and Electrical contractors
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-6">
+      <input name="Intrested" id="Intrested-6" value="7" type="checkbox">
+      Refer and Earn
+    </label>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="form-group row">
+                                    <label for="inputArea3" class="col-sm-2 col-form-label">Message</label>
+                                    <div class="col-sm-10">
+                                        <input type="textarea" class="form-control" id="inputArea3" placeholder="Message">
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#4274D7;">Close</button>
+                            <button type="button" class="btn btn-primary" style="background-color:#4274D7;">Submit</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
 
-								var frm = $('#contactForm1');
-								frm.submit(function (e) {
-								e.preventDefault();
-								$.ajax({
-								type: frm.attr('method'),
-								url: frm.attr('email.php'),
-								data: frm.serialize(),
-								success: function (data) {
-								console.log('Submission was successful.');
-								console.log(data);
-								},
-								error: function (data) {
-								console.log('An error occurred.');
-								console.log(data);
-								},
-								});
-								$('#contactForm1').text("new dialog title");
-								});
+            <!-- Form -->
 
-							</script>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</section> <!-- end section -->
-		
+            <script type="text/javascript">
+                <!-- Form Modal -->
+                			$(".modal-wide").on("show.bs.modal", function() {
+                  var height = $(window).height() - 200;
+                  $(this).find(".modal-body").css("max-height", height);
+                });
+                <!-- End Form Modal -->
+                				var frm = $('#contactForm1');
+                				frm.submit(function (e) {
+                				e.preventDefault();
+                				$.ajax({
+                				type: frm.attr('method'),
+                				url: frm.attr('email.php'),
+                				data: frm.serialize(),
+                				success: function (data) {
+                				console.log('Submission was successful.');
+                				console.log(data);
+                				},
+                				error: function (data) {
+                				console.log('An error occurred.');
+                				console.log(data);
+                				},
+                				});
+                				$('#contactForm1').text("new dialog title");
+                				});
+            </script>
+
+        </section>
+        <!-- end section -->
 		
 		<!-- Back to Top
 		============================== -->
