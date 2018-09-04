@@ -648,7 +648,7 @@
 
                             <div class="features-item" style="margin:50px;">
                                 <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                                    <h1 style="color:#000000;">"We emphasise on making your today's imaginations into tomorrow's reality"</h1>
+                                    <h1 style="color:#000000;text-justify:distribute;">"We emphasise on making your today's imaginations into tomorrow's reality"</h1>
                                     <h3 align="justify">Skylon India focuses on providing interior design & services to today's growing designing sector. A real set of experienced Handcrafted labours, budding enthusiast architects and engineers much interested to outbreak
                                         the talent of designing and execution in own thoughts. In a much competitive world of growing business we focus much more on effective work satisfaction rather than the profit.</h3>
                                     <h3 align="justify">As a company, we care about PEOPLE; employees, co-workers, customers, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about

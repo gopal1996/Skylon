@@ -475,7 +475,7 @@
                 <!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="aboutus.php">About Us</a></li>
                         <li><a href="earnatskylon.html">Earn at Skylon</a></li>
                     </ul>
                 </nav>
@@ -565,12 +565,12 @@
         <!--
 		Start Main Features
 		==================================== -->
-        <section id="main-counter">
+        <section id="services-counter">
             <div class="container">
                 <div class="row">
                     <!-- section title -->
                     <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-                        <h2 style="color:#000000;">About <span class="color">Us</span></h2>
+                        <h2 style="color:#fff;">About <span class="color">Us</span></h2>
                         <div class="border"></div>
                     </div>
                     <!-- /section title -->
@@ -580,12 +580,12 @@
 
                             <div class="features-item" style="padding:50px;">
                                 <div class="col-md-12 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                                    <h1 align="center" style="color:#000000;">Skylon India focuses on providing interior design & services to today's growing interior designing sector. A real set of experienced Handcrafted labors, budding enthusiast architects and engineers much interested to
+                                    <h2  style="color:#fff;text-justify:distribute;">Skylon India focuses on providing interior design & services to today's growing interior designing sector. A real set of experienced Handcrafted labors, budding enthusiast architects and engineers much interested to
                                         outbreak the talent of interior designing and execution in own thoughts. In a much competitive world of growing business we focus much more on effective work satisfaction rather than the profit. As a company, we
                                         care about CLIENTS, employees,Labours, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about PERFECTION. When our work
                                         is done, our customers rave about our services and products, and we are inspired to progress. We conceive that our positive work environment and commitment to team-work allow us to give our customers the ultimate
                                         service experience.
-                                    </h1>
+                                    </h2>
                                 </div>
 
                             </div>
@@ -703,7 +703,7 @@
         <!-- Start Portfolio Section
 		=========================================== -->
 
-        <section id="team-skills" style="position:relative;z-index=-1;">
+        <section id="services-counter" style="position:relative;z-index=-1;">
             <div class="container">
                 <div class="row wow fadeInDown" data-wow-duration="500ms">
                     <div class="col-lg-12">
