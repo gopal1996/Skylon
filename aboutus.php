@@ -623,7 +623,7 @@
                                     <h3>Skylon india’s main objective is to motivate and help our workers to claim their power and to satisfy client needs.</h3>
                                 </div>
                                 <!-- features media -->
-                                <div class="col-md-6 feature-media media-wrapper wow fadeInUp hidden-sm hidden-xs hidden-md" data-wow-duration="500ms">
+                                <div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
                                     <div style="color:#000000;">
                                         <i class="fa fa-child fa-4x"></i>
                                     </div>
@@ -631,41 +631,7 @@
                                     <h3>Our main strength- Innovative thinking, uniqueness and influence at work.</h3>
                                 </div>
                                 <!-- /features media -->
-
-                                <!-- features content -->
-
-                                <!-- /features content -->
-
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                    <!-- /features item -->
-
-                </div>
-                <!-- End row -->
-            </div>
-            <!-- End container -->
-        </section>
-        <!-- End section -->
-
-
-
-        <!--
-		Start Main Features
-		==================================== -->
-        <section id="main-counter">
-            <div class="container">
-                <div class="row">
-                    <!-- /section title -->
-                    <!-- features item -->
-                    <div id="features">
-                        <div class="item">
-
-                            <div class="features-item" style="padding:50px;">
-                                <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                                     <div style="color:#000000;">
                                         <i class="fa fa-child fa-4x"></i>
                                     </div>
@@ -673,14 +639,13 @@
                                     <h3>We assure that we deliver our work with greater quality at the given time.</h3>
                                 </div>
                                 <!-- features media -->
-                                <div class="col-md-6 feature-media media-wrapper wow fadeInUp hidden-sm hidden-xs hidden-md" data-wow-duration="500ms">
+                                <div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
                                     <div style="color:#000000;">
                                         <i class="fa fa-child fa-4x"></i>
                                     </div>
                                     <h1 style="color:#000000;">Our ambiance:</h1>
                                     <h3>At Skylon India, we commence Works which will shape your Dreams to a whole new level.</h3>
                                 </div>
-                                <!-- /features media -->
 
                                 <!-- features content -->
 
@@ -689,7 +654,8 @@
                             </div>
                         </div>
 
-
+					
+                        </div>
 
                     </div>
                     <!-- /features item -->
@@ -700,39 +666,52 @@
             <!-- End container -->
         </section>
         <!-- End section -->
-        <!-- Start Portfolio Section
+
+
+
+      
+		<!---- OUR Works V2 -->
+		
+		<!-- Start Portfolio Section
 		=========================================== -->
-
-        <section id="services-counter" style="position:relative;z-index=-1;">
-            <div class="container">
-                <div class="row wow fadeInDown" data-wow-duration="500ms">
-                    <div class="col-lg-12">
-
-                        <!-- section title -->
-                        <div class="title text-center">
-                            <h2 style="color:#000000">Our <span class="color">Works</span></h2>
-                            <div class="border"></div>
-                        </div>
-
-
-                    </div>
-                    <!-- /end col-lg-12 -->
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-
-            <!-- portfolio items -->
-            <div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
+		
+		<section id="services-counter" style="position:relative;z-index=-1;">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-duration="500ms">
+					<div class="col-lg-12">
+					
+						<!-- section title -->
+						<div class="title text-center">
+							<h2>Our <span class="color">Works</span></h2>
+							<div class="border"></div>
+						</div>
+						<!-- /section title -->
+					
+						<!-- portfolio item filtering -->
+						<div class="portfolio-filter clearfix">
+							<ul class="text-center">
+							    <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".completed">Completed Projetcs</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".ongoing">Ongoing Projects</a></li>
+								
+							</ul>
+						</div>
+						<!-- /portfolio item filtering -->
+						
+					</div> <!-- /end col-lg-12 -->
+				</div> <!-- end row -->
+			</div>	<!-- end container -->
+	
+			<!-- portfolio items -->
+			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
                 <ul id="og-grid" class="og-grid">
-                    <?php
+				<?php
 				if($result->num_rows > 0) {
 					while($row = $result->fetch_assoc()) {
-				
-						
-					echo '<li class="mix app">';
-					
-						?><a href="javascript:void(0)" data-largesrc="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>" data-title=<?php echo $row[ "prod_name"]?> data-description="<?php echo $row["prod_desc"]?>" >
+						?>
+					<!-- single portfolio item -->	
+					<li class="mix <?php echo $row["Category"]?>">
+						<a href="javascript:void(0)" data-largesrc="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>" data-title=<?php echo $row[ "prod_name"]?> data-description="<?php echo $row["prod_desc"]?>" >
 							<img src="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>">
 							<?php
 							echo '<div class="hover-mask">';
@@ -742,15 +721,20 @@
 								echo '</span>';
 							echo '</div>';
 						echo '</a>'; echo '</li>'; } } ?>
+					<!-- /single portfolio item -->
+					
+				</ul> <!-- end og grid -->
+			</div>  <!-- portfolio items wrapper -->
+			
+		</section>   <!-- End section -->
+		
+		
+		
+		
+		
+		<!---- End Of Our Works V2 -->
+		
 
-
-                </ul>
-                <!-- end og grid -->
-            </div>
-            <!-- portfolio items wrapper -->
-
-        </section>
-        <!-- End section -->
         <!-- Srart Contact Us
 		=========================================== -->
         <!-- Google Map -->

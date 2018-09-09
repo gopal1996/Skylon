@@ -129,19 +129,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control::-webkit-input-placeholder { /*  Chrome, Safari, Opera  */
-   color: #ddd;
+   color: #000;
 }
 
 .form-control:-moz-placeholder { /* Firefox 18- */
-   color: #ddd;  
+   color: #000;  
 }
 
 .form-control::-moz-placeholder {  /* Firefox 19+ */
-   color: #ddd;  
+   color: #000;  
 }
 
 .form-control:-ms-input-placeholder {  /*  Internet Explorer  */
-   color: #ddd;  
+   color: #000;  
 }
 
 
@@ -708,7 +708,8 @@ h1, h2, h3, h4, h5, h6 {
 #foot-counter {
    /* background-image: url(../img/parallax/city.jpg); */
    background-color: #50486d;
-    padding: 70px 0;
+    padding: 20px 0;
+
 }
 
 .counters-item {
@@ -723,7 +724,7 @@ h1, h2, h3, h4, h5, h6 {
 .counters-item span {
     display: inline;
     font-family: Oswald, sans-serif;
-    font-size: 35px;
+    font-size: 28px;
     line-height: 50px;
 }
 

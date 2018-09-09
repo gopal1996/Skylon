@@ -4,15 +4,16 @@ if(isset($_POST["submit"])){
 		$id = $_POST['id'];
 		$prod_name=$_POST['prod_name'];
 		$prod_desc=$_POST['prod_desc'];
+		$Category=$_POST['Category']
 		/*
          * Insert image data into database
          */
         
         //DB details
         $dbHost     = 'localhost';
-    $dbUsername = 'id6491760_skylon1';
-    $dbPassword = 'skylon@12345';
-    $dbName     = 'id6491760_skylon1';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName     = 'skylon1';
 		$pwd=$_POST['passwd'];
 		
 		if(! strcmp ($pwd,'admin'))

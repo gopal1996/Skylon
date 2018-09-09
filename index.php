@@ -16,7 +16,7 @@
 
     <!-- Mobile Specific Meta
 		================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
@@ -273,20 +273,20 @@
         }
         
         
-        .pop-form ::-webkit-input-placeholder {
+        ::-webkit-input-placeholder {
             color: #000;
         }
         
-        .pop-form ::-moz-placeholder{
+        ::-moz-placeholder{
             color: #000;
         }
         
-        .pop-form :-ms-input-placeholder {
-            color: #000;
+        :-ms-input-placeholder {
+            color: #fff;
         }
         
-        .pop-form :-moz-placeholder {
-            color: #000;
+        :-moz-placeholder {
+            color: #fff;
         }
         
         .pop-form input[type='submit'] {
@@ -442,6 +442,10 @@
           background: #bb0000;
           color: white;
         }
+		
+		
+		
+	
     </style>
 
 
@@ -649,9 +653,9 @@
                             <div class="features-item" style="margin:50px;">
                                 <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                                     <h1 style="color:#000000;text-justify:distribute;">"We emphasise on making your today's imaginations into tomorrow's reality"</h1>
-                                    <h3 align="justify">Skylon India focuses on providing interior design & services to today's growing designing sector. A real set of experienced Handcrafted labours, budding enthusiast architects and engineers much interested to outbreak
+                                    <h3 style="text-justify:distribute;">Skylon India focuses on providing interior design & services to today's growing designing sector. A real set of experienced Handcrafted labours, budding enthusiast architects and engineers much interested to outbreak
                                         the talent of designing and execution in own thoughts. In a much competitive world of growing business we focus much more on effective work satisfaction rather than the profit.</h3>
-                                    <h3 align="justify">As a company, we care about PEOPLE; employees, co-workers, customers, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about
+                                    <h3 style="text-justify:distribute;">As a company, we care about PEOPLE; employees, co-workers, customers, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about
                                         PERFECTION. We believe that our work must be perfect. When our work is done, our customers rave about our services and products, and we are inspired to progress.</h3>
                                     <h3 align="justify">We believe that our positive work environment and commitment to team-work allow us to give our customers the ultimate service experience.</h3>
                                 </div>
@@ -889,60 +893,65 @@
 
                     <!-- section title -->
                     <div class="title text-center wow fadeIn" data-wow-duration="500ms">
-                        <h2>Get In <span style="color:#dbbe3f;">Touch</span></h2>
+                        <h3>Get In <span style="color:#dbbe3f;">Touch</span></h3>
                         <div class="border"></div>
                     </div>
                     <!-- /section title -->
+					<!-- / End Contact Details -->
+					<div class="contact-info text-center col-md-6 wow fadeInUp">
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="#">Refer and Earn</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="#">Our Services</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="#">About Us</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Contact Us</a></h3>
+						</div>
+                    
+					</div>
 
                     <!-- Contact Details -->
                     <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-                        <h1 style="color:#dbbe3f">Contact Details</h1>
+                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Details</h3>
                         <br>
                         <div class="contact-details">
                             <div class="con-info clearfix">
                                 <i class="fa fa-home fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff">AP:1725,102ndStreet,<br>14thSector,<br>k.k.Nagar,<br>Chennai-600078.</span>
+								<span style="color:#ffffff;font-size:16px;">Reach Us: </span>
+                                <span style="color:#ffffff;font-size:16px;">AP:1725,102ndStreet,<br>14thSector, k.k.Nagar,<br>Chennai-600078.</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff">Phone: +919840492966</span>
+                                <span style="color:#ffffff;font-size:16px;">Phone: +919840492966</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-fax fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff">Phone: +917200107659</span>
+                                <span style="color:#ffffff;font-size:16px;">Phone: +917200107659</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff">Email: skylonindia@gmail.com</span>
+                                <span style="color:#ffffff;font-size:16px;">Email: skylonindia@gmail.com</span>
                             </div>
+							
                         </div>
-                    </div>
-                    <!-- / End Contact Details -->
-                    <div class="col-md-6" style="padding-left:35px">
-                        <h1><a href="#">Our Services</a></h1>
-                    </div>
-                    <div class="col-md-6" style="padding-left:35px">
-                        <h1><a href="#">About Us</a></h1>
-                    </div>
-                    <div class="col-md-6" style="padding-left:35px">
-                        <h1><a data-toggle="modal" href="#normalModal">Contact Us</a></h1>
-                    </div>
-                    <div class="col-md-6">
+						<div class="col-md-10">
+								<ul class="social-network social-circle">
+									<li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-youtube"></i></a></li>
 
+								</ul>
+						</div>
                     </div>
-                    <div class="col-md-4">
-                        <ul class="social-network social-circle">
-                            <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-
-                        </ul>
-                    </div>
-
+                    
                 </div>
                 <!-- end row -->
             </div>
@@ -959,21 +968,21 @@
                         <div class="modal-body">
                             <form method="post" id="contactForm1" name="form" style="color:#000000;">
                                 <div class="form-group row">
-                                    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                                    <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#000;">
+                                        <input type="text" class="form-control" id="inputName3" placeholder="name" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputPhone3" class="col-sm-2 col-form-label">Phone No</label>
+                                    <label for="inputPhone3" class="col-sm-2 col-form-label">Phone No*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPhone3" placeholder="Phone No">
+                                        <input type="text" class="form-control" id="inputPhone3" placeholder="90XXXXXXXX" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
 								<div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email@domain.com" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 
@@ -1027,7 +1036,8 @@
 								<div class="form-group row">
                                     <label for="inputArea3" class="col-sm-2 col-form-label">Message</label>
                                     <div class="col-sm-10">
-                                        <input type="textarea" class="form-control" id="inputArea3" placeholder="Message">
+									 <textarea rows="4" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;text-color:#000;"></textarea> 
+                                        
                                     </div>
                                 </div>
                                 

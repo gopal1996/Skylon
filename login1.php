@@ -67,6 +67,14 @@
 					<input type="text" name="prod_desc" class="form-control" id="prod_desc">
 					</div>
 					<div class="form-group">
+					<label for="Category">Category:</label>
+					<select name="Category" class="form-control" id="Category">
+					<option id="ongoing">Ongoing Projects</option>
+					<option id="completed">Completed Projects</option>
+					</select>
+					</div>
+					
+					<div class="form-group">
 					<label for="image">Images:</label>
 					<input type="file" class="form-control" name="image">
 					</div>
@@ -76,6 +84,7 @@
 					</div>
 					<input type="submit" class="form-control" name="submit" value="UPLOAD"/>
 					</form>
+					</div>
                 </div>
     </div>
     <div id="edit" class="container tab-pane fade"><br>
@@ -83,9 +92,9 @@
 	  <?php
 //DB details
         $dbHost     = 'localhost';
-    $dbUsername = 'id6491760_skylon1';
-    $dbPassword = 'skylon@12345';
-    $dbName     = 'id6491760_skylon1';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName     = 'skylon1';
 		//$pwd=$_POST['passwd'];
 
 // Create connection
@@ -95,7 +104,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, prod_name, prod_desc FROM products";
+$sql = "SELECT id, prod_name, prod_desc, Category FROM products";
 $result = $conn->query($sql);
 
 
@@ -110,6 +119,7 @@ if ($result->num_rows > 0) {
         echo '<td>'.$row["id"].'</td>';
         echo '<td>'.$row["prod_name"].'</td>';
         echo '<td>'.$row["prod_desc"].'</td>';
+		echo '<td>'.$row["Category"].'</td>';
       echo '</tr>';
       
     echo '</tbody>';
@@ -152,6 +162,13 @@ if ($result->num_rows > 0) {
 					<input type="text" name="prod_desc" class="form-control" id="prod_desc">
 					</div>
 					<div class="form-group">
+					<label for="Category">Category:</label>
+					<select name="Category" class="form-control" id="Category">
+					<option>Ongoing Projects</option>
+					<option>Completed Projects</option>
+					</select>
+					</div>
+					<div class="form-group">
 					<label for="passwd">Password:</label>
 					<input type="password" class="form-control" name="passwd">
 					</div>
@@ -179,7 +196,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, prod_name, prod_desc FROM products";
+$sql = "SELECT id, prod_name, prod_desc, Category FROM products";
 $result = $conn->query($sql);
 
 
@@ -194,6 +211,7 @@ if ($result->num_rows > 0) {
         echo '<td>'.$row["id"].'</td>';
         echo '<td>'.$row["prod_name"].'</td>';
         echo '<td>'.$row["prod_desc"].'</td>';
+		echo '<td>'.$row["Category"].'</td>';
       echo '</tr>';
       
     echo '</tbody>';
