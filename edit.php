@@ -4,7 +4,7 @@ if(isset($_POST["submit"])){
 		$id = $_POST['id'];
 		$prod_name=$_POST['prod_name'];
 		$prod_desc=$_POST['prod_desc'];
-		$Category=$_POST['Category']
+		$Category=$_POST['Category'];
 		/*
          * Insert image data into database
          */
@@ -27,7 +27,7 @@ if(isset($_POST["submit"])){
 			}
 		
 			//Insert image content into database
-			$insert = $db->query("UPDATE products SET prod_name='$prod_name', prod_desc='$prod_desc' WHERE id = '$id'")  ;
+			$insert = $db->query("UPDATE products SET prod_name='$prod_name', prod_desc='$prod_desc', Category='$Category' WHERE id = '$id'")  ;
 			if($insert){
 				echo "File uploaded successfully.";
 			}else{

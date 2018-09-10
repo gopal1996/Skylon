@@ -431,10 +431,10 @@
             </a>
         </div>
         <div class="icon-bar1" style="width:32px;height:32px;">
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" class="twitter"><i class="fa fa-instagram"></i></a>
             <a href="#" class="google"><i class="fa fa-google"></i></a>
-            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw" class="youtube"><i class="fa fa-youtube"></i></a>
         </div>
         <!--
 	    Start Preloader
@@ -499,7 +499,7 @@
                     <!-- single slide item -->
                     <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                         <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-1"></div>
+                            <div class="bg-img bg-img-4"></div>
                             <div class="carousel-caption">
                                 <div>
                                     <img class="wow fadeInUp" src="img/meghna.png" alt="Skylon">
@@ -513,26 +513,11 @@
                     <!-- single slide item -->
                     <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
                         <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-2"></div>
+                            <div class="bg-img bg-img-5"></div>
                             <div class="carousel-caption">
                                 <div>
                                     <h2 class="heading animated fadeInDown">Interior Design</h2>
                                     <!--<h3 class="animated fadeInUp">With all Mejor Browser support including IE 9</h3> -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single slide item -->
-
-                    <!-- single slide item -->
-                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-                        <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-3"></div>
-                            <div class="carousel-caption">
-                                <div>
-                                    <h2 class="heading animated fadeInRight">Together We Can Grow</h2>
-                                    <!-- <h3 class="animated fadeInLeft">Clean and Professional Design</h3> -->
 
                                 </div>
                             </div>
@@ -690,9 +675,9 @@
 						<!-- portfolio item filtering -->
 						<div class="portfolio-filter clearfix">
 							<ul class="text-center">
-							    <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".completed">Completed Projetcs</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".ongoing">Ongoing Projects</a></li>
+							    <li><a href="javascript:void(0)" class="filter" data-filter="all" style="font-size:20px;">All</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".completed" style="font-size:20px;">Completed Projetcs</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".ongoing" style="font-size:20px;">Ongoing Projects</a></li>
 								
 							</ul>
 						</div>
@@ -751,90 +736,101 @@
 
                     <!-- section title -->
                     <div class="title text-center wow fadeIn" data-wow-duration="500ms">
-                        <h2>Get In <span style="color:#dbbe3f;">Touch</span></h2>
+                        <h3>Get In <span style="color:#dbbe3f;">Touch</span></h3>
                         <div class="border"></div>
                     </div>
                     <!-- /section title -->
+					<!-- / End Contact Details -->
+					
+					<div class="contact-info text-center col-md-6 wow fadeInUp">
+					<div class="text-center">
+					<h3>&nbsp</h3>
+					</div>
+                       
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="#">Refer and Earn</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="services.html">Our Services</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="aboutus.php">About Us</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Contact Us</a></h3>
+						</div>
+                    
+					</div>
 
                     <!-- Contact Details -->
                     <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-                        <h1 style="color:#dbbe3f">Contact Details</h1>
+                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Details</h3>
                         <br>
                         <div class="contact-details">
                             <div class="con-info clearfix">
                                 <i class="fa fa-home fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff">AP:1725,102ndStreet,<br>14thSector,<br>k.k.Nagar,<br>Chennai-600078.</span>
+								<span style="color:#ffffff;font-size:16px;">Reach Us: </span>
+                                <span style="color:#ffffff;font-size:16px;">AP:1725,102ndStreet,<br>14thSector, k.k.Nagar,<br>Chennai-600078.</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff">Phone: +919840492966</span>
+                                <span style="color:#ffffff;font-size:16px;">Phone: +919840492966</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-fax fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff">Phone: +917200107659</span>
+                                <span style="color:#ffffff;font-size:16px;">Phone: +917200107659</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff">Email: skylonindia@gmail.com</span>
+                                <span style="color:#ffffff;font-size:16px;">Email: skylonindia@gmail.com</span>
                             </div>
+							
                         </div>
-                    </div>
-                    <!-- / End Contact Details -->
-                    <div class="col-md-6" style="padding-left:35px">
-                        <h1><a href="#">Our Services</a></h1>
-                    </div>
-                    <div class="col-md-6" style="padding-left:35px">
-                        <h1><a href="#">About Us</a></h1>
-                    </div>
-                    <div class="col-md-6" style="padding-left:35px">
-                        <h1><a data-toggle="modal" href="#normalModal">Contact Us</a></h1>
-                    </div>
-                    <div class="col-md-6">
+						<div class="col-md-10">
+								<ul class="social-network social-circle">
+									<li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="icoTwitter" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw" target="_blank" class="icoGoogle" title="Youtube"><i class="fa fa-youtube"></i></a></li>
 
+								</ul>
+						</div>
                     </div>
-                    <div class="col-md-4">
-                        <ul class="social-network social-circle">
-                            <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-
-
+                    
                 </div>
                 <!-- end row -->
             </div>
             <!-- end container -->
+
             <!-- Form -->
             <div id="normalModal" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="modal-title">Contact Us</h4>
+                            <h4 class="modal-title" style="color:#000;">Contact Us</h4>
                         </div>
                         <div class="modal-body">
                             <form method="post" id="contactForm1" name="form" style="color:#000000;">
                                 <div class="form-group row">
-                                    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                                    <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#000;">
+                                        <input type="text" class="form-control" id="inputName3" placeholder="name" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputPhone3" class="col-sm-2 col-form-label">Phone No</label>
+                                    <label for="inputPhone3" class="col-sm-2 col-form-label">Phone No*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPhone3" placeholder="Phone No">
+                                        <input type="text" class="form-control" id="inputPhone3" placeholder="90XXXXXXXX" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
 								<div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email@domain.com" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 
@@ -888,7 +884,8 @@
 								<div class="form-group row">
                                     <label for="inputArea3" class="col-sm-2 col-form-label">Message</label>
                                     <div class="col-sm-10">
-                                        <input type="textarea" class="form-control" id="inputArea3" placeholder="Message">
+									 <textarea rows="4" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;color:#000;"></textarea> 
+                                        
                                     </div>
                                 </div>
                                 

@@ -53,40 +53,41 @@
     </li>
   </ul>
   
-  <div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
-      <div class="container">
-                    
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
+<div class="tab-content">
+	<div id="home" class="container tab-pane active"><br>
+		<div class="container">             
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+				<div class="form-group">
 					<label for="prod_name">Project Name:</label>
 					<input type="text" name="prod_name" class="form-control" id="prod_name">
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
 					<label for="prod_desc">Project Description:</label>
 					<input type="text" name="prod_desc" class="form-control" id="prod_desc">
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
 					<label for="Category">Category:</label>
 					<select name="Category" class="form-control" id="Category">
-					<option id="ongoing">Ongoing Projects</option>
-					<option id="completed">Completed Projects</option>
+					<option id="ongoing">ongoing</option>
+					<option id="completed">completed</option>
 					</select>
-					</div>
-					
-					<div class="form-group">
+				</div>
+
+				<div class="form-group">
 					<label for="image">Images:</label>
 					<input type="file" class="form-control" name="image">
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
 					<label for="passwd">Password:</label>
 					<input type="password" class="form-control" name="passwd">
-					</div>
-					<input type="submit" class="form-control" name="submit" value="UPLOAD"/>
-					</form>
-					</div>
-                </div>
-    </div>
+				</div>
+				<input type="submit" class="form-control" name="submit" value="UPLOAD"/>
+			</form>
+		</div>
+	</div>
+</div>
+
+
     <div id="edit" class="container tab-pane fade"><br>
       <div class="container">
 	  <?php
@@ -164,8 +165,8 @@ if ($result->num_rows > 0) {
 					<div class="form-group">
 					<label for="Category">Category:</label>
 					<select name="Category" class="form-control" id="Category">
-					<option>Ongoing Projects</option>
-					<option>Completed Projects</option>
+					<option>ongoing</option>
+					<option>completed</option>
 					</select>
 					</div>
 					<div class="form-group">

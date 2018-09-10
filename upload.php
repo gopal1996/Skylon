@@ -9,7 +9,7 @@ if(isset($_POST["submit"])){
 		}
 		$prod_name=$_POST['prod_name'];
 		$prod_desc=$_POST['prod_desc'];
-		$Category=$_POST['Category']
+		$Category=$_POST['Category'];
 		/*
          * Insert image data into database
          */
@@ -32,7 +32,7 @@ if(isset($_POST["submit"])){
 			}
 		
 			//Insert image content into database
-			$insert = $db->query("INSERT into products (image, prod_name, prod_desc, Category) VALUES ('$imgContent', '$prod_name', '$prod_desc','$Category')")  ;
+			$insert = $db->query("INSERT into products (image, prod_name, prod_desc, Category) VALUES ('$imgContent', '$prod_name', '$prod_desc', '$Category')")  ;
 			if($insert){
 				echo "File uploaded successfully.";
 			}else{

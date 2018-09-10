@@ -577,7 +577,7 @@
                                         <div class="row">
                                             <a href="services.html" style="color:inherit" target=”_blank”>
                                                 <!-- Indicates a successful or positive action -->
-                                                <button type="button" class="btn btn-success btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Get a Quote</button>
+                                                <button type="button" class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Get a Quote</button>
                                             </a>
 
 
@@ -603,7 +603,7 @@
                                         <div class="row">
                                             <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                                                 <!-- Indicates a successful or positive action -->
-                                                <button type="button" class="btn btn-success btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Earn at Skylon</button>
+                                                <button type="button" class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Earn at Skylon</button>
                                             </a>
 
 
@@ -872,7 +872,7 @@
             <div class="row">
                 <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                    <button type="button" class="btn btn-primary btn-sm btn3d"><span class="glyphicon glyphicon-cloud"></span>Earn at Skylon</button>
+                    <button type="button" class="btn btn-info btn-sm btn3d"><span class="glyphicon glyphicon-cloud"></span>Earn at Skylon</button>
                 </a>
                 <a href="services.html" style="color:inherit" target=”_blank”>
                     <!-- Indicates a successful or positive action -->
@@ -898,15 +898,20 @@
                     </div>
                     <!-- /section title -->
 					<!-- / End Contact Details -->
+					
 					<div class="contact-info text-center col-md-6 wow fadeInUp">
+					<div class="text-center">
+					<h3>&nbsp</h3>
+					</div>
+                       
 						<div class="text-center">
 							<h3 style="color:#ffffff;"><a href="#">Refer and Earn</a></h3>
 						</div>
 						<div class="text-center">
-							<h3 style="color:#ffffff;"><a href="#">Our Services</a></h3>
+							<h3 style="color:#ffffff;"><a href="services.html">Our Services</a></h3>
 						</div>
 						<div class="text-center">
-							<h3 style="color:#ffffff;"><a href="#">About Us</a></h3>
+							<h3 style="color:#ffffff;"><a href="aboutus.php">About Us</a></h3>
 						</div>
 						<div class="text-center">
 							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Contact Us</a></h3>
@@ -963,7 +968,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="modal-title">Contact Us</h4>
+                            <h4 class="modal-title" style="color:#000;">Contact Us</h4>
                         </div>
                         <div class="modal-body">
                             <form method="post" id="contactForm1" name="form" style="color:#000000;">
@@ -1036,7 +1041,7 @@
 								<div class="form-group row">
                                     <label for="inputArea3" class="col-sm-2 col-form-label">Message</label>
                                     <div class="col-sm-10">
-									 <textarea rows="4" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;text-color:#000;"></textarea> 
+									 <textarea rows="4" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;color:#000;"></textarea> 
                                         
                                     </div>
                                 </div>
