@@ -594,12 +594,11 @@
                     <!-- single slide item -->
                     <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
                         <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-3"></div>
+                            <div class="bg-img bg-img-7"></div>
                             <div class="carousel-caption">
                                 <div>
-                                    <h2 class="heading animated fadeInRight">Together We Can Grow, Refer and get Rewards</h2>
                                     <!-- <h3 class="animated fadeInLeft">Clean and Professional Design</h3> -->
-                                    <div class="container" style="text-align:center;padding:80px;">
+                                    <div class="container" style="text-align:right;padding:80px;">
                                         <div class="row">
                                             <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                                                 <!-- Indicates a successful or positive action -->
@@ -1118,7 +1117,7 @@
 		<!-- Portfolio Filtering -->
 		<script src="js/jquery.mixitup.min.js"></script>
 		<!-- Custom Scrollbar -->
-		<script src="js/jquery.nicescroll.min.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
 		<!-- Jappear js -->
 		<script src="js/jquery.appear.js"></script>
 		<!-- Pie Chart -->
