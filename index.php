@@ -640,18 +640,14 @@
         <section id="main-counter">
             <div class="container">
                 <div class="row">
-                    <!-- section title -->
-                    <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-                        <h2 style="color:#000000;">About <span class="color">Us</span></h2>
-                        <div class="border"></div>
-                    </div>
+                    
                     <!-- /section title -->
                     <!-- features item -->
                     <div id="features">
                         <div class="item">
 
                             <div class="features-item" style="margin:50px;">
-                                <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="col-md-12 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                                     <h1 style="color:#000000;text-justify:distribute;">"At Skylon India, we provide best customized and personalised interior design solutions at an affordable cost with superior class looks and a fabulous finish."</h1>
 									<h2 style="color:#000000;text-justify:distribute;font-weight:bold;">Why us?</h2>
                                     <h3 style="text-justify:distribute;">Our ultimate motive is to design and execute the most aesthetic, innovative and effiecient home designs with utmost functionality to satisfy even the smallest expectation of our clients.</h3>
@@ -659,10 +655,7 @@
 									<h3 style="text-justify:distribute;"> We promise elegant interiors delivered within the stipulated time (depending upon the project) taking care of even the minute details or we pay you rent.</h3>
                                 </div>
                                 <!-- features media -->
-                                <div class="col-md-6 feature-media media-wrapper wow fadeInUp hidden-sm hidden-xs hidden-md" data-wow-duration="500ms">
-                                    <img src="img/parallax/man.png" alt="man" width="100%">
-                                </div>
-                                <!-- /features media -->
+                               
 
                                 <!-- features content -->
 
