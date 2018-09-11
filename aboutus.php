@@ -8,11 +8,14 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Skylon">
+    <meta name="description" content="Skylon India is pioneered in providing interior design &amp; services to today&#39;s growing
+interior designing sector. We also commence work which will shape your dream to a
+whole level at the given time">
+	<meta name="keywords" content="About us,About skylon india,Best interiors design,Interior designs in chennai">
 
     <meta name="author" content="2G developers">
 
-    <title>Skylon</title>
+    <title>About us|Skylon India.</title>
 
     <!-- Mobile Specific Meta
 		================================================== -->
@@ -475,8 +478,9 @@
                 <!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="aboutus.php">About Us</a></li>
-                        <li><a href="earnatskylon.html">Earn at Skylon</a></li>
+                        <li><a href="aboutus.php" target="_blank">About Us</a></li>
+						<li><a href="services.html" target="_blank">Services</a></li>
+                        <li><a href="earnatskylon.html" target="_blank">Earn at Skylon</a></li>
                     </ul>
                 </nav>
                 <!-- /main nav -->
@@ -516,9 +520,6 @@
                             <div class="bg-img bg-img-5"></div>
                             <div class="carousel-caption">
                                 <div>
-                                    <h2 class="heading animated fadeInDown">Interior Design</h2>
-                                    <!--<h3 class="animated fadeInUp">With all Mejor Browser support including IE 9</h3> -->
-
                                 </div>
                             </div>
                         </div>
@@ -535,7 +536,6 @@
 
                 <nav id="nav-dots" class="nav-dots">
                     <span class="nav-dot-current"></span>
-                    <span></span>
                     <span></span>
                 </nav>
 
@@ -877,6 +877,12 @@
                                             <label for="Intrested-6">
       <input name="Intrested" id="Intrested-6" value="7" type="checkbox">
       Refer and Earn
+    </label>
+                                        </div>
+										<div class="checkbox">
+                                            <label for="Intrested-7">
+      <input name="Intrested" id="Intrested-7" value="8" type="checkbox">
+      For Queries
     </label>
                                         </div>
                                     </div>

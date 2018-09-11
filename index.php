@@ -524,7 +524,7 @@
                     <!-- logo -->
                     <a class="navbar-brand" href="#body">
                         <h1 id="logo">
-                            <img src="img/logo-meghna.png" alt="Skylon" />
+                            <img src="img/skylon.jpg" alt="Skylon" />
                         </h1>
                     </a>
                     <!-- /logo -->
@@ -533,8 +533,9 @@
                 <!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="aboutus.php">About Us</a></li>
-                        <li><a href="earnatskylon.html">Earn at Skylon</a></li>
+                        <li><a href="aboutus.php" target="_blank">About Us</a></li>
+						<li><a href="services.html" target="_blank">Services</a></li>
+                        <li><a href="earnatskylon.html" target="_blank">Earn at Skylon</a></li>
                     </ul>
                 </nav>
                 <!-- /main nav -->
@@ -577,7 +578,7 @@
                                         <div class="row">
                                             <a href="services.html" style="color:inherit" target=”_blank”>
                                                 <!-- Indicates a successful or positive action -->
-                                                <button type="button" class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Get a Quote</button>
+                                                <button type="button" class="btn btn-info btn-lg btn3d"><span class="fa fa-book"></span>&nbsp;Get a Quote</button>
                                             </a>
 
 
@@ -602,7 +603,7 @@
                                         <div class="row">
                                             <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                                                 <!-- Indicates a successful or positive action -->
-                                                <button type="button" class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Earn at Skylon</button>
+                                                <button type="button" class="btn btn-info btn-lg btn3d"><span class="fa fa-inr"></span>&nbsp;Earn at Skylon</button>
                                             </a>
 
 
@@ -651,12 +652,11 @@
 
                             <div class="features-item" style="margin:50px;">
                                 <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                                    <h1 style="color:#000000;text-justify:distribute;">"We emphasise on making your today's imaginations into tomorrow's reality"</h1>
-                                    <h3 style="text-justify:distribute;">Skylon India focuses on providing interior design & services to today's growing designing sector. A real set of experienced Handcrafted labours, budding enthusiast architects and engineers much interested to outbreak
-                                        the talent of designing and execution in own thoughts. In a much competitive world of growing business we focus much more on effective work satisfaction rather than the profit.</h3>
-                                    <h3 style="text-justify:distribute;">As a company, we care about PEOPLE; employees, co-workers, customers, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about
-                                        PERFECTION. We believe that our work must be perfect. When our work is done, our customers rave about our services and products, and we are inspired to progress.</h3>
-                                    <h3 align="justify">We believe that our positive work environment and commitment to team-work allow us to give our customers the ultimate service experience.</h3>
+                                    <h1 style="color:#000000;text-justify:distribute;">"At Skylon India, we provide best customized and personalised interior design solutions at an affordable cost with superior class looks and a fabulous finish."</h1>
+									<h2 style="color:#000000;text-justify:distribute;font-weight:bold;">Why us?</h2>
+                                    <h3 style="text-justify:distribute;">Our ultimate motive is to design and execute the most aesthetic, innovative and effiecient home designs with utmost functionality to satisfy even the smallest expectation of our clients.</h3>
+									<h3 style="text-justify:distribute;"> We have a group of dedicated professional designers with expertise in residential and commercial interior home decor to help you create inviting and personalized spaces and we also engage skilled labour to perfectly execute our designs. From sophisticated living room design to space saving and clutter free interior design, we are here to help you to find the best interior solutions to match your requirement and style. Get a free estimate or book a free consultation with us at Skylon India today for Residential & commercial Interior projects, furniture designs and architectural 3D designs.</h3>
+									<h3 style="text-justify:distribute;"> We promise elegant interiors delivered within the stipulated time (depending upon the project) taking care of even the minute details or we pay you rent.</h3>
                                 </div>
                                 <!-- features media -->
                                 <div class="col-md-6 feature-media media-wrapper wow fadeInUp hidden-sm hidden-xs hidden-md" data-wow-duration="500ms">
@@ -724,7 +724,8 @@
                                 <i class="fa fa-industry fa-5x"></i>
                             </div>
                             <h3>Commercial Interiors</h3>
-                            <p>Commercial interior works are those interior works which mainly take place in commercial places.</p>
+                            <p>Commercial interior works are those interior works which mainly take place in commercial places.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         </div>
                     </article>
                     <!-- End Single Service Item -->
@@ -748,7 +749,8 @@
                                 <i class="fa fa-map fa-5x"></i>
                             </div>
                             <h3>Architecture Designing</h3>
-                            <p>Architecture designing is generally done after the completion of all structural works.</p>
+                            <p>Architecture designing is generally done after the completion of all structural works.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         </div>
                     </article>
                     <!-- End Single Service Item -->
@@ -783,7 +785,7 @@
                     <div class="row">
                         <a href="services.html" style="color:inherit" target=”_blank”>
                             <!-- Indicates a successful or positive action -->
-                            <button type="button" class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Read More</button>
+                            <button type="button" class="btn btn-info btn-lg btn3d"><span class="fa fa-ellipsis-h"></span>&nbsp;Read More</button>
                         </a>
                     </div>
                 </div>
@@ -871,11 +873,11 @@
             <div class="row">
                 <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                    <button type="button" class="btn btn-info btn-sm btn3d"><span class="glyphicon glyphicon-cloud"></span>Earn at Skylon</button>
+                    <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-inr"></span>&nbsp;Earn at Skylon</button>
                 </a>
                 <a href="services.html" style="color:inherit" target=”_blank”>
                     <!-- Indicates a successful or positive action -->
-                    <button type="button" class="btn btn-default btn-sm btn3d"><span class="glyphicon glyphicon-ok"></span>Get a Quote</button>
+                    <button type="button" class="btn btn-default btn-sm btn3d"><span class="fa fa-book"></span>&nbsp;Get a Quote</button>
                 </a>
 
 
@@ -1033,6 +1035,12 @@
                                             <label for="Intrested-6">
       <input name="Intrested" id="Intrested-6" value="7" type="checkbox">
       Refer and Earn
+    </label>
+                                        </div>
+										<div class="checkbox">
+                                            <label for="Intrested-7">
+      <input name="Intrested" id="Intrested-7" value="8" type="checkbox">
+      For Queries
     </label>
                                         </div>
                                     </div>

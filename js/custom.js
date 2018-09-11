@@ -99,14 +99,23 @@ jQuery(function ($) { "use strict";
 	/* ========================================================================= */
 	/*	Fix Slider Height
 	/* ========================================================================= */	
-
-	var slideHeight = $(window).height();
-	
+if ($(window).width() < 767 && $(window).width() > 300) {
+	var slideHeight = $(window).height()/2;
 	$('#slitSlider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
 
 	$(window).resize(function(){'use strict',
 		$('#slitSlider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
 	});
+}
+else{
+	var slideHeight = $(window).height();
+	$('#slitSlider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+
+	$(window).resize(function(){'use strict',
+		$('#slitSlider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+	});
+	
+}
 	
 	
 
