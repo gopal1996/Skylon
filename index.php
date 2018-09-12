@@ -534,8 +534,8 @@
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="aboutus.php" target="_blank">About Us</a></li>
-						<li><a href="services.html" target="_blank">Services</a></li>
-                        <li><a href="earnatskylon.html" target="_blank">Earn at Skylon</a></li>
+						<li><a href="services.html" target="_blank">Our Services</a></li>
+                        <li><a href="earnatskylon.html" target="_blank">Refer and Earn</a></li>
                     </ul>
                 </nav>
                 <!-- /main nav -->
@@ -560,7 +560,6 @@
                             <div class="carousel-caption">
                                 <div>
                                     <img class="wow fadeInUp" src="img/meghna.png" alt="Skylon">
-                                    <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="heading animated fadeInRight">Skylon India</h2>
                                 </div>
                             </div>
                         </div>
@@ -573,12 +572,12 @@
                             <div class="bg-img bg-img-2"></div>
                             <div class="carousel-caption">
                                 <div>
-                                    <h2 class="heading animated fadeInDown">We emphasise on making your today's imaginations into tomorrows's reality.</h2>
+                                    <h3 class="heading animated fadeInDown">We emphasise on making your today's imaginations into tomorrows's reality.</h3>
                                     <div class="container" style="text-align:center;padding:80px;">
                                         <div class="row">
                                             <a href="services.html" style="color:inherit" target=”_blank”>
                                                 <!-- Indicates a successful or positive action -->
-                                                <button type="button" class="btn btn-info btn-lg btn3d"><span class="fa fa-book"></span>&nbsp;Get a Quote</button>
+                                                <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
                                             </a>
 
 
@@ -603,7 +602,7 @@
                                         <div class="row">
                                             <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                                                 <!-- Indicates a successful or positive action -->
-                                                <button type="button" class="btn btn-info btn-lg btn3d"><span class="fa fa-inr"></span>&nbsp;Earn at Skylon</button>
+                                                <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-inr" style="font-size:18px;">&nbsp;Earn at Skylon</span></button>
                                             </a>
 
 
@@ -649,7 +648,7 @@
                             <div class="features-item" style="margin:50px;">
                                 <div class="col-md-12 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                                     <h1 style="color:#000000;text-justify:distribute;">"At Skylon India, we provide best customized and personalised interior design solutions at an affordable cost with superior class looks and a fabulous finish."</h1>
-									<h2 style="color:#000000;text-justify:distribute;font-weight:bold;">Why us?</h2>
+									<h2 style="color:#000000;text-align:center;font-weight:bold;">Why us?</h2>
                                     <h3 style="text-justify:distribute;">Our ultimate motive is to design and execute the most aesthetic, innovative and effiecient home designs with utmost functionality to satisfy even the smallest expectation of our clients.</h3>
 									<h3 style="text-justify:distribute;"> We have a group of dedicated professional designers with expertise in residential and commercial interior home decor to help you create inviting and personalized spaces and we also engage skilled labour to perfectly execute our designs. From sophisticated living room design to space saving and clutter free interior design, we are here to help you to find the best interior solutions to match your requirement and style. Get a free estimate or book a free consultation with us at Skylon India today for Residential & commercial Interior projects, furniture designs and architectural 3D designs.</h3>
 									<h3 style="text-justify:distribute;"> We promise elegant interiors delivered within the stipulated time (depending upon the project) taking care of even the minute details or we pay you rent.</h3>
@@ -798,56 +797,56 @@
         </section>
 
         <!-- Start Testimonial
-		=========================================== -->
+		=========================================== 
 
         <section id="testimonial" class="parallax-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <!-- section title -->
+                        <!-- section title 
                         <div class="sub-title text-center wow fadeInDown" data-wow-duration="500ms">
                             <h3>What People Say About Us</h3>
                         </div>
                         <!-- /section title -->
 
-                        <!-- testimonial wrapper -->
+                        <!-- testimonial wrapper 
                         <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
-                            <?php
-								if($comments->num_rows > 0) {
-									while($row = $comments->fetch_assoc()) {
+                            #<?php
+								#if($comments->num_rows > 0) {
+									#while($row = $comments->fetch_assoc()) {
 							
-										echo '<div class="item text-center">';
+									#	echo '<div class="item text-center">';
 									
 									
-										echo '<div class="client-thumb">';
-										?>
+									#	echo '<div class="client-thumb">';
+									#	?>
 										<img src="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>" class="img-responsive" alt="Skylon">
-										<?php
-											echo '</div>';
-											echo '<div class="client-info">';
-											echo '<div class="client-meta">';
-											echo '<h3>'.$row["cust_name"].'</h3>';	
-											echo '</div>';
-											echo '<div class="client-comment">';
-											echo '<p>'.$row["cust_desc"].'</p>';
-											echo '</div>';
-											echo '</div>';
-											echo '</div>';
-									}
-								}
+									#	<?php
+									#		echo '</div>';
+									#		echo '<div class="client-info">';
+									#		echo '<div class="client-meta">';
+									#		echo '<h3>'.$row["cust_name"].'</h3>';	
+									#		echo '</div>';
+									#		echo '<div class="client-comment">';
+									#		echo '<p>'.$row["cust_desc"].'</p>';
+									#		echo '</div>';
+									#		echo '</div>';
+									#		echo '</div>';
+									#}
+								#}
 							
 							?>
 
 
                         </div>
-                        <!-- end testimonial wrapper -->
+                        <!-- end testimonial wrapper 
                     </div>
-                    <!-- end col lg 12 -->
+                    <!-- end col lg 12 
                 </div>
-                <!-- End row -->
+                <!-- End row 
             </div>
-            <!-- End container -->
+            <!-- End container 
         </section>
         <!-- End Section -->
 
@@ -856,25 +855,27 @@
 
         <!-- Srart Contact Us
 		=========================================== -->
-        <!-- Google Map -->
-        <div class="google-map wow fadeInDown" data-wow-duration="500ms">
-            <div id="map-canvas"></div>
-        </div>
+        
 
 
         <div class="container-fluid" style="text-align:center;padding:80px;position:relative;z-index=-1;background-color:#000;">
             <div class="row">
                 <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                    <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-inr"></span>&nbsp;Earn at Skylon</button>
+                    <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-inr" style="font-size:18px;">&nbsp;Earn at Skylon</span></button>
                 </a>
                 <a href="services.html" style="color:inherit" target=”_blank”>
                     <!-- Indicates a successful or positive action -->
-                    <button type="button" class="btn btn-default btn-sm btn3d"><span class="fa fa-book"></span>&nbsp;Get a Quote</button>
+                    <button type="button" class="btn btn-default btn-sm btn3d"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
                 </a>
 
 
             </div>
+        </div>
+		
+		<!-- Google Map -->
+        <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+            <div id="map-canvas"></div>
         </div>
 
         <section id="foot-counter" class="bg-one" style="position:relative;z-index=-1;">
@@ -908,14 +909,14 @@
 							<h3 style="color:#ffffff;"><a href="aboutus.php">About Us</a></h3>
 						</div>
 						<div class="text-center">
-							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Contact Us</a></h3>
+							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Make an Appoinment now</a></h3>
 						</div>
                     
 					</div>
 
                     <!-- Contact Details -->
                     <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Details</h3>
+                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Us</h3>
                         <br>
                         <div class="contact-details">
                             <div class="con-info clearfix">
@@ -926,17 +927,20 @@
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Phone: +919840492966</span>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
                             </div>
-
-                            <div class="con-info clearfix">
-                                <i class="fa fa-fax fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Phone: +917200107659</span>
+							
+							<div class="con-info clearfix">
+                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Email: skylonindia@gmail.com</span>
+								<span style="color:#ffffff;font-size:16px;">Email: </span>
+                                <span style="color:#ffffff;font-size:16px;">&nbsp;&nbsp;skylonindia@gmail.com</span>
                             </div>
 							
                         </div>
