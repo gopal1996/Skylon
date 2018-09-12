@@ -31,12 +31,10 @@ specializing interior design">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
     <!-- Grid Component css -->
     <link rel="stylesheet" href="css/component.css">
-    <!-- Slit Slider css -->
-    <link rel="stylesheet" href="css/slit-slider.css">
+    <!--Slider css -->
+    <link rel="stylesheet" href="css/slider.css">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Media Queries -->
@@ -598,20 +596,20 @@ specializing interior design">
                         <!-- /responsive nav button -->
 
                         <!-- logo -->
-                        <a class="navbar-brand" href="#body">
-                            <h1 id="logo">
-                                <img src="img/logo-meghna.png" alt="Skylon" />
-                            </h1>
-                        </a>
+                        <a class="navbar-brand" href="index.php">
+                        <h1 id="logo">
+                            <img src="img/skylon.jpg" alt="Skylon" />
+                        </h1>
+                    </a>
                         <!-- /logo -->
                 </div>
 
                 <!-- main nav -->
                <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="aboutus.php" target="_blank">About Us</a></li>
-						<li><a href="services.html" target="_blank">Services</a></li>
-                        <li><a href="earnatskylon.html" target="_blank">Earn at Skylon</a></li>
+                        <li><a href="aboutus.php" >About Us</a></li>
+						<li><a href="services.html">Services</a></li>
+                        <li><a href="earnatskylon.html" >Earn at Skylon</a></li>
                     </ul>
                 </nav>
                 <!-- /main nav -->
@@ -625,31 +623,28 @@ specializing interior design">
             <!--
         Welcome Slider
         ==================================== -->
-            <section id="home">
+            <div id="home slitSlider" class="sl-slider-wrapper">
+       <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
 
-                <div id="slitSlider" class="sl-slider-wrapper">
-                    <div class="sl-slider">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-6"></div>
+      
+    </div>
+    
+  </div> 
+</div>
+</div>
 
-                        <!-- single slide item -->
-                        <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                            <div class="sl-slide-inner">
-                                <div class="bg-img bg-img-6"></div>
-                                <div class="carousel-caption">
-                                    <div>
-                                        <img class="wow fadeInUp" src="img/meghna.png" alt="Skylon">
-                                        <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="heading animated fadeInRight">Skylon India</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /single slide item -->
-
-
-                    </div>
-                    <!-- /sl-slider -->
-                </div>
-                <!-- /slider-wrapper -->
-            </section>
             <!--/#home section-->
 
 
@@ -668,7 +663,7 @@ of interior designs for residential interiors. Architect’s have significant jo
                             </p>
                         </div>
                         <div class="col-lg-6 home-about-right">
-                            <img class="img-fluid" src="img/Residential_Interior.png" alt="" style="max-width:100%;height: auto;">
+                            <img class="img-fluid" src="img/Architecture_Designing.png" alt="" style="max-width:100%;height: auto;">
                         </div>
                     </div>
                 </div>
@@ -762,6 +757,10 @@ Our civil and electrical contractors take up works which will commence after str
 
             <!-- Srart Contact Us
 		=========================================== -->
+<!-- Google Map -->
+          <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.8596407957737!2d80.20484020656036!3d13.043492344927714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d5f6cbc4df%3A0x7d3893caf1de4263!2sSkylon+India+-+Interior+Design!5e0!3m2!1sen!2sin!4v1536774236008" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
 
            <section id="foot-counter" class="bg-one" style="position:relative;z-index=-1;">
 
@@ -794,14 +793,14 @@ Our civil and electrical contractors take up works which will commence after str
 							<h3 style="color:#ffffff;"><a href="aboutus.php">About Us</a></h3>
 						</div>
 						<div class="text-center">
-							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Contact Us</a></h3>
+							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Make an Appoinment now</a></h3>
 						</div>
                     
 					</div>
 
                     <!-- Contact Details -->
                     <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Details</h3>
+                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Us</h3>
                         <br>
                         <div class="contact-details">
                             <div class="con-info clearfix">
@@ -812,17 +811,20 @@ Our civil and electrical contractors take up works which will commence after str
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Phone: +919840492966</span>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
                             </div>
-
-                            <div class="con-info clearfix">
-                                <i class="fa fa-fax fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Phone: +917200107659</span>
+							
+							<div class="con-info clearfix">
+                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Email: skylonindia@gmail.com</span>
+								<span style="color:#ffffff;font-size:16px;">Email ID: </span>
+                                <span style="color:#ffffff;font-size:16px;">&nbsp;skylonindia@gmail.com</span>
                             </div>
 							
                         </div>
@@ -855,7 +857,7 @@ Our civil and electrical contractors take up works which will commence after str
                                 <div class="form-group row">
                                     <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputName3" placeholder="name" style="background-color:#fff;color:#000;">
+                                        <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -977,8 +979,6 @@ Our civil and electrical contractors take up works which will commence after str
         </section>
         <!-- end section -->
 		
-		
-		
 		<!-- Back to Top
 		============================== -->
 		<a href="javascript:;" id="scrollUp">
@@ -996,8 +996,7 @@ Our civil and electrical contractors take up works which will commence after str
 		<script src="js/jquery-1.12.2.min.js"></script>
 		<!-- Bootstrap 3.1 -->
 		<script src="js/bootstrap.min.js"></script>
-		<!-- Slitslider -->
-		<script src="js/jquery.slitslider.js"></script>
+		
 		<script src="js/jquery.ba-cond.min.js"></script>
 		<!-- Parallax -->
 		<script src="js/jquery.parallax-1.1.3.js"></script>
@@ -1006,7 +1005,7 @@ Our civil and electrical contractors take up works which will commence after str
 		<!-- Portfolio Filtering -->
 		<script src="js/jquery.mixitup.min.js"></script>
 		<!-- Custom Scrollbar -->
-		<script src="js/jquery.nicescroll.min.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
 		<!-- Jappear js -->
 		<script src="js/jquery.appear.js"></script>
 		<!-- Pie Chart -->
@@ -1015,8 +1014,6 @@ Our civil and electrical contractors take up works which will commence after str
 		<script src="js/jquery.easing-1.3.pack.js"></script>
 		<!-- tweetie.min -->
 		<script src="js/tweetie.min.js"></script>
-		<!-- Google Map API -->
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<!-- Highlight menu item -->
 		<script src="js/jquery.nav.js"></script>
 		<!-- Sticky Nav -->

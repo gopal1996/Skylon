@@ -29,14 +29,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
+    
     <!-- Grid Component css -->
     <link rel="stylesheet" href="css/component.css">
-    <!-- Slit Slider css -->
-    <link rel="stylesheet" href="css/slit-slider.css">
+    
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
+	<!-- Slider -->
+    <link rel="stylesheet" href="css/slider.css">
     <!-- Media Queries -->
     <link rel="stylesheet" href="css/media-queries.css">
 
@@ -548,91 +548,55 @@
         <!--
         Welcome Slider
         ==================================== -->
-        <section id="home">
+		<div id="home slitSlider" class="sl-slider-wrapper">
+       <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
 
-            <div id="slitSlider" class="sl-slider-wrapper">
-                <div class="sl-slider">
-
-                    <!-- single slide item -->
-                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                        <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-1"></div>
-                            <div class="carousel-caption">
-                                <div>
-                                    <img class="wow fadeInUp" src="img/meghna.png" alt="Skylon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single slide item -->
-
-                    <!-- single slide item -->
-                    <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-                        <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-2"></div>
-                            <div class="carousel-caption">
-                                <div>
-                                    <h3 class="heading animated fadeInDown">We emphasise on making your today's imaginations into tomorrows's reality.</h3>
-                                    <div class="container" style="text-align:center;padding:80px;">
-                                        <div class="row">
-                                            <a href="services.html" style="color:inherit" target=”_blank”>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-3"></div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+          
+            <h3 class="heading animated fadeInDown">We emphasise on making your today's imaginations into tomorrows's reality.</h3>
+              
+        <a href="services.html" style="color:inherit">
                                                 <!-- Indicates a successful or positive action -->
                                                 <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
                                             </a>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-7"></div>
+      <!--<div class="hero">        
+        <hgroup>
+            <h1>We are amazing</h1>        
+            <h3>Get start your next awesome project</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div> -->
+    </div>
+  </div> 
+</div>
+</div>
 
 
-                                        </div>
-                                    </div>
-                                    <!--<h3 class="animated fadeInUp">With all Mejor Browser support including IE 9</h3> -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single slide item -->
-
-                    <!-- single slide item -->
-                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-                        <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-7"></div>
-                            <div class="carousel-caption">
-                                <div>
-                                    <!-- <h3 class="animated fadeInLeft">Clean and Professional Design</h3> -->
-                                    <div class="container" style="text-align:right;padding:80px;">
-                                        <div class="row">
-                                            <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
-                                                <!-- Indicates a successful or positive action -->
-                                                <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-inr" style="font-size:18px;">&nbsp;Earn at Skylon</span></button>
-                                            </a>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single slide item -->
-
-                </div>
-                <!-- /sl-slider -->
-
-                <nav id="nav-arrows" class="nav-arrows">
-                    <span class="nav-arrow-prev">Previous</span>
-                    <span class="nav-arrow-next">Next</span>
-                </nav>
-
-                <nav id="nav-dots" class="nav-dots">
-                    <span class="nav-dot-current"></span>
-                    <span></span>
-                    <span></span>
-                </nav>
-
-            </div>
-            <!-- /slider-wrapper -->
-        </section>
-        <!--/#home section-->
-
+		
+		<!--
+        End Welcome Slider
+        ==================================== -->
+		
         <!--
 		Start Main Features
 		==================================== -->
@@ -647,11 +611,21 @@
 
                             <div class="features-item" style="margin:50px;">
                                 <div class="col-md-12 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                                    <h1 style="color:#000000;text-justify:distribute;">"At Skylon India, we provide best customized and personalised interior design solutions at an affordable cost with superior class looks and a fabulous finish."</h1>
+                                    <h1 align="justify "style="color:#000000;">“At Skylon India, we provide best customized and personalised interior design solutions at an
+affordable cost with superior class looks and a fabulous finish”</h1>
 									<h2 style="color:#000000;text-align:center;font-weight:bold;">Why us?</h2>
-                                    <h3 style="text-justify:distribute;">Our ultimate motive is to design and execute the most aesthetic, innovative and effiecient home designs with utmost functionality to satisfy even the smallest expectation of our clients.</h3>
-									<h3 style="text-justify:distribute;"> We have a group of dedicated professional designers with expertise in residential and commercial interior home decor to help you create inviting and personalized spaces and we also engage skilled labour to perfectly execute our designs. From sophisticated living room design to space saving and clutter free interior design, we are here to help you to find the best interior solutions to match your requirement and style. Get a free estimate or book a free consultation with us at Skylon India today for Residential & commercial Interior projects, furniture designs and architectural 3D designs.</h3>
-									<h3 style="text-justify:distribute;"> We promise elegant interiors delivered within the stipulated time (depending upon the project) taking care of even the minute details or we pay you rent.</h3>
+                                    <h3 align="justify">Our ultimate intention (aim/motive) is to design and execute the most aesthetic, innovative and
+efficient home designs with utmost functionality to satisfy even the smallest expectation of our clients.</br></br>
+									We have a group of dedicated professional designers with expertise in residential and commercial
+interior home decor to help you create inviting and personalized spaces and we also engage skilled
+labour to perfectly execute our designs. From sophisticated living room design to space saving and
+clutter free interior design, we are here to help you to find the best interior solutions to match your
+requirement and style.
+								Get a free estimate or book a free consultation with us at Skylon India today
+for Residential &amp; commercial Interior projects, furniture designs and architectural 3D designs. We
+promise elegant interiors delivered within the stipulated time (depending upon the project) taking
+
+care of even the minute details or we pay you rent.</h3>
                                 </div>
                                 <!-- features media -->
                                
@@ -858,7 +832,12 @@
         
 
 
-        <div class="container-fluid" style="text-align:center;padding:80px;position:relative;z-index=-1;background-color:#000;">
+     <div class="container-fluid" style="text-align:center;padding:80px;position:relative;z-index=-1;background-color:#50486d;">
+		
+            <div class="row">
+			<h3>ENGAGE WITH US AND SHAPE YOUR DREAM</h3>
+			<br>
+			</div>
             <div class="row">
                 <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
@@ -874,8 +853,8 @@
         </div>
 		
 		<!-- Google Map -->
-        <div class="google-map wow fadeInDown" data-wow-duration="500ms">
-            <div id="map-canvas"></div>
+          <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.8596407957737!2d80.20484020656036!3d13.043492344927714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d5f6cbc4df%3A0x7d3893caf1de4263!2sSkylon+India+-+Interior+Design!5e0!3m2!1sen!2sin!4v1536774236008" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
         <section id="foot-counter" class="bg-one" style="position:relative;z-index=-1;">
@@ -939,8 +918,8 @@
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
-								<span style="color:#ffffff;font-size:16px;">Email: </span>
-                                <span style="color:#ffffff;font-size:16px;">&nbsp;&nbsp;skylonindia@gmail.com</span>
+								<span style="color:#ffffff;font-size:16px;">Email ID: </span>
+                                <span style="color:#ffffff;font-size:16px;">&nbsp;skylonindia@gmail.com</span>
                             </div>
 							
                         </div>
@@ -973,7 +952,7 @@
                                 <div class="form-group row">
                                     <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputName3" placeholder="name" style="background-color:#fff;color:#000;">
+                                        <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -1112,13 +1091,10 @@
 		<script src="js/jquery-1.12.2.min.js"></script>
 		<!-- Bootstrap 3.1 -->
 		<script src="js/bootstrap.min.js"></script>
-		<!-- Slitslider -->
 		<script src="js/jquery.slitslider.js"></script>
 		<script src="js/jquery.ba-cond.min.js"></script>
 		<!-- Parallax -->
 		<script src="js/jquery.parallax-1.1.3.js"></script>
-		<!-- Owl Carousel -->
-		<script src="js/owl.carousel.min.js"></script>
 		<!-- Portfolio Filtering -->
 		<script src="js/jquery.mixitup.min.js"></script>
 		<!-- Custom Scrollbar -->

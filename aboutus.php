@@ -32,12 +32,10 @@ whole level at the given time">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
     <!-- Grid Component css -->
     <link rel="stylesheet" href="css/component.css">
-    <!-- Slit Slider css -->
-    <link rel="stylesheet" href="css/slit-slider.css">
+    <!-- Slider css -->
+    <link rel="stylesheet" href="css/slider.css">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Media Queries -->
@@ -386,7 +384,30 @@ whole level at the given time">
           background: #3B5998;
           color: white;
         }
+        	@media screen and (max-width: 700px){
+		 .icon-bar1 {
+          position: fixed;
+          top: 35%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
         
+        /* Style the icon bar links */
+        .icon-bar1 a {
+          display: block;
+          text-align: center;
+          padding: 16px;
+          transition: all 0.3s ease;
+          color: white;
+          font-size: 10px;
+        }
+        
+        /* Style the social media icons with color, if you want */
+        .icon-bar1 a:hover {
+          background-color: #000;
+        }
+		}
         .rot{
         }
     </style>
@@ -401,9 +422,9 @@ whole level at the given time">
 
     //DB details
     $dbHost     = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName     = 'skylon1';
+    $dbUsername = 'id6491760_skylon1';
+    $dbPassword = 'skylon@12345';
+    $dbName     = 'id6491760_skylon1';
     
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
@@ -429,7 +450,7 @@ whole level at the given time">
         <!-- End Database
 	   ==================================== -->
         <div class="earnatskylon" style="height:30px;">
-            <a href="#" class="earn">
+            <a href="earnatskylon.html" class="earn">
                 <p class="rot" style="padding:4px;">Earn&nbsp;&nbsp;at&nbsp;&nbsp;Skylon</p>
             </a>
         </div>
@@ -467,9 +488,9 @@ whole level at the given time">
                     <!-- /responsive nav button -->
 
                     <!-- logo -->
-                    <a class="navbar-brand" href="#body">
+                   <a class="navbar-brand" href="index.php">
                         <h1 id="logo">
-                            <img src="img/logo-meghna.png" alt="Skylon" />
+                            <img src="img/skylon.jpg" alt="Skylon" />
                         </h1>
                     </a>
                     <!-- /logo -->
@@ -478,9 +499,9 @@ whole level at the given time">
                 <!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="aboutus.php" target="_blank">About Us</a></li>
-						<li><a href="services.html" target="_blank">Services</a></li>
-                        <li><a href="earnatskylon.html" target="_blank">Earn at Skylon</a></li>
+                        <li><a href="aboutus.php" >About Us</a></li>
+						<li><a href="services.html">Services</a></li>
+                        <li><a href="earnatskylon.html" >Earn at Skylon</a></li>
                     </ul>
                 </nav>
                 <!-- /main nav -->
@@ -495,54 +516,35 @@ whole level at the given time">
         <!--
         Welcome Slider
         ==================================== -->
-        <section id="home">
+        <div id="home slitSlider" class="sl-slider-wrapper">
+       <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
 
-            <div id="slitSlider" class="sl-slider-wrapper">
-                <div class="sl-slider">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-4"></div>
+      
+    </div>
+    <div class="item slides">
+      <div class="slide-5"></div>
+      
+    </div>
+    
+  </div> 
+</div>
+</div>
 
-                    <!-- single slide item -->
-                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                        <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-4"></div>
-                            <div class="carousel-caption">
-                                <div>
-                                    <img class="wow fadeInUp" src="img/meghna.png" alt="Skylon">
-                                    <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="heading animated fadeInRight">Skylon India</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single slide item -->
-
-                    <!-- single slide item -->
-                    <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-                        <div class="sl-slide-inner">
-                            <div class="bg-img bg-img-5"></div>
-                            <div class="carousel-caption">
-                                <div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single slide item -->
-
-                </div>
-                <!-- /sl-slider -->
-
-                <nav id="nav-arrows" class="nav-arrows">
-                    <span class="nav-arrow-prev">Previous</span>
-                    <span class="nav-arrow-next">Next</span>
-                </nav>
-
-                <nav id="nav-dots" class="nav-dots">
-                    <span class="nav-dot-current"></span>
-                    <span></span>
-                </nav>
-
-            </div>
-            <!-- /slider-wrapper -->
-        </section>
-        <!--/#home section-->
+        <!--
+        End Welcome Slider
+        ==================================== -->
 
 
 
@@ -723,8 +725,8 @@ whole level at the given time">
         <!-- Srart Contact Us
 		=========================================== -->
         <!-- Google Map -->
-        <div class="google-map wow fadeInDown" data-wow-duration="500ms">
-            <div id="map-canvas"></div>
+          <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.8596407957737!2d80.20484020656036!3d13.043492344927714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d5f6cbc4df%3A0x7d3893caf1de4263!2sSkylon+India+-+Interior+Design!5e0!3m2!1sen!2sin!4v1536774236008" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <section id="foot-counter" class="bg-one" style="position:relative;z-index=-1;">
 
@@ -757,14 +759,14 @@ whole level at the given time">
 							<h3 style="color:#ffffff;"><a href="aboutus.php">About Us</a></h3>
 						</div>
 						<div class="text-center">
-							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Contact Us</a></h3>
+							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Make an Appoinment now</a></h3>
 						</div>
                     
 					</div>
 
                     <!-- Contact Details -->
                     <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Details</h3>
+                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Us</h3>
                         <br>
                         <div class="contact-details">
                             <div class="con-info clearfix">
@@ -775,26 +777,29 @@ whole level at the given time">
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Phone: +919840492966</span>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
                             </div>
-
-                            <div class="con-info clearfix">
-                                <i class="fa fa-fax fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Phone: +917200107659</span>
+							
+							<div class="con-info clearfix">
+                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
                             </div>
 
                             <div class="con-info clearfix">
                                 <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
-                                <span style="color:#ffffff;font-size:16px;">Email: skylonindia@gmail.com</span>
+								<span style="color:#ffffff;font-size:16px;">Email ID: </span>
+                                <span style="color:#ffffff;font-size:16px;">&nbsp;skylonindia@gmail.com</span>
                             </div>
 							
                         </div>
 						<div class="col-md-10">
 								<ul class="social-network social-circle">
 									<li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#" class="icoTwitter" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw" target="_blank" class="icoGoogle" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+									<li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-youtube"></i></a></li>
 
 								</ul>
 						</div>
@@ -818,7 +823,7 @@ whole level at the given time">
                                 <div class="form-group row">
                                     <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputName3" placeholder="name" style="background-color:#fff;color:#000;">
+                                        <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -939,62 +944,55 @@ whole level at the given time">
 
         </section>
         <!-- end section -->
-
-
-
-        <!-- Back to Top
+		
+		<!-- Back to Top
 		============================== -->
-        <a href="javascript:;" id="scrollUp">
+		<a href="javascript:;" id="scrollUp">
 			<i class="fa fa-angle-up fa-2x"></i>
 		</a>
-
-        <!-- end Footer Area
+		
+		<!-- end Footer Area
 		========================================== -->
-
-        <!-- 
+		
+		<!-- 
 		Essential Scripts
 		=====================================-->
+		
+		<!-- Main jQuery -->
+		<script src="js/jquery-1.12.2.min.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.ba-cond.min.js"></script>
+		<!-- Parallax -->
+		<script src="js/jquery.parallax-1.1.3.js"></script>
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Portfolio Filtering -->
+		<script src="js/jquery.mixitup.min.js"></script>
+		<!-- Custom Scrollbar -->
+		<script src="js/jquery.nicescroll.js"></script>
+		<!-- Jappear js -->
+		<script src="js/jquery.appear.js"></script>
+		<!-- Pie Chart -->
+		<script src="js/easyPieChart.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing-1.3.pack.js"></script>
+		<!-- tweetie.min -->
+		<script src="js/tweetie.min.js"></script>
+		<!-- Highlight menu item -->
+		<script src="js/jquery.nav.js"></script>
+		<!-- Sticky Nav -->
+		<script src="js/jquery.sticky.js"></script>
+		<!-- Number Counter Script -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- wow.min Script -->
+		<script src="js/wow.min.js"></script>
+		<!-- For video responsive -->
+		<script src="js/jquery.fitvids.js"></script>
+		<!-- Grid js -->
+		<script src="js/grid.js"></script>
+		<!-- Custom js -->
+		<script src="js/custom.js"></script>
 
-        <!-- Main jQuery -->
-        <script src="js/jquery-1.12.2.min.js"></script>
-        <!-- Bootstrap 3.1 -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Slitslider -->
-        <script src="js/jquery.slitslider.js"></script>
-        <script src="js/jquery.ba-cond.min.js"></script>
-        <!-- Parallax -->
-        <script src="js/jquery.parallax-1.1.3.js"></script>
-        <!-- Owl Carousel -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- Portfolio Filtering -->
-        <script src="js/jquery.mixitup.min.js"></script>
-        <!-- Custom Scrollbar -->
-        <script src="js/jquery.nicescroll.min.js"></script>
-        <!-- Jappear js -->
-        <script src="js/jquery.appear.js"></script>
-        <!-- Pie Chart -->
-        <script src="js/easyPieChart.js"></script>
-        <!-- jQuery Easing -->
-        <script src="js/jquery.easing-1.3.pack.js"></script>
-        <!-- tweetie.min -->
-        <script src="js/tweetie.min.js"></script>
-        <!-- Google Map API -->
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <!-- Highlight menu item -->
-        <script src="js/jquery.nav.js"></script>
-        <!-- Sticky Nav -->
-        <script src="js/jquery.sticky.js"></script>
-        <!-- Number Counter Script -->
-        <script src="js/jquery.countTo.js"></script>
-        <!-- wow.min Script -->
-        <script src="js/wow.min.js"></script>
-        <!-- For video responsive -->
-        <script src="js/jquery.fitvids.js"></script>
-        <!-- Grid js -->
-        <script src="js/grid.js"></script>
-        <!-- Custom js -->
-        <script src="js/custom.js"></script>
-
-</body>
-
+    </body>
 </html>
