@@ -2,90 +2,486 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Skylon">
-        
-        <meta name="author" content="2G developers">
-		
-        <title>Skylon</title>
-		
-		<!-- Mobile Specific Meta
-		================================================== -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-		
-		<!-- CSS
-		================================================== -->
-		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- bootstrap.min css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Animate.css -->
-        <link rel="stylesheet" href="css/animate.css">
-		<!-- Owl Carousel -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-		<!-- Grid Component css -->
-        <link rel="stylesheet" href="css/component.css">
-		<!-- Slit Slider css -->
-        <link rel="stylesheet" href="css/slit-slider.css">
-		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/main.css">
-		<!-- Media Queries -->
-        <link rel="stylesheet" href="css/media-queries.css">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-		<!--
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Skylon">
+
+    <meta name="author" content="2G developers">
+
+    <title>Skylon</title>
+
+    <!-- Mobile Specific Meta
+		================================================== -->
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+
+    <!-- CSS
+		================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <!-- Grid Component css -->
+    <link rel="stylesheet" href="css/component.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+	<!-- Slider -->
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="css/media-queries.css">
+
+    <!--
 		Google Font
-		=========================== -->                    
-		
-		<!-- Oswald / Title Font -->
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-		<!-- Ubuntu / Body Font -->
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
-		
-		<!-- Modernizer Script for old Browsers -->		
-        <script src="js/modernizr-2.6.2.min.js"></script>
-		
-		
+		=========================== -->
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Oswald / Title Font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <!-- Ubuntu / Body Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.js"></script>
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <style>
+        /*=========================
+          Icons
+         ================= */
+        
+        /* footer social icons */
+        ul.social-network {
+        	list-style: none;
+        	display: inline;
+        	margin-left:0 !important;
+        	padding: 0;
+        }
+        ul.social-network li {
+        	display: inline;
+        	margin: 0 5px;
+        }
+        .btn-group button {
+            background-color: #4CAF50; /* Green background */
+            border: 1px solid green; /* Green border */
+            color: white; /* White text */
+            padding: 10px 24px; /* Some padding */
+            cursor: pointer; /* Pointer/hand icon */
+            float: left; /* Float the buttons side by side */
+        }
+        
+        /* Clear floats (clearfix hack) */
+        .btn-group:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .btn-group button:not(:last-child) {
+            border-right: none; /* Prevent double borders */
+        }
+        
+        /* Add a background color on hover */
+        .btn-group button:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* footer social icons */
+        .social-network a.icoRss:hover {
+        	background-color: #F56505;
+        }
+        .social-network a.icoFacebook:hover {
+        	background-color:#3B5998;
+        }
+        .social-network a.icoTwitter:hover {
+        	background-color:#33ccff;
+        }
+        .social-network a.icoGoogle:hover {
+        	background-color:#BD3518;
+        }
+        .social-network a.icoVimeo:hover {
+        	background-color:#0590B8;
+        }
+        .social-network a.icoLinkedin:hover {
+        	background-color:#007bb7;
+        }
+        .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+        .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+        	color:#fff;
+        }
+        a.socialIcon:hover, .socialHoverClass {
+        	color:#44BCDD;
+        }
+        
+        .social-circle li a {
+        	display:inline-block;
+        	position:relative;
+        	margin:0 auto 0 auto;
+        	-moz-border-radius:50%;
+        	-webkit-border-radius:50%;
+        	border-radius:50%;
+        	text-align:center;
+        	width: 50px;
+        	height: 50px;
+        	font-size:20px;
+        }
+        .social-circle li i {
+        	margin:0;
+        	line-height:50px;
+        	text-align: center;
+        }
+        
+        .social-circle li a:hover i, .triggeredHover {
+        	-moz-transform: rotate(360deg);
+        	-webkit-transform: rotate(360deg);
+        	-ms--transform: rotate(360deg);
+        	transform: rotate(360deg);
+        	-webkit-transition: all 0.2s;
+        	-moz-transition: all 0.2s;
+        	-o-transition: all 0.2s;
+        	-ms-transition: all 0.2s;
+        	transition: all 0.2s;
+        }
+        .social-circle i {
+        	color: #fff;
+        	-webkit-transition: all 0.8s;
+        	-moz-transition: all 0.8s;
+        	-o-transition: all 0.8s;
+        	-ms-transition: all 0.8s;
+        	transition: all 0.8s;
+        }
+        
+        a#icon {
+         background-color: #D3D3D3;   
+        }
+        
+        .button {
+         font-size: 1em;
+         padding: 10px;
+         color: #fff;
+         border: 2px solid #FF9800;
+         border-radius: 20px;
+         text-decoration: none;
+         cursor: pointer;
+         transition: all 0.3s ease-out;
+        }
+        .button:hover {
+         background: #06D85F;
+        }
+        
+        .overlay {
+         position: fixed;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background: rgba(0, 0, 0, 0.7);
+         transition: opacity 500ms;
+         visibility: hidden;
+         opacity: 0;
+        }
+        .overlay:target {
+         visibility: visible;
+         opacity: 1;
+        }
+        
+        .popup1 {
+         margin: 70px auto;
+         padding: 20px;
+         background: #fff;
+         border-radius: 5px;
+         width: 30%;
+         position: relative;
+         transition: all 5s ease-in-out;
+        }
+        
+        .popup1 h2 {
+         margin-top: 0;
+         color: #000;
+         font-family: Tahoma, Arial, sans-serif;
+        }
+        .popup1 .close {
+         position: absolute;
+         top: 20px;
+         right: 30px;
+         transition: all 200ms;
+         font-size: 30px;
+         font-weight: bold;
+         text-decoration: none;
+         color: #000;
+        }
+        .popup1 .close:hover {
+         color: #000;
+        }
+        .popup1 .content {
+         max-height: 30%;
+         overflow: auto;
+        }
+        
+        .pop-form form {
+            padding: 0 15px 15px 15px;
+        }
+        
+        .pop-form input,
+        .pop-form textarea {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 12px;
+            width: 254px;
+            max-width: 254px;
+            margin-bottom: 10px;
+            margin-left: 7px;
+            padding: 6px;
+            border: none;
+            border-radius: 4px;
+            color: #999;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .pop-form input:focus,
+        .pop-form textarea:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        .pop-form input[type='submit'] {
+            display: block;
+            width: 120px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .4s ease;
+            color: #000 !important;
+            border: none;
+        }
+        
+        .pop-form input[type='submit']:hover {
+            box-shadow: 0 3px 3px 0 rgba(0,0,0,0.07),0 1px 7px 0 rgba(0,0,0,0.02),0 3px 1px -1px rgba(0,0,0,0.1);
+        }
+        
+        .pop-form textarea {
+            min-height: 110px;
+        	color:#000000;
+        }
+        
+        
+        ::-webkit-input-placeholder {
+            color: #000;
+        }
+        
+        ::-moz-placeholder{
+            color: #000;
+        }
+        
+        :-ms-input-placeholder {
+            color: #fff;
+        }
+        
+        :-moz-placeholder {
+            color: #fff;
+        }
+        
+        .pop-form input[type='submit'] {
+            background: #000000;
+        }
+        
+        
+        @media screen and (max-width: 700px){
+         .box{
+         width: 70%;
+         }
+         .popup1{
+         width: 70%;
+         }
+        }
+        
+        .btn3d {
+            position:relative;
+            top: -6px;
+            border:0;
+             transition: all 40ms linear;
+             margin-top:10px;
+             margin-bottom:10px;
+             margin-left:2px;
+             margin-right:2px;
+        }
+        .btn3d:active:focus,
+        .btn3d:focus:hover,
+        .btn3d:focus {
+            -moz-outline-style:none;
+                 outline:medium none;
+        }
+        .btn3d:active, .btn3d.active {
+            top:2px;
+        }
+        .btn3d.btn-white {
+            color: #666666;
+            box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #f5f5f5, 0 8px 8px 1px rgba(0,0,0,.2);
+            background-color:#fff;
+        }
+        .btn3d.btn-white:active, .btn3d.btn-white.active {
+            color: #666666;
+            box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+            background-color:#fff;
+        }
+        .btn3d.btn-default {
+            color: #666666;
+            box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0,0,0,.2);
+            background-color:#f9f9f9;
+        }
+        .btn3d.btn-default:active, .btn3d.btn-default.active {
+            color: #666666;
+            box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+            background-color:#f9f9f9;
+        }
+        .btn3d.btn-primary {
+            box-shadow:0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#4274D7;
+        }
+        .btn3d.btn-primary:active, .btn3d.btn-primary.active {
+            box-shadow:0 0 0 1px #417fbd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color:#4274D7;
+        }
+        .btn3d.btn-success {
+            box-shadow:0 0 0 1px #31c300 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #5eb924, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#78d739;
+        }
+        .btn3d.btn-success:active, .btn3d.btn-success.active {
+            box-shadow:0 0 0 1px #30cd00 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #78d739;
+        }
+        .btn3d.btn-info {
+            box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#39B3D7;
+        }
+        .btn3d.btn-info:active, .btn3d.btn-info.active {
+            box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #39B3D7;
+        }
+        .btn3d.btn-warning {
+            box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #D79A34, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#FEAF20;
+        }
+        .btn3d.btn-warning:active, .btn3d.btn-warning.active {
+            box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #FEAF20;
+        }
+        .btn3d.btn-danger {
+            box-shadow:0 0 0 1px #b93802 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #AA0000, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#D73814;
+        }
+        .btn3d.btn-danger:active, .btn3d.btn-danger.active {
+            box-shadow:0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #D73814;
+        }
+        .btn3d.btn-magick {
+            color: #fff;
+            box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #9823d5, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#bb39d7;
+        }
+        .btn3d.btn-magick:active, .btn3d.btn-magick.active {
+            box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #bb39d7;
+        }
+    </style>
+
+    <style>
+        /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+        .icon-bar1 {
+          position: fixed;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+        
+        /* Style the icon bar links */
+        .icon-bar1 a {
+          display: block;
+          text-align: center;
+          padding: 10px;
+          transition: all 0.3s ease;
+          color: white;
+          font-size: 10px;
+        }
+        
+        /* Style the social media icons with color, if you want */
+        .icon-bar1 a:hover {
+          background-color: #000;
+        }
+        
+        .facebook {
+          background: #3B5998;
+          color: white;
+        }
+        
+        .twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        
+        .google {
+          background: #dd4b39;
+          color: white;
+        }
+        
+        .linkedin {
+          background: #007bb5;
+          color: white;
+        }
+        
+        .youtube {
+          background: #bb0000;
+          color: white;
+        }
 		
-		  ga('create', 'UA-54152927-1', 'auto');
-		  ga('send', 'pageview');
 		
-		</script>
+		
 	
-    </head>
-	
-    <body id="body">
-	    <!--
+    </style>
+
+
+</head>
+
+<body id="body">
+    <div class="icon-bar1" style="width:32px;height:32px;">
+         <a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/IndiaSkylon" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" class="google"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+    <!--
 	    Start Preloader
 	    ==================================== -->
-		<div id="loading-mask">
-			<div class="loading-img">
-				<img alt="Skylon Preloader" src="img/preloader.gif"  />
-			</div>
-		</div>
-        <!--
+    <div id="loading-mask">
+        <div class="loading-img">
+            <img alt="Skylon Preloader" src="img/preloader.gif" />
+        </div>
+    </div>
+
+
+
+    <!--
         End Preloader
         ==================================== -->
-		<!--
+    <!--
 		Database Connection
 		==================================== -->
-		<?php
+    <?php
 
     //DB details
     $dbHost     = 'localhost';
-    $dbUsername = 'id6491760_skylon1';
-    $dbPassword = 'skylon@12345';
-    $dbName     = 'id6491760_skylon1';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName     = 'skylon1';
     
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
@@ -107,43 +503,43 @@
 		//   $i++;
 	   //}
       ?>
-	  
-	  <!-- End Database
+
+        <!-- End Database
 	   ==================================== -->
-	   <!-- 
+        <!-- 
         Fixed Navigation
-        ==================================== 
-        <header id="navigation1" class="navbar1 navbar-inverse1 hidden-sm hidden-xs hidden-md">
+        ==================================== -->
+        <header id="navigation" class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
-                    <!-- responsive nav button 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-					<!-- /responsive nav button 
-					
-					<!-- logo 
-                    <a class="navbar-brand1" href="#body">
-						<h1 id="logo">
-							<img src="img/logo-meghna.png" alt="Meghna" />
-						</h1>
-					</a>
-					<!-- /logo 
+                    <!-- /responsive nav button -->
+
+                    <!-- logo -->
+                    <a class="navbar-brand" href="#body">
+                        <h1 id="logo">
+                            <img src="img/skylon.png" alt="Skylon" />
+                        </h1>
+                    </a>
+                    <!-- /logo -->
                 </div>
 
-				<!-- main nav 
-               
-                        
-                        <h4 align="right"><i class="fa fa-phone"></i>&nbsp;+919840492966&nbsp;,<br>+917200107659</h4>
-						
-                        
-						
-                    
-				<!-- /main nav 
-				
+                <!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="aboutus.php">About Us</a></li>
+						<li><a href="services.html">Our Services</a></li>
+                        <li><a href="earnatskylon.html">Refer and Earn</a></li>
+                    </ul>
+                </nav>
+                <!-- /main nav -->
+
             </div>
         </header>
         <!--
@@ -152,999 +548,569 @@
         <!--
         Welcome Slider
         ==================================== -->
-		<section id="home">	    
+		<div id="home slitSlider" class="sl-slider-wrapper">
+       <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  <script>
+    
+    
+$(document).ready(function() {  
+var i = 0;
+    var $target = $('.item');
+    var $target1 = $('.item1');
+    var $target2 = $('.item2');
+    var $target3 = $('.item3');
+	$target1.addClass('active');
+ setInterval(function() {
+	 i++;
+  
+   if(i==1)
+   { $target.removeClass('active');
+   $target1.removeClass('active');
+   $target2.removeClass('active');
+   $target3.removeClass('active');
+	   $target2.addClass('active');
+   } if(i==2)
+   { $target.removeClass('active');
+   $target1.removeClass('active');
+   $target2.removeClass('active');
+   $target3.removeClass('active');
+	   $target3.addClass('active');
+   } if(i==3)
+   { $target.removeClass('active');
+   $target1.removeClass('active');
+   $target2.removeClass('active');
+   $target3.removeClass('active');
+	   $target1.addClass('active');
+	   i=0;
+   }
+        
+    }, 5000);
+
+ }); 
+   
+  </script>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item item1 slides ">
+      <div class="slide-3"></div>
+    </div>
+    <div class="item  item2 slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+          
+            <h3 class="heading animated fadeInDown">We emphasise on making your today's imaginations into tomorrows's reality.</h3>
+              
+        <a href="services.html" style="color:inherit">
+<button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
+</a>
+      </div>
+    </div>
+	<div class="item item slides ">
+      <div class="slide-7"></div>
+    <div class="hero">        
+              
+        <a href="services.html" style="color:inherit">
+		<!-- Indicates a successful or positive action -->
+		<button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-inr" style="font-size:18px;">&nbsp;Refer and Earn</span></button>
+		</a>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+</div>
+
+
 		
-            <div id="slitSlider" class="sl-slider-wrapper">
-				<div class="sl-slider">
-					
-					<!-- single slide item -->
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-						<div class="carousel-caption">
-							<div>
-								<img class="wow fadeInUp" src="img/meghna.png" alt="Skylon">
-								<h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Welcome To Skylon</h2>
-							</div>
-						</div>
-						</div>
-					</div>
-					<!-- /single slide item -->
-					
-					<!-- single slide item -->
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div>
-						<div class="carousel-caption">
-							<div>
-								<h2 class="heading animated fadeInDown">Interior Design</h2>
-								<!--<h3 class="animated fadeInUp">With all Mejor Browser support including IE 9</h3> -->
-								
-							</div>
-						</div>
-						</div>
-					</div>
-					<!-- /single slide item -->
-					
-					<!-- single slide item -->
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div>
-						<div class="carousel-caption">
-							<div>
-								<h2 class="heading animated fadeInRight">Together We Can Grow</h2>
-								<!-- <h3 class="animated fadeInLeft">Clean and Professional Design</h3> -->
-								
-							</div>
-						</div>
-						</div>
-					</div>
-					<!-- /single slide item -->
-
-				</div><!-- /sl-slider -->
-				
-				<nav id="nav-arrows" class="nav-arrows">
-					<span class="nav-arrow-prev">Previous</span>
-					<span class="nav-arrow-next">Next</span>
-				</nav>
-
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-				</nav>
-
-			</div><!-- /slider-wrapper -->
-		</section>
-		<!--/#home section-->
-		
-        <!-- 
-        Fixed Navigation
+		<!--
+        End Welcome Slider
         ==================================== -->
-        <header id="navigation" class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-					<!-- /responsive nav button -->
-					
-					<!-- logo -->
-                    <a class="navbar-brand" href="#body">
-						<h1 id="logo">
-							<img src="img/logo-meghna.png" alt="Skylon" />
-						</h1>
-					</a>
-					<!-- /logo -->
-                </div>
-
-				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="Navigation">
-                    <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#main-counter">About Us</a></li>
-                        <li><a href="#team-skills1">Skills</a></li>
-                        <li><a href="#services-counter">Services</a></li>
-                        <li><a href="#team-skills">Works</a></li>
-                        <li><a href="#team-counter">Team</a></li>                       
-                        <li><a href="#touch-counter">Contact</a></li>
-						
-                    </ul>
-                </nav>
-				<!-- /main nav -->
-				
-            </div>
-        </header>
+		
         <!--
-        End Fixed Navigation
-        ==================================== -->
-		
-		
-		<!--
-		Start About Section
-		==================================== -->
-		<section id="about-counter" class="bg-one">
-			<div class="container">
-				<div class="row">
-				
-					
-					<!-- About item -->
-					<div class="col-md-4 text-center wow fadeInUp wrap" data-wow-duration="500ms" >
-						<div class="wrap-about">							
-							<div class="icon-box" style="color:#000000;">
-								<i class="fa fa-lightbulb-o fa-4x"></i>
-							</div>					
-							<!-- Express About Yourself -->
-							<div class="about-content text-center">
-								<h3 class="ddd" style="color:#000000;">We're Creative</h3>								
-								<p></p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-					
-					<!-- About item -->
-					<div class="col-md-4 text-center wow fadeInUp wrap" data-wow-duration="500ms" data-wow-delay="250ms">
-						<div class="wrap-about">
-							<div class="icon-box">
-								<i class="fa fa-users fa-4x"></i>
-							</div>
-							<!-- Express About Yourself -->
-							<div class="about-content text-center">
-								<h3 style="color:#000000;">We're Professional</h3>
-								<p></p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-					
-					<!-- About item -->					
-					<div class="col-md-4 text-center wow fadeInUp wrap" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="wrap-about kill-margin-bottom">
-							<div class="icon-box">
-								<i class="fa fa-users fa-4x"></i>
-							</div>
-							<!-- Express About Yourself -->
-							<div class="about-content text-center">
-								<h3 style="color:#000000;">We're Team</h3>
-								<p></p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-					
-				</div> 		<!-- End row -->
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-		
-		
-		
-		<!--
 		Start Main Features
 		==================================== -->
-		<section id="main-counter">
-			<div class="container">
-				<div class="row">
-					<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-						<h2 style="color:#000000;">About <span class="color">Us</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-					<!-- features item -->
-					<div id="features">
-						<div class="item">
-							
-							<div class="features-item">
-							<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-									<h1 style="color:#000000;">"We emphasise on making your today's imaginations into tomorrow's reality"</h1>
-									<h3>Skylon India focuses on providing interior design & services to today's growing designing sector.  A real set of experienced Handcrafted labours, budding enthusiast architects and engineers much interested to outbreak the talent of designing and execution in own thoughts. In a much competitive world of growing business we focus much more on effective work satisfaction rather than the profit.</h3>
-									<h3>As a company, we care about PEOPLE; employees, co-workers, customers, vendors, and whoever else we come across in our work. We believe that people are more important than projects, products, or problems. We care about PERFECTION. We believe that our work must be perfect. When our work is done, our customers rave about our services and products, and we are inspired to progress.</h3>
-									<h3>We believe that our positive work environment and commitment to team-work allow us to give our customers the ultimate service experience.</h3>
-								</div>
-								<!-- features media -->
-								<div class="col-md-6 feature-media media-wrapper wow fadeInUp hidden-sm hidden-xs hidden-md" data-wow-duration="500ms">
-									<img src="img/parallax/man.png" alt="man" width="100%">
-								</div>
-								<!-- /features media -->								
-								
-								<!-- features content -->
-								
-								<!-- /features content -->
-								
-							</div>
-						</div>
-						
-						
-						
-					</div>
-					<!-- /features item -->
-					
-				</div> 		<!-- End row -->
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-		
-		<section id="sample1">
-		<div>
-		<img src="http://www.pmchconstructors.com/wp-content/uploads/2016/10/LouisvilleCityscape3.jpg" style="max-width: 100%;max-height: 100%">
-		</div>
-		</section>
-		
-		
-		
-		<!-- Start Team Skills
-		=========================================== -->
-		
-		<section id="team-skills1" class="parallax-section">
-			<div class="container">
-				<div class="row wow fadeInDown" data-wow-duration="500ms">
-				
-					<!-- section title -->
-					<div class="title text-center">
-						<h2>Our <span class="color">Skills</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-					
-					<!-- skill set -->
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-						<div class="skill-chart text-center">
-							<span class="chart" data-percent="80">
-								<span class="percent">86</span>
-							</span>
-							<h3><i class="fa fa-child"></i> Perfection</h3>
-							
-						</div>
-					</div>
-					<!-- end skill set -->
-					
-					<!-- skill set -->
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-						<div class="skill-chart text-center">
-							<span class="chart" data-percent="90">
-								<span class="percent">90</span>
-							</span>
-							<h3><i class="fa fa-wifi"></i> Satisfaction</h3>
-							
-						</div>
-					</div>
-					<!-- end skill set -->
-					
-					<!-- skill set -->
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="skill-chart text-center">
-							<span class="chart" data-percent="85">
-								<span class="percent"></span>
-							</span>
-							<h3><i class="fa fa-thumbs-up"></i> Quality</h3>
-							
-						</div>
-					</div>
-					<!-- end skill set -->
-					
-					<!-- skill set -->
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="skill-chart text-center">
-							<span class="chart" data-percent="92">
-								<span class="percent"></span>
-							</span>
-							<h3><i class="fa fa-trophy"></i> Trust</h3>
-							
-						</div>
-					</div>
-					<!-- end skill set -->
-					
-				</div>  		<!-- End row -->
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-		
-		<!--
-		Start Counter Section
-		==================================== 
-		
-		<section id="counter" class="parallax-section">
-			<div class="container">
-				<div class="row">
-				
-					<!-- first count item 
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
-						<div class="counters-item">
-							<div>
-							    <span data-speed="3000" data-to="320">320</span>
-							</div>
-							<i class="fa fa-users fa-3x"></i>
-							<h3>Happy Clients</h3>
-						</div>
-					</div>
-					<!-- end first count item -->
-				
-					<!-- second count item 
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-						<div class="counters-item">
-							<div>
-							    <span data-speed="3000" data-to="565">565</span>
-							</div>
-							<i class="fa fa-check-square fa-3x"></i>
-							<h3>Projects completed</h3>
-						</div>
-					</div>
-					<!-- end second count item -->
-				
-					<!-- third count item 
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="counters-item">
-							<div>
-							    <span data-speed="3000" data-to="95">95</span>
-								<span>%</span>
-							</div>
-							<i class="fa fa-thumbs-up fa-3x"></i>
-				            <h3>Positive feedback</h3>
-							
-						</div>
-					</div>
-					<!-- end third count item -->
-					
-					<!-- fourth count item 
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="counters-item kill-margin-bottom">
-							<div>
-							    <span data-speed="3000" data-to="2500">2500</span>
-							</div>
-							<i class="fa fa-coffee fa-3x"></i>
-							<h3>Cups of Coffee</h3>
-						</div>
-					</div>
-					<!-- end fourth count item -->
-					
-				</div> 		<!-- end row -->
-			</div>   	<!-- end container -->
-		</section>   <!-- end section -->
-		
-		
-		<!-- Start Services Section
+        <section id="main-counter">
+            <div class="container">
+                <div class="row">
+                    
+                    <!-- /section title -->
+                    <!-- features item -->
+                    <div id="features">
+                        <div class="item">
+
+                            <div class="features-item" style="margin:50px;">
+                                <div class="col-md-12 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                                    <h1 align="center "style="color:#000000;">“At Skylon India, we provide best customized and personalised interior design solutions at an
+affordable cost with superior class looks and a fabulous finish”</h1>
+									<h2 style="color:#000000;text-align:center;font-weight:bold;">Why us?</h2>
+                                    <h3 style="text-align: justify;text-justify:newspaper;">Our ultimate intention (aim/motive) is to design and execute the most aesthetic, innovative and
+efficient home designs with utmost functionality to satisfy even the smallest expectation of our clients.</br></br>
+									We have a group of dedicated professional designers with expertise in residential and commercial
+interior home decor to help you create inviting and personalized spaces and we also engage skilled
+labour to perfectly execute our designs. From sophisticated living room design to space saving and
+clutter free interior design, we are here to help you to find the best interior solutions to match your
+requirement and style.
+								Get a free estimate or book a free consultation with us at Skylon India today
+for Residential &amp; commercial Interior projects, furniture designs and architectural 3D designs. We
+promise elegant interiors delivered within the stipulated time (depending upon the project) taking
+
+care of even the minute details or we pay you rent.</h3>
+                                </div>
+                                <!-- features media -->
+                               
+
+                                <!-- features content -->
+
+                                <!-- /features content -->
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- /features item -->
+
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End container -->
+        </section>
+        <!-- End section -->
+
+        <section id="sample1" style="position:relative;z-index=-1;">
+            <div>
+                <img src="img/parallax/Louis.jpg" style="max-width: 100%;max-height: 100%">
+            </div>
+        </section>
+
+
+
+        <!-- Start Services Section
 		==================================== -->
-		
-		<section id="services-counter" class="bg-one">
-			<div class="container">
-				<div class="row">
-					
-					<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-						<h2>Our <span class="color">Services</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-					
+
+        <section id="services-counter" class="bg-one" style="position:relative;z-index=-1;">
+            <div class="container">
+                <div class="row">
+
+                    <!-- section title -->
+                    <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                        <h2>Our <span class="color">Services</span></h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+
                     <!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-home fa-5x"></i>
-							</div>
-							<h3>Residential Interiors</h3>
-							<p>Sample Paragraph</p>
-						</div>
-					</article>
+                    <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                        <div class="service-block text-center">
+                            <div class="service-icon text-center">
+                                <i class="fa fa-home fa-5x"></i>
+                            </div>
+                            <h3>Residential Interiors</h3>
+                            <p>Interior design is an integral part of buildings, Most of the residential building focused on Interior home decorations to have greater aesthetic view of buildings.</p>
+                        </div>
+                    </article>
                     <!-- End Single Service Item -->
-                    
+
                     <!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-industry fa-5x"></i>
-							</div>
-							<h3>Commercial Interiors</h3>
-							<p>Sample Paragraph</p>
-						</div>
-					</article>
+                    <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                        <div class="service-block text-center">
+                            <div class="service-icon text-center">
+                                <i class="fa fa-industry fa-5x"></i>
+                            </div>
+                            <h3>Commercial Interiors</h3>
+                            <p>Commercial interior works are those interior works which mainly take place in commercial places.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                    </article>
                     <!-- End Single Service Item -->
-                    
+
                     <!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-gavel fa-5x"></i>
-							</div>
-							<h3>Renovation Works</h3>
-							<p>Sample Paragraph</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-					
-					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-map fa-5x"></i>
-							</div>
-							<h3>Architecture Designing</h3>
-							<p>Sample Paragraph</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-					
-					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-wrench fa-5x"></i>
-							</div>
-							<h3>Handcrafter Designer Furniture’s</h3>
-							<p>Sample Paragraph</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-					
-					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="service-block text-center kill-margin-bottom">
-							<div class="service-icon text-center">
-								<i class="fa fa-plug fa-5x"></i>
-							</div>
-							<h3>Civil & Electrical Contractors</h3>
-							<p>Sample Paragraph</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-						
-				</div> 		<!-- End row -->
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-		
-		
-		<!-- Start Portfolio Section
-		=========================================== -->
-		
-		<section id="team-skills">
-			<div class="container">
-				<div class="row wow fadeInDown" data-wow-duration="500ms">
-					<div class="col-lg-12">
-					
-						<!-- section title -->
-						<div class="title text-center">
-							<h2 style="color:#000000">Our <span class="color">Works</span></h2>
-							<div class="border"></div>
-						</div>
-						<!-- /section title -->
-					
-						<!-- portfolio item filtering 
-						<div class="portfolio-filter clearfix">
-							<ul class="text-center">
-							    <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".app">Mobile App</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".web">Web Design</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">Photoshop</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Illustrator</a></li>
-							</ul>
-						</div>
-						<!-- /portfolio item filtering -->
-						
-					</div> <!-- /end col-lg-12 -->
-				</div> <!-- end row -->
-			</div>	<!-- end container -->
-	
-			<!-- portfolio items -->
-			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
-                <ul id="og-grid" class="og-grid">
-				<?php
-				if($result->num_rows > 0) {
-					while($row = $result->fetch_assoc()) {
-				
-						
-					echo '<li class="mix app">';
-					
-						?><a href="javascript:void(0)" data-largesrc="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>" data-title=<?php echo $row["prod_name"]?> data-description="<?php echo $row["prod_desc"]?>" >
-							<img src="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>">
-							<?php
-							echo '<div class="hover-mask">';
-								echo "<h3>".$row["prod_name"]."</h3>";
-								echo '<span>';
-									echo '<i class="fa fa-plus fa-2x"></i>';
-								echo '</span>';
-							echo '</div>';
-						echo '</a>';
-					echo '</li>';
-					
-					}
-				}
-					?>
-					
-					
-				</ul> <!-- end og grid -->
-			</div>  <!-- portfolio items wrapper -->
-			
-		</section>   <!-- End section -->
-		
-		
-		<section id="sample2">
-		<div>
-		<img src="img\parallax\bruns.jpg" style="max-width: 100%;max-height: 100%">
-		</div>
-		</section>
-		
-		<!-- Start Testimonial
-		=========================================== -->
-		
-		<section id="testimonial" class="parallax-section">
-			<div class="container">
-				<div class="row">				
-					<div class="col-lg-12">
-					
-						<!-- section title -->
-						<div class="sub-title text-center wow fadeInDown" data-wow-duration="500ms">
-							<h3>What People Say About Us</h3>
-						</div>
-						<!-- /section title -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+                        <div class="service-block text-center">
+                            <div class="service-icon text-center">
+                                <i class="fa fa-gavel fa-5x"></i>
+                            </div>
+                            <h3>Renovation Works</h3>
+                            <p>Skylon India will help you to renovate or remodel your house to the whole new level and the very look of house will be greater than your farthest imaginations.</p>
+                        </div>
+                    </article>
+                    <!-- End Single Service Item -->
 
-						<!-- testimonial wrapper -->
-						<div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
-						<?php
-				if($comments->num_rows > 0) {
-					while($row = $comments->fetch_assoc()) {
-						
-							echo '<div class="item text-center">';
-								
-								
-								echo '<div class="client-thumb">';
-									?><img src="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>" class="img-responsive" alt="Skylon">
-									<?php
-								echo '</div>';
-								
-								
-								
-								echo '<div class="client-info">';
-									echo '<div class="client-meta">';
-										echo '<h3>'.$row["cust_name"].'</h3>';
-										
-									echo '</div>';
-									echo '<div class="client-comment">';
-										echo '<p>'.$row["cust_desc"].'</p>';
-										
-									echo '</div>';
-								echo '</div>';
-								
-							echo '</div>';
-					}
-				}
-							
-						?>
-							<!-- testimonial single 
-							<div class="item text-center">
-								
-								<!-- client photo 
-								<div class="client-thumb">
-									<img src="img/team/client.jpg" class="img-responsive" alt="Skylon">
-								</div>
-								<!-- /client photo 
-								
-								<!-- client info 
-								<div class="client-info">
-									<div class="client-meta">
-										<h3>Shareen Raj</h3>
-										
-									</div>
-									<div class="client-comment">
-										<p>Excellent</p>
-										
-									</div>
-								</div>
-								<!-- /client info 
-							</div>
-							<!-- /testimonial single -->
-						
-							<!-- testimonial single 
-							<div class="item text-center">
-								
-								<!-- client photo 
-								<div class="client-thumb">
-									<img src="img/team/client.jpg" class="img-responsive" alt="Skylon">
-								</div>
-								<!-- /client photo 
-								
-								<!-- client info 
-								<div class="client-info">
-									<div class="client-meta">
-										<h3>Shareen Raj</h3>
-										
-									</div>
-									<div class="client-comment">
-										<p>Happy with your service</p>
-										
-									</div>
-								</div>
-								<!-- /client info 
-							</div>
-							<!-- /testimonial single -->
-							
-						</div>		<!-- end testimonial wrapper -->
-					</div> 		<!-- end col lg 12 -->
-				</div>	    <!-- End row -->
-			</div>       <!-- End container -->
-		</section>    <!-- End Section -->
-		
-		<!--
-		Start Blog Section
-		=========================================== -->
-				
-		<section id="blog" class="bg-one">
-			<div class="container">
-				<div class="row">
+                    <!-- Single Service Item -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+                        <div class="service-block text-center">
+                            <div class="service-icon text-center">
+                                <i class="fa fa-map fa-5x"></i>
+                            </div>
+                            <h3>Architecture Designing</h3>
+                            <p>Architecture designing is generally done after the completion of all structural works.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                    </article>
+                    <!-- End Single Service Item -->
 
-					<!-- section title -->
-					<div class="title text-center wow fadeInDown">
-						<h2> Latest <span class="color">Posts</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
+                    <!-- Single Service Item -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
+                        <div class="service-block text-center">
+                            <div class="service-icon text-center">
+                                <i class="fa fa-wrench fa-5x"></i>
+                            </div>
+                            <h3>Handcrafter Designer Furniture’s</h3>
+                            <p>Handcrafted designed furnitures are the furnitures that are crafted using bare hands to make it more durable and efficient.</p>
+                        </div>
+                    </article>
+                    <!-- End Single Service Item -->
 
-					<div class="clearfix">
-					
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms">
-							<div class="note">
-								<div class="media-wrapper">
-									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- /single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-							<div class="note">
-								<div id="gallery-post" class="media-wrapper">
-									<div class="item">
-										<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-									</div>
-									<div class="item">
-										<img src="img/blog/bicycle.jpg" alt="Flying bicycle" class="img-responsive">
-									</div>
-									<div class="item">
-										<img src="img/blog/3D-beach-art.jpg" alt="3D Beach Art | Meghna" class="img-responsive">
-									</div>
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Slider Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-							<div class="note">
-								<div class="media-wrapper">
-									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-							<div class="note kill-margin-bottom">
-								<div class="media-wrapper">
-									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-					</div>
+                    <!-- Single Service Item -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <div class="service-block text-center kill-margin-bottom">
+                            <div class="service-icon text-center">
+                                <i class="fa fa-plug fa-5x"></i>
+                            </div>
+                            <h3>Civil & Electrical Contractors</h3>
+                            <p>Our civil and electrical contractors take up works which will commence after structural construction like wall construction,paintings,electrical wiring and more.</p>
+                        </div>
+                    </article>
+                    <!-- End Single Service Item -->
 
-					<div class="all-post text-center">
-						<a class="btn btn-transparent" href="blog.html">View All Post</a>
-					</div>
-
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</section> <!-- end section -->
-		
-		
-		
-		<!-- Start Our Team
-		=========================================== -->
-		
-		<section id="team-counter">
-			<div class="container">
-				<div class="row">
-				
-					<!-- section title -->
-					<div class="title text-center wow fadeInUp" data-wow-duration="500ms">
-						<h2 style="color:#000000;">Our <span class="color">Team</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-					
-					<!-- team member -->
-					<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms">
-                       <article class="team-mate">
-							<div class="member-photo">
-								<!-- member photo -->
-								<img class="img-responsive" src="img/team/member-4.jpg" alt="Meghna">
-								<!-- /member photo -->
-								
-								<!-- member social profile -->
-								<div class="mask">
-									<ul class="clearfix">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-									</ul>
-								</div>
-								<!-- /member social profile -->
-							</div>
-							
-							<!-- member name & designation -->
-							<div class="member-title">
-								<h3>Abul Mal Muhit</h3>
-								<span>CEO/Founder</span>
-							</div>
-							<!-- /member name & designation -->
-							
-							
-						   
-                       </article>
+                </div>
+                <!-- End row -->
+                <div class="container" style="text-align:center;padding:80px;">
+                    <div class="row">
+                        <a href="services.html" style="color:inherit" target=”_blank”>
+                            <!-- Indicates a successful or positive action -->
+                            <button type="button" class="btn btn-info btn-lg btn3d"><span class="fa fa-ellipsis-h"></span>&nbsp;Read More</button>
+                        </a>
                     </div>
-					<!-- end team member -->
-					
-					<!-- team member -->
-					<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-                       <article class="team-mate">
-							<div class="member-photo">
-								<!-- member photo -->
-								<img class="img-responsive" src="img/team/client-2.jpg" alt="Meghna">
-								<!-- /member photo -->
-								
-								<!-- member social profile -->
-								<div class="mask">
-									<ul class="clearfix">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-									</ul>
-								</div>
-								<!-- /member social profile -->
-							</div>
+                </div>
+            </div>
+            <!-- End container -->
+        </section>
+        <!-- End section -->
+
+
+       
+
+
+        <section id="sample2" style="position:relative;z-index=-1;">
+            <div>
+                <img src="img\parallax\bruns.jpg" style="max-width: 100%;max-height: 100%">
+            </div>
+        </section>
+
+        <!-- Start Testimonial
+		=========================================== 
+
+        <section id="testimonial" class="parallax-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- section title 
+                        <div class="sub-title text-center wow fadeInDown" data-wow-duration="500ms">
+                            <h3>What People Say About Us</h3>
+                        </div>
+                        <!-- /section title -->
+
+                        <!-- testimonial wrapper 
+                        <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+                            #<?php
+								#if($comments->num_rows > 0) {
+									#while($row = $comments->fetch_assoc()) {
 							
-							<!-- member name & designation -->
-							<div class="member-title">
-								<h3>Frank Miller</h3>
-								<span>Manager</span>
-							</div>
-							<!-- /member name & designation -->
+									#	echo '<div class="item text-center">';
+									
+									
+									#	echo '<div class="client-thumb">';
+									#	?>
+										<img src="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>" class="img-responsive" alt="Skylon">
+									#	<?php
+									#		echo '</div>';
+									#		echo '<div class="client-info">';
+									#		echo '<div class="client-meta">';
+									#		echo '<h3>'.$row["cust_name"].'</h3>';	
+									#		echo '</div>';
+									#		echo '<div class="client-comment">';
+									#		echo '<p>'.$row["cust_desc"].'</p>';
+									#		echo '</div>';
+									#		echo '</div>';
+									#		echo '</div>';
+									#}
+								#}
 							
-							
-						</article>
+							?>
+
+
+                        </div>
+                        <!-- end testimonial wrapper 
                     </div>
-					<!-- end team member -->
-					
-					<!-- team member -->
-					<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
-                       <article class="team-mate">
-							<div class="member-photo">
-								<!-- member photo -->
-								<img class="img-responsive" src="img/team/client-3.jpg" alt="Meghna">
-								<!-- /member photo -->
-								
-								<!-- member social profile -->
-								<div class="mask">
-									<ul class="clearfix">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-									</ul>
-								</div>
-								<!-- /member social profile -->
-							</div>
-							
-							<!-- member name & designation -->
-							<div class="member-title">
-								<h3>Michael Jonson</h3>
-								<span>Web Developer</span>
-							</div>
-							<!-- /member name & designation -->
-							
-							
-                       </article>
+                    <!-- end col lg 12 
+                </div>
+                <!-- End row 
+            </div>
+            <!-- End container 
+        </section>
+        <!-- End Section -->
+
+
+
+
+        <!-- Srart Contact Us
+		=========================================== -->
+        
+
+
+     <div class="container-fluid" style="text-align:center;padding:80px;position:relative;z-index=-1;background-color:#50486d;">
+		
+            <div class="row">
+			<h3>ENGAGE WITH US AND SHAPE YOUR DREAM</h3>
+			<br>
+			</div>
+            <div class="row">
+                <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
+                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                    <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-inr" style="font-size:18px;">&nbsp;Earn at Skylon</span></button>
+                </a>
+                <a href="services.html" style="color:inherit" target=”_blank”>
+                    <!-- Indicates a successful or positive action -->
+                    <button type="button" class="btn btn-default btn-sm btn3d"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
+                </a>
+
+
+            </div>
+        </div>
+		
+		<!-- Google Map -->
+          <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.8596407957737!2d80.20484020656036!3d13.043492344927714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d5f6cbc4df%3A0x7d3893caf1de4263!2sSkylon+India+-+Interior+Design!5e0!3m2!1sen!2sin!4v1536774236008" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <section id="foot-counter" class="bg-one" style="position:relative;z-index=-1;">
+
+            <!-- /Google Map -->
+            <div class="container">
+                <div class="row">
+
+
+
+                    <!-- section title -->
+                    <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                        <h3>Get In <span style="color:#dbbe3f;">Touch</span></h3>
+                        <div class="border"></div>
                     </div>
-					<!-- end team member -->
-					
-					<!-- team member -->
-					<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-                       <article class="team-mate kill-margin-bottom">
-							<div class="member-photo">
-								<!-- member photo -->
-								<img class="img-responsive" src="img/team/client-3.jpg" alt="Meghna">
-								<!-- /member photo -->
-								
-								<!-- member social profile -->
-								<div class="mask">
-									<ul class="clearfix">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-									</ul>
-								</div>
-								<!-- /member social profile -->
-							</div>
-							
-							<!-- member name & designation -->
-							<div class="member-title">
-								<h3>Mo. Kha. Alamgir</h3>
-								<span>SEO Specialist</span>
-							</div>
-							<!-- /member name & designation -->
-							
-							
-                       </article>
-                    </div>
-					<!-- end team member -->
-					
-				</div>  	<!-- End row -->
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-		
-		
-		
-		
-		
-		<!-- Srart Contact Us
-		=========================================== -->	
-<!-- Google Map -->
-			<div class="google-map wow fadeInDown" data-wow-duration="500ms">
-				<div id="map-canvas"></div>
-			</div>			
-		<section id="about-counter" class="bg-one">
-		
-			<!-- /Google Map -->
-			<div class="container">
-				<div class="row">
-				
-				
-					
-					<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-						<h2>Get In <span style="color:#352d4f;">Touch</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-					
-					<!-- Contact Details -->
-					<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-						<h1 style="color:#250284;">Contact Details</h1>
-						<br>
-						<div class="contact-details">
-							<div class="con-info clearfix">
-								<i class="fa fa-home fa-lg"></i>
-								<span>AP:1725,102ndStreet,<br>14thSector,<br>k.k.Nagar,<br>Chennai-600078.</span>
-							</div>
-							
-							<div class="con-info clearfix">
-								<i class="fa fa-phone fa-lg"></i>
-								<span>Phone: +919840492966</span>
-							</div>
-							
-							<div class="con-info clearfix">
-								<i class="fa fa-fax fa-lg"></i>
-								<span>Phone: +917200107659</span>
-							</div>
-							
-							<div class="con-info clearfix">
-								<i class="fa fa-envelope fa-lg"></i>
-								<span>Email: skylonindia@gmail.com</span>
-							</div>
-						</div>
-					</div>
+                    <!-- /section title -->
 					<!-- / End Contact Details -->
-						
-					<!-- Contact Form -->
-					<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-						<form id="contact-form" method="post" action="sendmail.php" role="form">
-						
-							<div class="form-group">
-								<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
-							</div>
-							
-							<div class="form-group">
-								<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
-							</div>
-							
-							<div class="form-group">
-								<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-							</div>
-							
-							<div class="form-group">
-								<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
-							</div>
-							
-							<div id="mail-success" class="success">
-								Thank you. The Mailman is on His Way :)
-							</div>
-							
-							<div id="mail-fail" class="error">
-								Sorry, don't know what happened. Try later :(
-							</div>
-							
-							<div id="cf-submit">
-								<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
-							</div>						
-							
-						</form>
+					
+					<div class="contact-info text-center col-md-6 wow fadeInUp">
+					<div class="text-center">
+					<h3>&nbsp</h3>
 					</div>
-					<!-- ./End Contact Form -->
-				
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-			
-			
-			
-		</section> <!-- end section -->
-		
-		<!-- end Contact Area
-		========================================== -->
-		
-		<footer id="foot-counter" class="bg-one">
-			<div class="container">
-			    <div class="row wow fadeInUp" data-wow-duration="500ms">
-					<div class="col-lg-12">
-						
-						<!-- Footer Social Links -->
-						<div class="social-icon">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							</ul>
+                       
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="#">Refer and Earn</a></h3>
 						</div>
-						<!--/. End Footer Social Links -->
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="services.html">Our Services</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="aboutus.php">About Us</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Make an Appoinment now</a></h3>
+						</div>
+                    
+					</div>
 
-						<!-- copyright -->
-						<div class="copyright text-center">
-							<a href="index.html">
-								<img src="img/skylon.png" alt="Skylon" /> 
-							</a>
-							<br />
+                    <!-- Contact Details -->
+                    <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                        <h3 style="color:#dbbe3f;font-weight:bold;">Contact Us</h3>
+                        <br>
+                        <div class="contact-details">
+                            <div class="con-info clearfix">
+                                <i class="fa fa-home fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">Reach Us: </span>
+                                <span style="color:#ffffff;font-size:16px;">AP:1725,102ndStreet,<br>14thSector, k.k.Nagar,<br>Chennai-600078.</span>
+                            </div>
+
+                            <div class="con-info clearfix">
+                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
+                            </div>
 							
-							<p>Developed by 2G Developers.</p>
+							<div class="con-info clearfix">
+                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
+                            </div>
+
+                            <div class="con-info clearfix">
+                                <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">Email ID: </span>
+                                <span style="color:#ffffff;font-size:16px;">&nbsp;skylonindia@gmail.com</span>
+                            </div>
+							
+                        </div>
+						<div class="col-md-10">
+								<ul class="social-network social-circle">
+									<li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://twitter.com/IndiaSkylon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="icoGoogle" title="Google +"><i class="fa fa-youtube"></i></a></li>
+
+								</ul>
 						</div>
-						<!-- /copyright -->
-						
-					</div> <!-- end col lg 12 -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</footer> <!-- end footer -->
+                    </div>
+                    
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+
+            <!-- Form -->
+            <div id="normalModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" style="color:#000;">Contact Us</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" id="contactForm1" name="form" style="color:#000000;">
+                                <div class="form-group row">
+                                    <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#fff;color:#000;">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPhone3" class="col-sm-2 col-form-label">Phone No*</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputPhone3" placeholder="90XXXXXXXX" style="background-color:#fff;color:#000;">
+                                    </div>
+                                </div>
+								<div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email@domain.com" style="background-color:#fff;color:#000;">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Intrested In</label>
+                                    <div class="col-sm-10">
+                                        <div class="checkbox">
+                                            <label for="Intrested-0">
+      <input name="Intrested" id="Intrested-0" value="1" type="checkbox">
+      Residential Interior
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-1">
+      <input name="Intrested" id="Intrested-1" value="2" type="checkbox">
+      Commercial Interior
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-2">
+      <input name="Intrested" id="Intrested-2" value="3" type="checkbox">
+      Renovation works
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-3">
+      <input name="Intrested" id="Intrested-3" value="4" type="checkbox">
+      Architecture Designing
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-4">
+      <input name="Intrested" id="Intrested-4" value="5" type="checkbox">
+      Handcrafted designed furnitures
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-5">
+      <input name="Intrested" id="Intrested-5" value="6" type="checkbox">
+      Civil and Electrical contractors
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-6">
+      <input name="Intrested" id="Intrested-6" value="7" type="checkbox">
+      Refer and Earn
+    </label>
+                                        </div>
+										<div class="checkbox">
+                                            <label for="Intrested-7">
+      <input name="Intrested" id="Intrested-7" value="8" type="checkbox">
+      For Queries
+    </label>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="form-group row">
+                                    <label for="inputArea3" class="col-sm-2 col-form-label">Message</label>
+                                    <div class="col-sm-10">
+									 <textarea rows="4" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;color:#000;"></textarea> 
+                                        
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#4274D7;">Close</button>
+                            <button type="button" class="btn btn-primary" style="background-color:#4274D7;">Submit</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+            <!-- Form -->
+
+            <script type="text/javascript">
+                <!-- Form Modal -->
+                			$(".modal-wide").on("show.bs.modal", function() {
+                  var height = $(window).height() - 200;
+                  $(this).find(".modal-body").css("max-height", height);
+                });
+                <!-- End Form Modal -->
+                				var frm = $('#contactForm1');
+                				frm.submit(function (e) {
+                				e.preventDefault();
+                				$.ajax({
+                				type: frm.attr('method'),
+                				url: frm.attr('email.php'),
+                				data: frm.serialize(),
+                				success: function (data) {
+                				console.log('Submission was successful.');
+                				console.log(data);
+                				},
+                				error: function (data) {
+                				console.log('An error occurred.');
+                				console.log(data);
+                				},
+                				});
+                				$('#contactForm1').text("new dialog title");
+                				});
+            </script>
+
+        </section>
+        <!-- end section -->
 		
 		<!-- Back to Top
 		============================== -->
@@ -1163,17 +1129,14 @@
 		<script src="js/jquery-1.12.2.min.js"></script>
 		<!-- Bootstrap 3.1 -->
 		<script src="js/bootstrap.min.js"></script>
-		<!-- Slitslider -->
 		<script src="js/jquery.slitslider.js"></script>
 		<script src="js/jquery.ba-cond.min.js"></script>
 		<!-- Parallax -->
 		<script src="js/jquery.parallax-1.1.3.js"></script>
-		<!-- Owl Carousel -->
-		<script src="js/owl.carousel.min.js"></script>
 		<!-- Portfolio Filtering -->
 		<script src="js/jquery.mixitup.min.js"></script>
 		<!-- Custom Scrollbar -->
-		<script src="js/jquery.nicescroll.min.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
 		<!-- Jappear js -->
 		<script src="js/jquery.appear.js"></script>
 		<!-- Pie Chart -->

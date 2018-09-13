@@ -41,51 +41,71 @@
             </div>
         </header>
        <!-- Nav tabs -->
+	   <script>
+	   $(".add").click(function(){
+    $(".edit").removeClass("active");
+    $(".del").removeClass("active");
+});
+	   $(".edit").click(function(){
+    $(".add").removeClass("active");
+    $(".del").removeClass("active");
+});
+	   </script>
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home">Add Projects</a>
+      <a class="nav-link add active" data-toggle="tab" href="#home">Add Projects</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#edit">Edit Projects</a>
+      <a class="nav-link edit" data-toggle="tab" href="#edit">Edit Projects</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#delete">Remove Projects</a>
+      <a class="nav-link del" data-toggle="tab" href="#delete">Remove Projects</a>
     </li>
   </ul>
   
-  <div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
-      <div class="container">
-                    
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
+<div class="tab-content">
+	<div id="home" class="container tab-pane active"><br>
+		<div class="container">             
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+				<div class="form-group">
 					<label for="prod_name">Project Name:</label>
 					<input type="text" name="prod_name" class="form-control" id="prod_name">
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
 					<label for="prod_desc">Project Description:</label>
 					<input type="text" name="prod_desc" class="form-control" id="prod_desc">
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
+					<label for="Category">Category:</label>
+					<select name="Category" class="form-control" id="Category">
+					<option id="ongoing">ongoing</option>
+					<option id="completed">completed</option>
+					</select>
+				</div>
+
+				<div class="form-group">
 					<label for="image">Images:</label>
 					<input type="file" class="form-control" name="image">
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
 					<label for="passwd">Password:</label>
 					<input type="password" class="form-control" name="passwd">
-					</div>
-					<input type="submit" class="form-control" name="submit" value="UPLOAD"/>
-					</form>
-                </div>
-    </div>
+				</div>
+				<input type="submit" class="form-control" name="submit" value="UPLOAD"/>
+			</form>
+		</div>
+	</div>
+
+
+
     <div id="edit" class="container tab-pane fade"><br>
       <div class="container">
 	  <?php
 //DB details
         $dbHost     = 'localhost';
-    $dbUsername = 'id6491760_skylon1';
-    $dbPassword = 'skylon@12345';
-    $dbName     = 'id6491760_skylon1';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName     = 'skylon1';
 		//$pwd=$_POST['passwd'];
 
 // Create connection
@@ -95,7 +115,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, prod_name, prod_desc FROM products";
+$sql = "SELECT id, prod_name, prod_desc, Category FROM products";
 $result = $conn->query($sql);
 
 
@@ -110,6 +130,7 @@ if ($result->num_rows > 0) {
         echo '<td>'.$row["id"].'</td>';
         echo '<td>'.$row["prod_name"].'</td>';
         echo '<td>'.$row["prod_desc"].'</td>';
+		echo '<td>'.$row["Category"].'</td>';
       echo '</tr>';
       
     echo '</tbody>';
@@ -152,6 +173,13 @@ if ($result->num_rows > 0) {
 					<input type="text" name="prod_desc" class="form-control" id="prod_desc">
 					</div>
 					<div class="form-group">
+					<label for="Category">Category:</label>
+					<select name="Category" class="form-control" id="Category">
+					<option>ongoing</option>
+					<option>completed</option>
+					</select>
+					</div>
+					<div class="form-group">
 					<label for="passwd">Password:</label>
 					<input type="password" class="form-control" name="passwd">
 					</div>
@@ -179,7 +207,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, prod_name, prod_desc FROM products";
+$sql = "SELECT id, prod_name, prod_desc, Category FROM products";
 $result = $conn->query($sql);
 
 
@@ -194,6 +222,7 @@ if ($result->num_rows > 0) {
         echo '<td>'.$row["id"].'</td>';
         echo '<td>'.$row["prod_name"].'</td>';
         echo '<td>'.$row["prod_desc"].'</td>';
+		echo '<td>'.$row["Category"].'</td>';
       echo '</tr>';
       
     echo '</tbody>';
@@ -235,17 +264,12 @@ if ($result->num_rows > 0) {
 					<label for="passwd">Password:</label>
 					<input type="password" class="form-control" name="passwd">
 					</div>
-					<input type="submit" class="form-control" name="submit" value="UPLOAD"/>
+					<input type="submit" class="form-control" name="submit" value="DELETE"/>
 					</form>
                 </div>
     </div>
   </div>
-</div>
 
-                
-            
-
-    </div>
     <!-- wrapper -->
 </body>            
 
