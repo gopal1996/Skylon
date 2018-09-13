@@ -455,10 +455,17 @@ whole level at the given time">
             </a>
         </div>
         <div class="icon-bar1" style="width:32px;height:32px;">
+<<<<<<< HEAD
              <a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
                   <a href="https://twitter.com/IndiaSkylon" class="twitter"><i class="fa fa-twitter"></i></a>
                   <a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" class="google"><i class="fa fa-instagram"></i></a>
                   <a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="youtube"><i class="fa fa-youtube"></i></a>
+=======
+            <a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" class="twitter"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw" class="youtube"><i class="fa fa-youtube"></i></a>
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
         </div>
         <!--
 	    Start Preloader

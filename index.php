@@ -43,6 +43,7 @@
     <!--
 		Google Font
 		=========================== -->
+<<<<<<< HEAD
 
     <!-- Oswald / Title Font -->
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
@@ -393,6 +394,358 @@
         }
     </style>
 
+=======
+
+    <!-- Oswald / Title Font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <!-- Ubuntu / Body Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.js"></script>
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <style>
+        /*=========================
+          Icons
+         ================= */
+        
+        /* footer social icons */
+        ul.social-network {
+        	list-style: none;
+        	display: inline;
+        	margin-left:0 !important;
+        	padding: 0;
+        }
+        ul.social-network li {
+        	display: inline;
+        	margin: 0 5px;
+        }
+        .btn-group button {
+            background-color: #4CAF50; /* Green background */
+            border: 1px solid green; /* Green border */
+            color: white; /* White text */
+            padding: 10px 24px; /* Some padding */
+            cursor: pointer; /* Pointer/hand icon */
+            float: left; /* Float the buttons side by side */
+        }
+        
+        /* Clear floats (clearfix hack) */
+        .btn-group:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .btn-group button:not(:last-child) {
+            border-right: none; /* Prevent double borders */
+        }
+        
+        /* Add a background color on hover */
+        .btn-group button:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* footer social icons */
+        .social-network a.icoRss:hover {
+        	background-color: #F56505;
+        }
+        .social-network a.icoFacebook:hover {
+        	background-color:#3B5998;
+        }
+        .social-network a.icoTwitter:hover {
+        	background-color:#33ccff;
+        }
+        .social-network a.icoGoogle:hover {
+        	background-color:#BD3518;
+        }
+        .social-network a.icoVimeo:hover {
+        	background-color:#0590B8;
+        }
+        .social-network a.icoLinkedin:hover {
+        	background-color:#007bb7;
+        }
+        .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+        .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+        	color:#fff;
+        }
+        a.socialIcon:hover, .socialHoverClass {
+        	color:#44BCDD;
+        }
+        
+        .social-circle li a {
+        	display:inline-block;
+        	position:relative;
+        	margin:0 auto 0 auto;
+        	-moz-border-radius:50%;
+        	-webkit-border-radius:50%;
+        	border-radius:50%;
+        	text-align:center;
+        	width: 50px;
+        	height: 50px;
+        	font-size:20px;
+        }
+        .social-circle li i {
+        	margin:0;
+        	line-height:50px;
+        	text-align: center;
+        }
+        
+        .social-circle li a:hover i, .triggeredHover {
+        	-moz-transform: rotate(360deg);
+        	-webkit-transform: rotate(360deg);
+        	-ms--transform: rotate(360deg);
+        	transform: rotate(360deg);
+        	-webkit-transition: all 0.2s;
+        	-moz-transition: all 0.2s;
+        	-o-transition: all 0.2s;
+        	-ms-transition: all 0.2s;
+        	transition: all 0.2s;
+        }
+        .social-circle i {
+        	color: #fff;
+        	-webkit-transition: all 0.8s;
+        	-moz-transition: all 0.8s;
+        	-o-transition: all 0.8s;
+        	-ms-transition: all 0.8s;
+        	transition: all 0.8s;
+        }
+        
+        a#icon {
+         background-color: #D3D3D3;   
+        }
+        
+        .button {
+         font-size: 1em;
+         padding: 10px;
+         color: #fff;
+         border: 2px solid #FF9800;
+         border-radius: 20px;
+         text-decoration: none;
+         cursor: pointer;
+         transition: all 0.3s ease-out;
+        }
+        .button:hover {
+         background: #06D85F;
+        }
+        
+        .overlay {
+         position: fixed;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background: rgba(0, 0, 0, 0.7);
+         transition: opacity 500ms;
+         visibility: hidden;
+         opacity: 0;
+        }
+        .overlay:target {
+         visibility: visible;
+         opacity: 1;
+        }
+        
+        .popup1 {
+         margin: 70px auto;
+         padding: 20px;
+         background: #fff;
+         border-radius: 5px;
+         width: 30%;
+         position: relative;
+         transition: all 5s ease-in-out;
+        }
+        
+        .popup1 h2 {
+         margin-top: 0;
+         color: #000;
+         font-family: Tahoma, Arial, sans-serif;
+        }
+        .popup1 .close {
+         position: absolute;
+         top: 20px;
+         right: 30px;
+         transition: all 200ms;
+         font-size: 30px;
+         font-weight: bold;
+         text-decoration: none;
+         color: #000;
+        }
+        .popup1 .close:hover {
+         color: #000;
+        }
+        .popup1 .content {
+         max-height: 30%;
+         overflow: auto;
+        }
+        
+        .pop-form form {
+            padding: 0 15px 15px 15px;
+        }
+        
+        .pop-form input,
+        .pop-form textarea {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 12px;
+            width: 254px;
+            max-width: 254px;
+            margin-bottom: 10px;
+            margin-left: 7px;
+            padding: 6px;
+            border: none;
+            border-radius: 4px;
+            color: #999;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .pop-form input:focus,
+        .pop-form textarea:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        .pop-form input[type='submit'] {
+            display: block;
+            width: 120px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .4s ease;
+            color: #000 !important;
+            border: none;
+        }
+        
+        .pop-form input[type='submit']:hover {
+            box-shadow: 0 3px 3px 0 rgba(0,0,0,0.07),0 1px 7px 0 rgba(0,0,0,0.02),0 3px 1px -1px rgba(0,0,0,0.1);
+        }
+        
+        .pop-form textarea {
+            min-height: 110px;
+        	color:#000000;
+        }
+        
+        
+        ::-webkit-input-placeholder {
+            color: #000;
+        }
+        
+        ::-moz-placeholder{
+            color: #000;
+        }
+        
+        :-ms-input-placeholder {
+            color: #fff;
+        }
+        
+        :-moz-placeholder {
+            color: #fff;
+        }
+        
+        .pop-form input[type='submit'] {
+            background: #000000;
+        }
+        
+        
+        @media screen and (max-width: 700px){
+         .box{
+         width: 70%;
+         }
+         .popup1{
+         width: 70%;
+         }
+        }
+        
+        .btn3d {
+            position:relative;
+            top: -6px;
+            border:0;
+             transition: all 40ms linear;
+             margin-top:10px;
+             margin-bottom:10px;
+             margin-left:2px;
+             margin-right:2px;
+        }
+        .btn3d:active:focus,
+        .btn3d:focus:hover,
+        .btn3d:focus {
+            -moz-outline-style:none;
+                 outline:medium none;
+        }
+        .btn3d:active, .btn3d.active {
+            top:2px;
+        }
+        .btn3d.btn-white {
+            color: #666666;
+            box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #f5f5f5, 0 8px 8px 1px rgba(0,0,0,.2);
+            background-color:#fff;
+        }
+        .btn3d.btn-white:active, .btn3d.btn-white.active {
+            color: #666666;
+            box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+            background-color:#fff;
+        }
+        .btn3d.btn-default {
+            color: #666666;
+            box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0,0,0,.2);
+            background-color:#f9f9f9;
+        }
+        .btn3d.btn-default:active, .btn3d.btn-default.active {
+            color: #666666;
+            box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+            background-color:#f9f9f9;
+        }
+        .btn3d.btn-primary {
+            box-shadow:0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#4274D7;
+        }
+        .btn3d.btn-primary:active, .btn3d.btn-primary.active {
+            box-shadow:0 0 0 1px #417fbd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color:#4274D7;
+        }
+        .btn3d.btn-success {
+            box-shadow:0 0 0 1px #31c300 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #5eb924, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#78d739;
+        }
+        .btn3d.btn-success:active, .btn3d.btn-success.active {
+            box-shadow:0 0 0 1px #30cd00 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #78d739;
+        }
+        .btn3d.btn-info {
+            box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#39B3D7;
+        }
+        .btn3d.btn-info:active, .btn3d.btn-info.active {
+            box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #39B3D7;
+        }
+        .btn3d.btn-warning {
+            box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #D79A34, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#FEAF20;
+        }
+        .btn3d.btn-warning:active, .btn3d.btn-warning.active {
+            box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #FEAF20;
+        }
+        .btn3d.btn-danger {
+            box-shadow:0 0 0 1px #b93802 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #AA0000, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#D73814;
+        }
+        .btn3d.btn-danger:active, .btn3d.btn-danger.active {
+            box-shadow:0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #D73814;
+        }
+        .btn3d.btn-magick {
+            color: #fff;
+            box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #9823d5, 0 8px 8px 1px rgba(0,0,0,0.5);
+            background-color:#bb39d7;
+        }
+        .btn3d.btn-magick:active, .btn3d.btn-magick.active {
+            box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+            background-color: #bb39d7;
+        }
+    </style>
+
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
     <style>
         /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
         .icon-bar1 {
@@ -453,10 +806,17 @@
 
 <body id="body">
     <div class="icon-bar1" style="width:32px;height:32px;">
+<<<<<<< HEAD
          <a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
                   <a href="https://twitter.com/IndiaSkylon" class="twitter"><i class="fa fa-twitter"></i></a>
                   <a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" class="google"><i class="fa fa-instagram"></i></a>
                   <a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="youtube"><i class="fa fa-youtube"></i></a>
+=======
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
     </div>
     <!--
 	    Start Preloader
@@ -524,7 +884,11 @@
                     <!-- logo -->
                     <a class="navbar-brand" href="#body">
                         <h1 id="logo">
+<<<<<<< HEAD
                             <img src="img/skylon.png" alt="Skylon" />
+=======
+                            <img src="img/skylon.jpg" alt="Skylon" />
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
                         </h1>
                     </a>
                     <!-- /logo -->
@@ -533,9 +897,15 @@
                 <!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
+<<<<<<< HEAD
                         <li><a href="aboutus.php">About Us</a></li>
 						<li><a href="services.html">Our Services</a></li>
                         <li><a href="earnatskylon.html">Refer and Earn</a></li>
+=======
+                        <li><a href="aboutus.php" target="_blank">About Us</a></li>
+						<li><a href="services.html" target="_blank">Our Services</a></li>
+                        <li><a href="earnatskylon.html" target="_blank">Refer and Earn</a></li>
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
                     </ul>
                 </nav>
                 <!-- /main nav -->
@@ -559,6 +929,7 @@
     <li data-target="#bs-carousel" data-slide-to="1"></li>
     <li data-target="#bs-carousel" data-slide-to="2"></li>
   </ol>
+<<<<<<< HEAD
   <script>
     
     
@@ -604,12 +975,22 @@ var i = 0;
       <div class="slide-3"></div>
     </div>
     <div class="item  item2 slides">
+=======
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-3"></div>
+    </div>
+    <div class="item slides">
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
       <div class="slide-2"></div>
       <div class="hero">        
           
             <h3 class="heading animated fadeInDown">We emphasise on making your today's imaginations into tomorrows's reality.</h3>
               
         <a href="services.html" style="color:inherit">
+<<<<<<< HEAD
 <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
 </a>
       </div>
@@ -624,6 +1005,22 @@ var i = 0;
 		</a>
       </div>
       
+=======
+                                                <!-- Indicates a successful or positive action -->
+                                                <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
+                                            </a>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-7"></div>
+      <!--<div class="hero">        
+        <hgroup>
+            <h1>We are amazing</h1>        
+            <h3>Get start your next awesome project</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div> -->
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
     </div>
   </div> 
 </div>
@@ -649,10 +1046,17 @@ var i = 0;
 
                             <div class="features-item" style="margin:50px;">
                                 <div class="col-md-12 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+<<<<<<< HEAD
                                     <h1 align="center "style="color:#000000;">“At Skylon India, we provide best customized and personalised interior design solutions at an
 affordable cost with superior class looks and a fabulous finish”</h1>
 									<h2 style="color:#000000;text-align:center;font-weight:bold;">Why us?</h2>
                                     <h3 style="text-align: justify;text-justify:newspaper;">Our ultimate intention (aim/motive) is to design and execute the most aesthetic, innovative and
+=======
+                                    <h1 align="justify "style="color:#000000;">“At Skylon India, we provide best customized and personalised interior design solutions at an
+affordable cost with superior class looks and a fabulous finish”</h1>
+									<h2 style="color:#000000;text-align:center;font-weight:bold;">Why us?</h2>
+                                    <h3 align="justify">Our ultimate intention (aim/motive) is to design and execute the most aesthetic, innovative and
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
 efficient home designs with utmost functionality to satisfy even the smallest expectation of our clients.</br></br>
 									We have a group of dedicated professional designers with expertise in residential and commercial
 interior home decor to help you create inviting and personalized spaces and we also engage skilled
@@ -918,6 +1322,7 @@ care of even the minute details or we pay you rent.</h3>
                        
 						<div class="text-center">
 							<h3 style="color:#ffffff;"><a href="#">Refer and Earn</a></h3>
+<<<<<<< HEAD
 						</div>
 						<div class="text-center">
 							<h3 style="color:#ffffff;"><a href="services.html">Our Services</a></h3>
@@ -926,6 +1331,16 @@ care of even the minute details or we pay you rent.</h3>
 							<h3 style="color:#ffffff;"><a href="aboutus.php">About Us</a></h3>
 						</div>
 						<div class="text-center">
+=======
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="services.html">Our Services</a></h3>
+						</div>
+						<div class="text-center">
+							<h3 style="color:#ffffff;"><a href="aboutus.php">About Us</a></h3>
+						</div>
+						<div class="text-center">
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
 							<h3 style="color:#ffffff;"><a data-toggle="modal" href="#normalModal">Make an Appoinment now</a></h3>
 						</div>
                     
@@ -965,8 +1380,13 @@ care of even the minute details or we pay you rent.</h3>
 								<ul class="social-network social-circle">
 									<li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
 									<li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+<<<<<<< HEAD
 									<li><a href="https://twitter.com/IndiaSkylon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 									<li><a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="icoGoogle" title="Google +"><i class="fa fa-youtube"></i></a></li>
+=======
+									<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-youtube"></i></a></li>
+>>>>>>> b7fae8e8c6d4035a13e5cace7dd72104612c7ddf
 
 								</ul>
 						</div>
