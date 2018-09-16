@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Admin Panel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -31,7 +31,7 @@
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="">Projects</a></li>
                         <li><a href="comments.php">Comments</a></li>
-                        <li><a href="#page-wrapper">Services</a></li>
+                        
                         
 						
                     </ul>
@@ -102,10 +102,10 @@
       <div class="container">
 	  <?php
 //DB details
-        $dbHost     = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName     = 'skylon1';
+    $dbHost     = 'localhost';
+    $dbUsername = 'skyloki9_skylon';
+    $dbPassword = 'skylon@123';
+    $dbName     = 'skyloki9_skylon';
 		//$pwd=$_POST['passwd'];
 
 // Create connection
@@ -194,10 +194,10 @@ if ($result->num_rows > 0) {
       <div class="container">
 	  <?php
 //DB details
-        $dbHost     = 'localhost';
-        $dbUsername = 'root';
-        $dbPassword = '';
-        $dbName     = 'skylon1';
+    $dbHost     = 'localhost';
+    $dbUsername = 'skyloki9_skylon';
+    $dbPassword = 'skylon@123';
+    $dbName     = 'skyloki9_skylon';
 		
 
 // Create connection

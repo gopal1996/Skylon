@@ -27,9 +27,9 @@
                <!-- CSS
                   ================================================== -->
                <!-- Fontawesome Icon font -->
-               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-               <!-- bootstrap.min css -->
                <link rel="stylesheet" href="css/bootstrap.min.css">
+               <!-- bootstrap.min css -->
+               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
                <!-- Animate.css -->
                <link rel="stylesheet" href="css/animate.css">
                <!-- Grid Component css -->
@@ -38,7 +38,7 @@
 	<link rel="stylesheet" href="css/social-button.css">
                <!-- Slider css -->
                <link rel="stylesheet" href="css/owl.carousel.css">
-               <link rel="stylesheet" href="css/slider.css">
+               <link rel="stylesheet" href="css/slider1.css">
                <!-- Main Stylesheet -->
                <link rel="stylesheet" href="css/main.css">
                <!-- Media Queries -->
@@ -73,12 +73,20 @@
                </div>
                
                <!--
-                  End Fixed Navigation
-                  ==================================== -->
+	    Start Preloader
+	    ==================================== -->
+        <div id="loading-mask" style="background:white;">
+            <div class="loading-img">
+                <img alt="Skylon Preloader" src="img/preloader.gif" />
+            </div>
+        </div>
+        <!--
+        End Preloader
+        ==================================== -->
                <!-- 
                   Fixed Navigation
                   ==================================== -->
-               <header id="navigation" class="navbar navbar-inverse">
+               <header id="navigation" class="navbar navbar-inverse" style="position:fixed;">
                   <div class="container">
                      <div class="navbar-header">
                         <!-- responsive nav button -->
@@ -92,7 +100,7 @@
                         <!-- logo -->
                         <a class="navbar-brand" href="index.php">
                            <h1 id="logo">
-                              <img src="img/skylon.png" alt="Skylon" />
+                              <img src="img/skylon1.png" alt="Skylon" width="130px;" height="50px;"/>
                            </h1>
                         </a>
                         <!-- /logo -->
@@ -114,7 +122,7 @@
                <!--
                   Welcome Slider
                   ==================================== -->
-               <div id="home slitSlider" class="sl-slider-wrapper">
+               <div id="home slitSlider" class="sl-slider-wrapper" style="padding-top:70px;">
                   <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
                      <!-- Overlay -->
                      <div class="overlay"></div>
@@ -143,23 +151,23 @@
                         <!-- features item -->
                         <div id="features">
                            <div class="item">
-                              <div class="features-item" style="padding:50px;">
+                              <div class="features-item" style="padding:20px 10px 10px 22px;">
                                  <div class="col-md-12 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                                    <h1 style="color:#000000;text-justify:distribute;">"Realize the true value of your knowledge and contacts"</h1>
-                                    <h2 style="color:#000000;text-justify:distribute;">Every successful project that you get us will reap you with exciting profit. Grab this great opportunity!!</h2>
+                                    <h3 class="ow" style="color:#000000;text-align:justify">"Realize the true value of your knowledge and contacts"</h3>
+                                    <h3 class="ow" style="color:#000000;text-align:justify">Every successful project that you get us will reap you with exciting profit. Grab this great opportunity!!</h3>
 									<h2 style="color:#000000;text-justify:distribute;font-weight:bold;">How it works:</h2>
                                     <ol style="color:#000;">
                                        <li>
-                                          <h3 style="text-justify:distribute;">1) As we mentioned above, you will be  rewarded everytime you refer Us the project. Standard reward amount is 5% of the total project value.</h3>
+                                          <p class="ow" style="text-align:justify">1) As we mentioned above, you will be  rewarded everytime you refer Us the project. Standard reward amount is 5% of the total project value.</hp>
                                        </li>
                                        <li>
-                                          <h3 style="text-justify:distribute;">2) For each time you refer us your standard reward amount will be increased by 0.5%</h3>
+                                          <p class="ow" style="text-align:justify">2) For each time you refer us your standard reward amount will be increased by 0.5%</p>
                                        </li>
                                        <li>
-                                          <h3 style="text-justify:distribute;">3) Maximum reward value is  7.5% of the project value.</h3>
+                                          <p class="ow" style="text-align:justify">3) Maximum reward value is  7.5% of the project value.</p>
                                        </li>
                                        <li>
-                                          <h3 style="text-justify:distribute;">4) You can also refer us multiple projects at a time. Your reward value depends on the no of projects you refer us.</h3>
+                                          <p class="ow" style="text-align:justify;">4) You can also refer us multiple projects at a time. Your reward value depends on the no of projects you refer us.</p>
                                        </li>
                                     </ol>
                                  </div>
@@ -190,7 +198,7 @@
                         </div>
                         <!-- /section title -->
                         <!-- / End Contact Details -->
-                        <div class="contact-info text-center col-md-6 wow fadeInUp">
+                        <div class="contact-info text-center col-md-6 col-sm-6 wow fadeInUp">
                            <div class="text-center">
                               <h3>&nbsp</h3>
                            </div>
@@ -208,7 +216,7 @@
                            </div>
                         </div>
                         <!-- Contact Details -->
-                        <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                        <div class="contact-info col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="500ms">
                            <h3 style="color:#d3b36c;font-weight:bold;">Contact Us</h3>
                            <br>
                            <div class="contact-details">
@@ -218,15 +226,16 @@
                                  <span style="color:#ffffff;font-size:16px;">AP:1725,102ndStreet,<br>14thSector, k.k.Nagar,<br>Chennai-600078.</span>
                               </div>
                               <div class="con-info clearfix">
-                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
-                                 <span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
-                                 <span style="color:#ffffff;font-size:16px;">+917200107659</span>
-                              </div>
-                              <div class="con-info clearfix">
-                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
-                                 <span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
-                                 <span style="color:#ffffff;font-size:16px;">+919600540998</span>
-                              </div>
+                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+919840492966</span>
+                            </div>
+							
+							<div class="con-info clearfix">
+                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+917200107659</span>
+                            </div>
                               <div class="con-info clearfix">
                                  <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
                                  <span style="color:#ffffff;font-size:16px;">Email ID: </span>
@@ -246,133 +255,202 @@
                      <!-- end row -->
                   </div>
                   <!-- end container -->
-                  <!-- Form -->
-                  <div id="normalModal" class="modal fade">
-                     <div class="modal-dialog">
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                              <h4 class="modal-title" style="color:#000;">Contact Us</h4>
-                           </div>
-                           <div class="modal-body">
-                              <form method="post" id="contactForm1" name="form" style="color:#000000;">
-                                 <div class="form-group row">
+                   <!-- Form -->
+            <div id="normalModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" style="color:#000;">Contact Us</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" id="contactForm1" name="form" style="color:#000000;">
+                                <div class="form-group row">
                                     <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
                                     <div class="col-sm-10">
-                                       <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#fff;color:#000;">
+                                        <input type="text" name="cpname" class="form-control" id="inputName3" placeholder="Name" style="background-color:#fff;color:#000;">
                                     </div>
-                                 </div>
-                                 <div class="form-group row">
+                                </div>
+                                <div class="form-group row">
                                     <label for="inputPhone3" class="col-sm-2 col-form-label">Phone No*</label>
                                     <div class="col-sm-10">
-                                       <input type="text" class="form-control" id="inputPhone3" placeholder="90XXXXXXXX" style="background-color:#fff;color:#000;">
+                                        <input type="tel" name="cpphone" class="form-control" id="inputPhone3" placeholder="90XXXXXXXX" style="background-color:#fff;color:#000;">
                                     </div>
-                                 </div>
-                                 <div class="form-group row">
+                                </div>
+								<div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                                     <div class="col-sm-10">
-                                       <input type="text" class="form-control" id="inputEmail3" placeholder="Email@domain.com" style="background-color:#fff;color:#000;">
+                                        <input type="email" name="cpemail" class="form-control" id="inputEmail3" placeholder="Email@domain.com" style="background-color:#fff;color:#000;">
                                     </div>
-                                 </div>
-                                 <div class="form-group row">
+                                </div>
+                                
+                                <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Intrested In</label>
                                     <div class="col-sm-10">
-                                       <div class="checkbox">
-                                          <label for="Intrested-0">
-                                          <input name="Intrested" id="Intrested-0" value="1" type="checkbox">
-                                          Residential Interior
-                                          </label>
-                                       </div>
-                                       <div class="checkbox">
-                                          <label for="Intrested-1">
-                                          <input name="Intrested" id="Intrested-1" value="2" type="checkbox">
-                                          Commercial Interior
-                                          </label>
-                                       </div>
-                                       <div class="checkbox">
-                                          <label for="Intrested-2">
-                                          <input name="Intrested" id="Intrested-2" value="3" type="checkbox">
-                                          Renovation works
-                                          </label>
-                                       </div>
-                                       <div class="checkbox">
-                                          <label for="Intrested-3">
-                                          <input name="Intrested" id="Intrested-3" value="4" type="checkbox">
-                                          Architecture Designing
-                                          </label>
-                                       </div>
-                                       <div class="checkbox">
-                                          <label for="Intrested-4">
-                                          <input name="Intrested" id="Intrested-4" value="5" type="checkbox">
-                                          Handcrafted designed furnitures
-                                          </label>
-                                       </div>
-                                       <div class="checkbox">
-                                          <label for="Intrested-5">
-                                          <input name="Intrested" id="Intrested-5" value="6" type="checkbox">
-                                          Civil and Electrical contractors
-                                          </label>
-                                       </div>
-                                       <div class="checkbox">
-                                          <label for="Intrested-6">
-                                          <input name="Intrested" id="Intrested-6" value="7" type="checkbox">
-                                          Refer and Earn
-                                          </label>
-                                       </div>
-                                       <div class="checkbox">
-                                          <label for="Intrested-7">
-                                          <input name="Intrested" id="Intrested-7" value="8" type="checkbox">
-                                          For Queries
-                                          </label>
-                                       </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-0">
+      <input name="Intrested[]" id="Intrested-0" value="Residential Interior" type="checkbox">
+      Residential Interior
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-1">
+      <input name="Intrested[]" id="Intrested-1" value="Commercial Interior" type="checkbox">
+      Commercial Interior
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-2">
+      <input name="Intrested[]" id="Intrested-2" value="Renovation works" type="checkbox">
+      Renovation works
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-3">
+      <input name="Intrested[]" id="Intrested-3" value="Architecture Designing" type="checkbox">
+      Architecture Designing
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-4">
+      <input name="Intrested[]" id="Intrested-4" value="Handcrafted designed furnitures" type="checkbox">
+      Handcrafted designed furnitures
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-5">
+      <input name="Intrested[]" id="Intrested-5" value="Civil and Electrical contractors" type="checkbox">
+      Civil and Electrical contractors
+    </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="Intrested-6">
+      <input name="Intrested[]" id="Intrested-6" value="Refer and Earn" type="checkbox">
+      Refer and Earn
+    </label>
+                                        </div>
+										<div class="checkbox">
+                                            <label for="Intrested-7">
+      <input name="Intrested[]" id="Intrested-7" value="For Queries" type="checkbox">
+      For Queries
+    </label>
+                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="form-group row">
+                                </div>
+								<div class="form-group row">
                                     <label for="inputArea3" class="col-sm-2 col-form-label">Message</label>
                                     <div class="col-sm-10">
-                                       <textarea rows="4" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;color:#000;"></textarea> 
+									 <textarea rows="4" name="subject" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;color:#000;"></textarea> 
+                                        
                                     </div>
-                                 </div>
-                              </form>
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#4274D7;">Close</button>
-                              <button type="button" class="btn btn-primary" style="background-color:#4274D7;">Submit</button>
-                           </div>
+                                </div>
+                                
+                            </form>
                         </div>
-                        <!-- /.modal-content -->
-                     </div>
-                     <!-- /.modal-dialog -->
-                  </div>
-                  <!-- /.modal -->
-                  <!-- Form -->
-                  <script type="text/javascript">
-                     <!-- Form Modal -->
-                     			$(".modal-wide").on("show.bs.modal", function() {
-                       var height = $(window).height() - 200;
-                       $(this).find(".modal-body").css("max-height", height);
-                     });
-                     <!-- End Form Modal -->
-                     				var frm = $('#contactForm1');
-                     				frm.submit(function (e) {
-                     				e.preventDefault();
-                     				$.ajax({
-                     				type: frm.attr('method'),
-                     				url: frm.attr('email.php'),
-                     				data: frm.serialize(),
-                     				success: function (data) {
-                     				console.log('Submission was successful.');
-                     				console.log(data);
-                     				},
-                     				error: function (data) {
-                     				console.log('An error occurred.');
-                     				console.log(data);
-                     				},
-                     				});
-                     				$('#contactForm1').text("new dialog title");
-                     				});
-                  </script>
-               </section>
+                        <div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal" style="background-color:#ef0505;">Close</button>
+                            <button  id="submitfrm" class="btn btn-primary" style="background-color:#4274D7;">Submit</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+            <!-- Form -->
+
+            <script type="text/javascript">
+                <!-- Form Modal -->
+                			$(".modal-wide").on("show.bs.modal", function() {
+                  var height = $(window).height() - 200;
+                  $(this).find(".modal-body").css("max-height", height);
+                });
+			
+
+                <!-- End Form Modal -->
+                				
+                				$( "#submitfrm" ).click(function(e) {
+									var frm = $('#contactForm1');
+									var sEmail = $('#inputEmail3').val();
+									var sPhone = $('#inputPhone3').val();
+									var sName = $('#inputName3').val();
+									function validateEmail(sEmail) {
+
+   var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+   if (filter.test(sEmail)) {
+
+       return true;
+
+   }
+
+   else {
+
+       return false;
+									}}
+									if ($.trim(sEmail).length == 0) {
+								
+										alert('Please enter valid email address');
+								
+										e.preventDefault();
+								
+									}
+									else if ($.trim(sPhone).length == 0) {
+								
+										alert('Please enter valid Phone Number');
+								
+										e.preventDefault();
+								
+									}
+								else if ($.trim(sName).length == 0) {
+								
+										alert('Please enter valid NAME');
+								
+										e.preventDefault();
+								
+									}
+								
+									
+									
+
+									else if (validateEmail(sEmail)) {
+								
+										
+								
+									
+								
+                				e.preventDefault();
+                				$.ajax({
+                				type: frm.attr('method'),
+                				url: "email.php",
+                				data: frm.serialize(),
+                				success: function (data) {
+                				console.log('Submission was successful.');
+                				
+                				},
+                				error: function (data) {
+                				console.log('An error occurred.');
+                				console.log(data);
+                				},
+                				});
+								$('#contactForm1').text("Thanks for contacting us our executives will get back to you shortly");
+								var x = document.getElementById("submitfrm");
+								x.style.display = "none";
+									}
+									else {
+								
+										alert('Invalid Email Address');
+								
+										e.preventDefault();
+								
+									}
+                				
+                				});
+            </script>
+
+        </section>
+        <!-- end section -->
                <!-- end section -->
                <!-- Back to Top
                   ============================== -->
@@ -396,7 +474,7 @@
                <!-- Portfolio Filtering -->
                <script src="js/jquery.mixitup.min.js"></script>
                <!-- Custom Scrollbar -->
-               <script src="js/jquery.nicescroll.js"></script>
+               
                <!-- Jappear js -->
                <script src="js/jquery.appear.js"></script>
                <!-- Pie Chart -->

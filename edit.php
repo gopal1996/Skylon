@@ -10,10 +10,10 @@ if(isset($_POST["submit"])){
          */
         
         //DB details
-        $dbHost     = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName     = 'skylon1';
+    $dbHost     = 'localhost';
+    $dbUsername = 'skyloki9_skylon';
+    $dbPassword = 'skylon@123';
+    $dbName     = 'skyloki9_skylon';
 		$pwd=$_POST['passwd'];
 		
 		if(! strcmp ($pwd,'admin'))

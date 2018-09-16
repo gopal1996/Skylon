@@ -79,7 +79,7 @@
     cursorwidth: "6px",
     cursorborder: "1px solid #fff",
     cursorborderradius: "5px",
-    scrollspeed: 40,
+    scrollspeed: 5,
     mousescrollstep: 9 * 3,
     touchbehavior: false,   // deprecated
     emulatetouch: false,    // replacing touchbehavior

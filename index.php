@@ -90,12 +90,11 @@
 		==================================== -->
     <?php
 
-    //DB details
+   //DB details
     $dbHost     = 'localhost';
     $dbUsername = 'skyloki9_skylon';
     $dbPassword = 'skylon@123';
     $dbName     = 'skyloki9_skylon';
-    
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
     
@@ -131,7 +130,7 @@
                     <!-- logo -->
                     <a class="navbar-brand" href="#body">
                         <h1 id="logo">
-                            <img src="img/skylon.png" alt="Skylon" />
+                            <img src="img/skylon1.png" alt="Skylon" width="130px;" height="50px;"/>
                         </h1>
                     </a>
                     <!-- /logo -->
@@ -210,6 +209,15 @@ var i = 0;
   <div class="carousel-inner">
     <div class="item item1 slides ">
       <div class="slide-3"></div>
+   <div class="hero">        
+          
+            <h4 class="heading animated fadeInDown">SKYLON INDIA INTERIOR DECORATORS</h4>
+              
+        <a data-toggle="modal" href="#normalModal" style="color:inherit;">
+            
+
+</a>
+      </div>
     </div>
     <div class="item  item2 slides">
       <div class="slide-2"></div>
@@ -218,8 +226,12 @@ var i = 0;
             <h4 class="heading animated fadeInDown">Anticipated to work with us!!!.</h4>
               
         <a data-toggle="modal" href="#normalModal" style="color:inherit;">
-<button type="button" class="ph btn btn-info btn3d btn-xs"><span class="fa fa-book">&nbsp;Get a Quote Now</span></button>
-<button type="button" class="sys btn btn-info btn3d btn-lg"><span class="fa fa-book">&nbsp;Get a Quote Now</span></button>
+      
+ 
+<button type="button" class="ph btn btn-info btn3d btn-xs" style="margin-left:78%;padding-bottom:8px" ><span class="fa fa-book">&nbsp;Get a Quote Now</span></button>
+<button type="button" class="ipad btn btn-info btn3d btn-lg"  style="margin-left:75%;"><span class="fa fa-book">&nbsp;Get a Quote Now</span></button>
+<br><br>
+<button type="button" class="sys btn btn-info btn3d btn-lg"  style="margin-left:32%;"><span class="fa fa-book">&nbsp;Get a Quote Now</span></button>
 </a>
       </div>
     </div>
@@ -231,6 +243,7 @@ var i = 0;
 		<!-- Indicates a successful or positive action -->
 		<button type="button" class="ph btn btn-info btn3d btn-xs "><span class="fa fa-inr">&nbsp;Refer and Earn</span></button>
 		<button type="button" class="sys btn btn-info btn3d btn-lg"><span class="fa fa-inr">&nbsp;Refer and Earn</span></button>
+        <button type="button" class="ipad btn btn-info btn3d btn-lg"><span class="fa fa-inr">&nbsp;Refer and Earn</span></button>
 		</a>
       </div>
       
@@ -299,7 +312,7 @@ care of even the minute details or we pay you rent.</h4>
 
         <section id="sample1" style="position:relative;z-index=-1;">
             <div>
-                <img src="img/parallax/Louis.jpg" style="max-width: 100%;max-height: 100%">
+                <img src="img/parallax/Louis.jpg" alt="Louis" style="max-width: 100%;max-height: 100%">
             </div>
         </section>
 
@@ -352,8 +365,8 @@ business.</p>
                             <div class="service-icon text-center">
                                 <i class="fa fa-gavel fa-5x"></i>
                             </div>
-                            <h3>Renovation Works</h3>
-                            <p>Skylon India will help you to renovate or remodel your house to the whole new level and the very look of house will be greater than your farthest imaginations.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</p>
+                            <h3>&nbsp;&nbsp;Renovation Works&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                            <p>Skylon India will help you to renovate or remodel your Residential or Commercial space to the whole new level and the very look of your &nbsp;  building will be greater than your farthest imaginations.</p>
                         </div>
                     </article>
                     <!-- End Single Service Item -->
@@ -419,7 +432,7 @@ electrical wiring and more.</p>
 
         <section id="sample2" style="position:relative;z-index=-1;">
             <div>
-                <img src="img\parallax\bruns.jpg" style="max-width: 100%;max-height: 100%">
+                <img src="img\parallax\bruns.jpg" alt="Bruns" style="max-width: 100%;max-height: 100%">
             </div>
         </section>
 
@@ -494,11 +507,11 @@ electrical wiring and more.</p>
             <div class="row">
                 <a href="earnatskylon.html" style="color:inherit" target=”_blank”>
                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                    <button type="button" class="btn btn-info btn-sm btn3d"><span class="fa fa-inr" style="font-size:18px;">&nbsp;Earn at Skylon</span></button>
+                    <button type="button" class="btn btn-info btn3d btn-lg"><span class="fa fa-inr" style="font-size:18px;">&nbsp;Earn at Skylon</span></button>
                 </a>
-                <a href="services.html" style="color:inherit" target=”_blank”>
+                <a href="#normalModal" data-toggle="modal" style="color:inherit">
                     <!-- Indicates a successful or positive action -->
-                    <button type="button" class="btn btn-default btn-sm btn3d"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
+                    <button type="button" class="btn btn-default btn3d btn-lg"><span class="fa fa-book" style="font-size:18px;">&nbsp;Get a Quote</span></button>
                 </a>
 
 
@@ -526,9 +539,9 @@ electrical wiring and more.</p>
                     <!-- /section title -->
 					<!-- / End Contact Details -->
 					
-					<div class="contact-info text-center col-md-6 wow fadeInUp">
+					<div class="contact-info text-center col-md-6 col-sm-6 wow fadeInUp">
 					<div class="text-center">
-					<h3>&nbsp</h3>
+					<h3>&nbsp;</h3>
 					</div>
                        
 						<div class="text-center">
@@ -547,36 +560,36 @@ electrical wiring and more.</p>
 					</div>
 
                     <!-- Contact Details -->
-                    <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                    <div class="contact-info col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="500ms">
                         <h3 style="color:#d3b36c;font-weight:bold;">Contact Us</h3>
                         <br>
                         <div class="contact-details">
-                            <div class="con-info clearfix">
+                            <div class="con-info text-center clearfix">
                                 <i class="fa fa-home fa-lg" style="color:#ffffff"></i>
 								<span style="color:#ffffff;font-size:16px;">Reach Us: </span>
                                 <span style="color:#ffffff;font-size:16px;">AP:1725,102ndStreet,<br>14thSector, k.k.Nagar,<br>Chennai-600078.</span>
                             </div>
 
-                            <div class="con-info clearfix">
+                            <div class="con-info  text-center clearfix">
+                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
+								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
+                                <span style="color:#ffffff;font-size:16px;">+919840492966</span>
+                            </div>
+							
+							<div class="con-info  text-center clearfix">
                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
 								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
                                 <span style="color:#ffffff;font-size:16px;">+917200107659</span>
                             </div>
-							
-							<div class="con-info clearfix">
-                                <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
-								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
-                                <span style="color:#ffffff;font-size:16px;">+919600540998</span>
-                            </div>
 
-                            <div class="con-info clearfix">
+                            <div class="con-info  text-center clearfix">
                                 <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
-								<span style="color:#ffffff;font-size:16px;">Email ID: </span>
-                                <span style="color:#ffffff;font-size:16px;">&nbsp;skylonindia@gmail.com</span>
+								<span style="color:#ffffff;font-size:16px;">Email: </span>
+                                <span style="color:#ffffff;font-size:16px;">skylonindia@gmail.com</span>
                             </div>
 							
                         </div>
-						<div class="col-md-10">
+						<div class="col-md-10  text-center">
 								<ul class="social-network social-circle">
 									<li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
 									<li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -592,7 +605,7 @@ electrical wiring and more.</p>
             </div>
             <!-- end container -->
 
-            <!-- Form -->
+              <!-- Form -->
             <div id="normalModal" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -605,19 +618,19 @@ electrical wiring and more.</p>
                                 <div class="form-group row">
                                     <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputName3" placeholder="Name" style="background-color:#fff;color:#000;">
+                                        <input type="text" name="cpname" class="form-control" id="inputName3" placeholder="Name" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputPhone3" class="col-sm-2 col-form-label">Phone No*</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPhone3" placeholder="90XXXXXXXX" style="background-color:#fff;color:#000;">
+                                        <input type="tel" name="cpphone" class="form-control" id="inputPhone3" placeholder="90XXXXXXXX" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
 								<div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email@domain.com" style="background-color:#fff;color:#000;">
+                                        <input type="email" name="cpemail" class="form-control" id="inputEmail3" placeholder="Email@domain.com" style="background-color:#fff;color:#000;">
                                     </div>
                                 </div>
                                 
@@ -626,49 +639,49 @@ electrical wiring and more.</p>
                                     <div class="col-sm-10">
                                         <div class="checkbox">
                                             <label for="Intrested-0">
-      <input name="Intrested" id="Intrested-0" value="1" type="checkbox">
+      <input name="Intrested[]" id="Intrested-0" value="Residential Interior" type="checkbox">
       Residential Interior
     </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="Intrested-1">
-      <input name="Intrested" id="Intrested-1" value="2" type="checkbox">
+      <input name="Intrested[]" id="Intrested-1" value="Commercial Interior" type="checkbox">
       Commercial Interior
     </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="Intrested-2">
-      <input name="Intrested" id="Intrested-2" value="3" type="checkbox">
+      <input name="Intrested[]" id="Intrested-2" value="Renovation works" type="checkbox">
       Renovation works
     </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="Intrested-3">
-      <input name="Intrested" id="Intrested-3" value="4" type="checkbox">
+      <input name="Intrested[]" id="Intrested-3" value="Architecture Designing" type="checkbox">
       Architecture Designing
     </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="Intrested-4">
-      <input name="Intrested" id="Intrested-4" value="5" type="checkbox">
+      <input name="Intrested[]" id="Intrested-4" value="Handcrafted designed furnitures" type="checkbox">
       Handcrafted designed furnitures
     </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="Intrested-5">
-      <input name="Intrested" id="Intrested-5" value="6" type="checkbox">
+      <input name="Intrested[]" id="Intrested-5" value="Civil and Electrical contractors" type="checkbox">
       Civil and Electrical contractors
     </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="Intrested-6">
-      <input name="Intrested" id="Intrested-6" value="7" type="checkbox">
+      <input name="Intrested[]" id="Intrested-6" value="Refer and Earn" type="checkbox">
       Refer and Earn
     </label>
                                         </div>
 										<div class="checkbox">
                                             <label for="Intrested-7">
-      <input name="Intrested" id="Intrested-7" value="8" type="checkbox">
+      <input name="Intrested[]" id="Intrested-7" value="For Queries" type="checkbox">
       For Queries
     </label>
                                         </div>
@@ -677,7 +690,7 @@ electrical wiring and more.</p>
 								<div class="form-group row">
                                     <label for="inputArea3" class="col-sm-2 col-form-label">Message</label>
                                     <div class="col-sm-10">
-									 <textarea rows="4" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;color:#000;"></textarea> 
+									 <textarea rows="4" name="subject" class="form-control" cols="50" placeholder="Feedback" style="background-color:#fff;color:#000;"></textarea> 
                                         
                                     </div>
                                 </div>
@@ -685,8 +698,8 @@ electrical wiring and more.</p>
                             </form>
                         </div>
                         <div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#4274D7;">Close</button>
-                            <button type="button" class="btn btn-primary" style="background-color:#4274D7;">Submit</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal" style="background-color:#ef0505;">Close</button>
+                            <button  id="submitfrm" class="btn btn-primary" style="background-color:#4274D7;">Submit</button>
                         </div>
                     </div>
                     <!-- /.modal-content -->
@@ -703,24 +716,86 @@ electrical wiring and more.</p>
                   var height = $(window).height() - 200;
                   $(this).find(".modal-body").css("max-height", height);
                 });
+			
+
                 <!-- End Form Modal -->
-                				var frm = $('#contactForm1');
-                				frm.submit(function (e) {
+                				
+                				$( "#submitfrm" ).click(function(e) {
+									var frm = $('#contactForm1');
+									var sEmail = $('#inputEmail3').val();
+									var sPhone = $('#inputPhone3').val();
+									var sName = $('#inputName3').val();
+									function validateEmail(sEmail) {
+
+   var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+   if (filter.test(sEmail)) {
+
+       return true;
+
+   }
+
+   else {
+
+       return false;
+									}}
+									if ($.trim(sEmail).length == 0) {
+								
+										alert('Please enter valid email address');
+								
+										e.preventDefault();
+								
+									}
+									else if ($.trim(sPhone).length == 0) {
+								
+										alert('Please enter valid Phone Number');
+								
+										e.preventDefault();
+								
+									}
+								else if ($.trim(sName).length == 0) {
+								
+										alert('Please enter valid NAME');
+								
+										e.preventDefault();
+								
+									}
+								
+									
+									
+
+									else if (validateEmail(sEmail)) {
+								
+										
+								
+									
+								
                 				e.preventDefault();
                 				$.ajax({
                 				type: frm.attr('method'),
-                				url: frm.attr('email.php'),
+                				url: "email.php",
                 				data: frm.serialize(),
                 				success: function (data) {
                 				console.log('Submission was successful.');
-                				console.log(data);
+                				
                 				},
                 				error: function (data) {
                 				console.log('An error occurred.');
                 				console.log(data);
                 				},
                 				});
-                				$('#contactForm1').text("new dialog title");
+								$('#contactForm1').text("Thanks for contacting us our executives will get back to you shortly");
+								var x = document.getElementById("submitfrm");
+								x.style.display = "none";
+									}
+									else {
+								
+										alert('Invalid Email Address');
+								
+										e.preventDefault();
+								
+									}
+                				
                 				});
             </script>
 
@@ -751,7 +826,7 @@ electrical wiring and more.</p>
 		<!-- Portfolio Filtering -->
 		<script src="js/jquery.mixitup.min.js"></script>
 		<!-- Custom Scrollbar -->
-		<script src="js/jquery.nicescroll.js"></script>
+		
 		<!-- Jappear js -->
 		<script src="js/jquery.appear.js"></script>
 		<!-- Pie Chart -->

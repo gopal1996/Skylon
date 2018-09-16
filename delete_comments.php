@@ -7,11 +7,11 @@ if(isset($_POST["submit"])){
          * Insert image data into database
          */
         
-        //DB details
-        $dbHost     = 'localhost';
-    $dbUsername = 'id6491760_skylon1';
-    $dbPassword = 'skylon@12345';
-    $dbName     = 'id6491760_skylon1';
+       //DB details
+    $dbHost     = 'localhost';
+    $dbUsername = 'skyloki9_skylon';
+    $dbPassword = 'skylon@123';
+    $dbName     = 'skyloki9_skylon';
 		$pwd=$_POST['passwd'];
 		
 		if(! strcmp ($pwd,'admin'))

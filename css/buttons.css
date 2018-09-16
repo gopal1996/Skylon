@@ -242,6 +242,9 @@
         .ph
 		 {
 			 display:none;
+		 } .ipad
+		 {
+			 display:none;
 		 }
 		 .sys
 		 {
@@ -261,8 +264,62 @@
 		 .sys
 		 {
 			 display:none;
-		 }		 
+		 }
+		.ipad  {
+			 display:none;
+		 }
+		.earnatskylon {
+          position: fixed;
+          top: 20%;
+          right:-70px;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
         }
+        }
+		@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { .ph
+		 {
+			 display:none;
+		 }
+		 .sys
+		 {
+			 display:none;
+		 }
+		.ipad  {
+			 display:block;
+		 }}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { .ph
+		 {
+			 display:none;
+		 }
+		 .sys
+		 {
+			 display:none;
+		 }
+		.ipad  {
+			 display:block;
+		 }}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { .ph
+		 {
+			 display:none;
+		 }
+		 .sys
+		 {
+			 display:none;
+		 }
+		.ipad  {
+			 display:block;
+		 } }
         
         .btn3d {
     position:relative;
@@ -476,32 +533,14 @@
             background: #000;
         }
         
-        @media screen and (max-width: 676px) {
-            .nb-form:hover .user-icon {
-                display: none;
-            }
-        
-            .nb-form .message {
-                display: none;
-            }
-        
-            .nb-form form {
-                padding-top: 15px;
-            }
-            .nb-form{
-                right: 50%;
-                bottom: -320px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
+       
         
         
          /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
         .earnatskylon {
           position: fixed;
-          top: 50%;
-          right:-60px;
+          top: 56%;
+          right:-70px;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -584,3 +623,28 @@
           background: #bb0000;
           color: white;
         }
+		
+@media screen and (max-width: 767px){
+         .box{
+         width: 70%;
+         }
+         .popup1{
+         width: 70%;
+         }
+		 .ph
+		 {
+			 display:block;
+		 }
+		 .sys
+		 {
+			 display:none;
+		 }
+		.earnatskylon {
+          position: fixed;
+          top: 25%;
+          right:-70px;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+       }

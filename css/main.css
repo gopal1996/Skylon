@@ -117,21 +117,6 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: 0 0 0;
 }
 
-.form-control::-webkit-input-placeholder { /*  Chrome, Safari, Opera  */
-   color: #000;
-}
-
-.form-control:-moz-placeholder { /* Firefox 18- */
-   color: #000;  
-}
-
-.form-control::-moz-placeholder {  /* Firefox 19+ */
-   color: #000;  
-}
-
-.form-control:-ms-input-placeholder {  /*  Internet Explorer  */
-   color: #000;  
-}
 
 
 #loading-mask {
@@ -151,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     left: 0;
     position: fixed;
-    top: 50%;
+    top: 30%;
     width: 100%;
 }
 
