@@ -8,11 +8,14 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Skylon">
+    <meta name="description" content="At Skylon India, we provide best customized and personalised interior design solutions at an
+affordable cost with superior class looks and a fabulous finish">
+
+<meta name="keywords" content="Interior design,Interior decoration,Best interior design,Residential interiors,Commercial interiors,Civil and electrical contractors,Best interior design in chennai">
 
     <meta name="author" content="2G developers">
 
-    <title>Skylon</title>
+    <title>Skylon India - Interior Decorators</title>
 
     <!-- Mobile Specific Meta
 		================================================== -->
@@ -541,11 +544,11 @@ electrical wiring and more.</p>
 					
 					<div class="contact-info text-center col-md-6 col-sm-6 wow fadeInUp">
 					<div class="text-center">
-					<h3>&nbsp;</h3>
+					<br>
 					</div>
                        
 						<div class="text-center">
-							<h3 style="color:#ffffff;"><a href="#">Refer and Earn</a></h3>
+							<h3 style="color:#ffffff;"><a href="earnatskylon.html">Refer and Earn</a></h3>
 						</div>
 						<div class="text-center">
 							<h3 style="color:#ffffff;"><a href="services.html">Our Services</a></h3>
