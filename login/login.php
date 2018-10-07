@@ -85,7 +85,7 @@
 
 				<div class="form-group">
 					<label for="image">Images:</label>
-					<input type="file" class="form-control" name="image">
+					<input type="file" name="image" class="form-control" id="image">
 				</div>
 				<div class="form-group">
 					<label for="passwd">Password:</label>
@@ -115,7 +115,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, prod_name, prod_desc, Category FROM products";
+$sql = "SELECT id, prod_name, prod_desc, Category,image FROM products";
 $result = $conn->query($sql);
 
 
@@ -131,6 +131,7 @@ if ($result->num_rows > 0) {
         echo '<td>'.$row["prod_name"].'</td>';
         echo '<td>'.$row["prod_desc"].'</td>';
 		echo '<td>'.$row["Category"].'</td>';
+		echo '<td>'.$row["image"].'</td>';
       echo '</tr>';
       
     echo '</tbody>';
@@ -179,6 +180,7 @@ if ($result->num_rows > 0) {
 					<option>completed</option>
 					</select>
 					</div>
+					
 					<div class="form-group">
 					<label for="passwd">Password:</label>
 					<input type="password" class="form-control" name="passwd">
@@ -207,7 +209,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, prod_name, prod_desc, Category FROM products";
+$sql = "SELECT id, prod_name, prod_desc, Category,image FROM products";
 $result = $conn->query($sql);
 
 
@@ -223,6 +225,7 @@ if ($result->num_rows > 0) {
         echo '<td>'.$row["prod_name"].'</td>';
         echo '<td>'.$row["prod_desc"].'</td>';
 		echo '<td>'.$row["Category"].'</td>';
+		echo '<td>'.$row["image"].'</td>';
       echo '</tr>';
       
     echo '</tbody>';

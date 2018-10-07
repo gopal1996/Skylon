@@ -28,6 +28,8 @@ affordable cost with superior class looks and a fabulous finish">
 		================================================== -->
     <!-- Fontawesome Icon font -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Canonical -->
+    <link rel="canonical" href="www.skylonindia.com" />
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Animate.css -->
@@ -55,19 +57,32 @@ affordable cost with superior class looks and a fabulous finish">
     <script src="js/jquery.js"></script>
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-   
-
-    <style>
-        
-
-
-	
     </style>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-125892339-1', 'auto');
+        ga('require', 'GTM-T2C5ZZC');
+        ga('send', 'pageview');
+  </script>
+
+
+    
 
 
 </head>
 
 <body id="body">
+   
     <div class="icon-bar1" style="width:32px;height:32px;">
          <a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
                   <a href="https://twitter.com/IndiaSkylon" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -159,7 +174,7 @@ affordable cost with superior class looks and a fabulous finish">
         Welcome Slider
         ==================================== -->
 		<div id="home slitSlider" class="sl-slider-wrapper" style="padding-top:70px;">
-       <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+       <div class="carousel fade-carousel slide"  id="bs-carousel">
   <!-- Overlay -->
   <div class="overlay"></div>
 
@@ -522,7 +537,7 @@ electrical wiring and more.</p>
         </div>
 		
 		<!-- Google Map -->
-          <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+          <div class="google-map wow fadeInDown" data-wow-duration="500ms" style="position:relative;z-index=-1;background-color:#50486d;">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.8596407957737!2d80.20484020656036!3d13.043492344927714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d5f6cbc4df%3A0x7d3893caf1de4263!2sSkylon+India+-+Interior+Design!5e0!3m2!1sen!2sin!4v1536774236008" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
@@ -563,50 +578,45 @@ electrical wiring and more.</p>
 					</div>
 
                     <!-- Contact Details -->
-                    <div class="contact-info col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="500ms">
-                        <h3 style="color:#d3b36c;font-weight:bold;">Contact Us</h3>
-                        <br>
-                        <div class="contact-details">
-                            <div class="con-info text-center clearfix">
-                                <i class="fa fa-home fa-lg" style="color:#ffffff"></i>
-								<span style="color:#ffffff;font-size:16px;">Reach Us: </span>
-                                <span style="color:#ffffff;font-size:16px;">AP:1725,102ndStreet,<br>14thSector, k.k.Nagar,<br>Chennai-600078.</span>
-                            </div>
-
-                            <div class="con-info  text-center clearfix">
+                        <div class="contact-info col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="500ms">
+                           <h3 style="color:#d3b36c;font-weight:bold;">Contact Us</h3>
+                           <br>
+                           <div class="contact-details">
+                              <div class="con-info clearfix">
+                                 <i class="fa fa-home fa-lg" style="color:#ffffff"></i>
+                                 <span style="color:#ffffff;font-size:16px;">Reach Us: </span>
+                                 <span style="color:#ffffff;font-size:16px;">AP:1725,102ndStreet,<br>14thSector, k.k.Nagar,<br>Chennai-600078.</span>
+                              </div>
+                              <div class="con-info clearfix">
                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
 								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
                                 <span style="color:#ffffff;font-size:16px;">+919840492966</span>
                             </div>
 							
-							<div class="con-info  text-center clearfix">
+							<div class="con-info clearfix">
                                 <i class="fa fa-phone fa-lg" style="color:#ffffff"></i>
 								<span style="color:#ffffff;font-size:16px;">&nbsp;Phone No: </span>
                                 <span style="color:#ffffff;font-size:16px;">+917200107659</span>
                             </div>
-
-                            <div class="con-info  text-center clearfix">
-                                <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
-								<span style="color:#ffffff;font-size:16px;">Email: </span>
-                                <span style="color:#ffffff;font-size:16px;">skylonindia@gmail.com</span>
-                            </div>
-							
+                              <div class="con-info clearfix">
+                                 <i class="fa fa-envelope fa-lg" style="color:#ffffff"></i>
+                                 <span style="color:#ffffff;font-size:16px;">Email ID: </span>
+                                 <span style="color:#ffffff;font-size:16px;">&nbsp;skylonindia@gmail.com</span>
+                              </div>
+                           </div>
+                           <div class="col-md-10">
+                              <ul class="social-network social-circle">
+                                 <li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                 <li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a href="https://twitter.com/IndiaSkylon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="icoGoogle" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                              </ul>
+                           </div>
                         </div>
-						<div class="col-md-10  text-center">
-								<ul class="social-network social-circle">
-									<li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="https://twitter.com/IndiaSkylon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="icoGoogle" title="Google +"><i class="fa fa-youtube"></i></a></li>
-
-								</ul>
-						</div>
-                    </div>
-                    
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
+                     </div>
+                     <!-- end row -->
+                  </div>
+                  <!-- end container -->
 
               <!-- Form -->
             <div id="normalModal" class="modal fade">

@@ -356,14 +356,14 @@ whole level at the given time">
 						?>
                         <!-- single portfolio item -->
                         <li class="mix <?php echo $row["Category"]?>">
-                            <a href="javascript:void(0)" data-largesrc="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>" data-title="<?php echo $row[ "prod_name"]?>" data-description="<?php echo $row["prod_desc"]?>" >
-							<img src="data:image/jpeg;base64,<?php echo base64_encode($row['image'])?>">
+                            <a style="font-size: 14px;" href="javascript:void(0)" data-largesrc="<?php echo 'http://www.skylonindia.com/project/'.$row['image']?>" data-title="<?php echo $row[ "prod_name"]?>" data-description="<?php echo $row["prod_desc"]?>" >
+							<img src="<?php echo 'http://www.skylonindia.com/project/'.$row['image']?>">
 							<?php
 							echo '<div class="hover-mask">';?>
-								<h3><?php echo $row[ "prod_name"]?></h3>
-							<?php	
+								<h3>"<?php echo $row[ "prod_name"]?>"</h3>
+							<?php	echo '<span>';
 									echo '<i class="fa fa-plus fa-2x"></i>';
-								
+								echo '</span>';
 							echo '</div>';
 						echo '</a>'; echo '</li>'; } } ?>
                         <!-- /single portfolio item -->
@@ -381,7 +381,7 @@ whole level at the given time">
         <!-- Srart Contact Us
 		=========================================== -->
         <!-- Google Map -->
-        <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+        <div class="google-map wow fadeInDown" data-wow-duration="500ms" style="position:relative;z-index=-1;background-color:#50486d;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.8596407957737!2d80.20484020656036!3d13.043492344927714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d5f6cbc4df%3A0x7d3893caf1de4263!2sSkylon+India+-+Interior+Design!5e0!3m2!1sen!2sin!4v1536774236008" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <section id="foot-counter" class="bg-one" style="position:relative;z-index=-1;">
@@ -404,7 +404,7 @@ whole level at the given time">
                         </div>
 
                         <div class="text-center">
-                            <h3 style="color:#ffffff;"><a href="#">Refer and Earn</a></h3>
+                            <h3 style="color:#ffffff;"><a href="earnatskylon.html">Refer and Earn</a></h3>
                         </div>
                         <div class="text-center">
                             <h3 style="color:#ffffff;"><a href="services.html">Our Services</a></h3>
@@ -450,10 +450,10 @@ whole level at the given time">
                         </div>
                         <div class="col-md-10">
                             <ul class="social-network social-circle">
-                                <li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://instagram.com/skylon_india?utm_source=ig_profile_share&igshid=yyl086ibgfrq" target="_blank" class="icoRss" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="https://www.facebook.com/skylonindia/?ref=bookmarks" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://twitter.com/IndiaSkylon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="icoGoogle" title="Google +"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCkYerkHBOvQc759YxHKRVWw?view_as=subscriber" class="icoGoogle" title="Youtube"><i class="fa fa-youtube"></i></a></li>
 
                             </ul>
                         </div>

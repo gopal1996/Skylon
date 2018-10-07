@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Login"
+AuthUserFile "/home/skyloki9/.htpasswds/public_html/login/passwd"
+require valid-user
