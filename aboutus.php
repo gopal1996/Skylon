@@ -191,8 +191,8 @@ whole level at the given time">
 
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#bs-carousel" data-slide-to="1"></li>
+                    <li data-target="#bs-carousel" data-slide-to="0" class="active" style="width:13px;height:13px;"></li>
+                    <li data-target="#bs-carousel" data-slide-to="1" style="width:13px;height:13px;"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->

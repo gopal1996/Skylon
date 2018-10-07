@@ -180,9 +180,9 @@ affordable cost with superior class looks and a fabulous finish">
 
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
+    <li data-target="#bs-carousel" data-slide-to="0" class="active" style="width:13px;height:13px;"></li>
+    <li data-target="#bs-carousel" data-slide-to="1" style="width:13px;height:13px;"></li>
+    <li data-target="#bs-carousel" data-slide-to="2" style="width:13px;height:13px;"></li>
   </ol>
   <script>
     
